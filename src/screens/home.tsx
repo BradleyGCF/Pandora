@@ -1,18 +1,20 @@
-import Search from '@/modules/core/components/search'
-import UserList from '@/modules/users/components/userList'
-import { getAllUsers } from '@/modules/users/services'
-
-export function loader() {
-  const data = getAllUsers()
-  return data
-}
+import { ButtonPrimary } from '../modules/library/components/button/ButtonPrimary';
+import { ButtonSecondary } from '../modules/library/components/button/ButtonSecondary';
+import { ButtonDanger } from '../modules/library/components/button/ButtonDanger';
 
 export default function Home() {
   return (
-    <div>
-      <h2>Usuarios</h2>
-      <Search />
-      <UserList />
-    </div>
+<div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+  <h2>Usuarios</h2>
+  <div>
+    <ButtonPrimary onClick={() => console.log('Primary clicked')}>Primary Button</ButtonPrimary>
+  </div>
+  <div>
+    <ButtonSecondary onClick={() => console.log('Secondary clicked')}>Secondary Button</ButtonSecondary>
+  </div>
+  <div>
+    <ButtonDanger onClick={() => console.log('Danger clicked')}>Danger Button</ButtonDanger>
+  </div>
+</div>
   )
 }

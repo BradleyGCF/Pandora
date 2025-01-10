@@ -1,1 +1,0 @@
-Carpeta para las utilidades del entorno, cómo funciones para formatear téxtos entre otras cosas.
