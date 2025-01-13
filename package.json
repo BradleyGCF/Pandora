@@ -12,6 +12,7 @@
     "test": "cypress run --spec ./cypress/e2e/* --browser chrome"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "@radix-ui/react-alert-dialog": "1.1.1",
     "@radix-ui/react-avatar": "1.1.0",
     "@radix-ui/react-dialog": "1.1.1",

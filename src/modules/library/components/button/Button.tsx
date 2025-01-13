@@ -2,25 +2,30 @@ import React from 'react';
 
 export type ButtonProps = {
   children: React.ReactNode;
-  onClick?: () => void;
+  className?: string;
   disabled?: boolean;
-  variant?: 'primary' | 'secondary' | 'danger';  // Puedes añadir más variantes si lo necesitas
-  className?: string;  // Permite añadir clases personalizadas
+  leftIcon?: React.ReactNode;
+  rightIcon?: React.ReactNode;
+  iconPosition?: 'left' | 'right';
+  onClick?: () => void;
+  variant?: 'primary' | 'secondary' | 'text';  // Puedes añadir más variantes si lo necesitas
 };
 
 export const Button: React.FC<ButtonProps> = ({
   children,
-  onClick,
-  disabled = false,
-  variant = 'primary',
   className = '',
+  disabled = false,
+  leftIcon,
+  rightIcon,
+  onClick,
+  variant = 'primary',
 }) => {
   // Estilos según el tipo de variante
   const baseStyles = 'py-2 px-4 rounded focus:outline-none transition-all';
   const variantStyles = {
-    primary: 'bg-blue-500 text-white hover:bg-blue-600',
-    secondary: 'bg-gray-300 text-black hover:bg-gray-400',
-    danger: 'bg-red-500 text-white hover:bg-red-600',
+    primary: '',
+    secondary: '',
+    text: '',
   };
 
   const disabledStyles = 'bg-gray-400 text-gray-600 cursor-not-allowed';
@@ -30,8 +35,18 @@ export const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       disabled={disabled}
       className={`${baseStyles} ${variantStyles[variant]} ${disabled ? disabledStyles : ''} ${className}`}
-    >
-      {children}
+    ><div className={`flex items-center justify-center gap-5`}>
+    {/* {icon && iconPosition === 'left' && (
+      <span className="w-5 h-5">{icon}</span>
+    )}
+    {children}
+    {icon && iconPosition === 'right' && (
+      <span className="w-5 h-5">{icon}</span>
+    )} */}
+    {leftIcon && <span className="w-5 h-5">{leftIcon}</span>}   {/* Ícono izquierdo */}
+        {children}
+        {rightIcon && <span className="w-5 h-5">{rightIcon}</span>} {/* Ícono derecho */}
+  </div>
     </button>
   );
 };

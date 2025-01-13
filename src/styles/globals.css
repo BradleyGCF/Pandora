@@ -31,8 +31,25 @@
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
     --ring: 0 0% 3.9%;
+    --text: 0, 0%, 100%;
+    --font-family: "Inter";
+    --font-weight: 700;
+    --text-color: 207, 90%, 54%;
 
     --radius: 0.5rem;
+
+    --initial-primary: 207, 90%, 54%;
+    --hover-primary: 208, 79%, 51%;
+    --hover-background-primary: 221, 79%, 51%;
+    --active-background-primary: 210, 79%, 46%;
+    --disabled-background-primary: 207, 90%, 77%;
+    --focus-background-primary: 207, 90%, 54%;
+    --border-radius: 100px;
+    --button-width: 149px;
+    --button-height: 48px;
+    --button-padding: 10px;
+    --border-secondary: 207, 90%, 54%;
+    
   }
 
   .dark {
