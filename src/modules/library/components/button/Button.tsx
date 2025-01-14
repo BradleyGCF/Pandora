@@ -37,18 +37,9 @@ export const Button: React.FC<ButtonProps> = ({
       className={`${baseStyles} ${variantStyles[variant]} ${disabled ? disabledStyles : ""} ${className}`}
     >
       <div className={`flex items-center justify-center gap-5`}>
-        {/* {icon && iconPosition === 'left' && (
-      <span className="w-5 h-5">{icon}</span>
-    )}
-    {children}
-    {icon && iconPosition === 'right' && (
-      <span className="w-5 h-5">{icon}</span>
-    )} */}
         {leftIcon && <span className="w-5 h-5">{leftIcon}</span>}{" "}
-        {/* Ícono izquierdo */}
         {children}
         {rightIcon && <span className="w-5 h-5">{rightIcon}</span>}{" "}
-        {/* Ícono derecho */}
       </div>
     </button>
   );
