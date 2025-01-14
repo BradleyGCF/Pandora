@@ -44,7 +44,10 @@
     --active-background-primary: 210, 79%, 46%;
     --disabled-background-primary: 207, 90%, 77%;
     --focus-background-primary: 207, 90%, 54%;
-    --border-radius: 100px;
+    --border-radius-large: 100px;
+    --border-radius-medium: 16px;
+    --border-radius-small: 8px;
+    --border-radius-normal: 0px;
     --button-width: 149px;
     --button-height: 48px;
     --button-padding: 10px;
