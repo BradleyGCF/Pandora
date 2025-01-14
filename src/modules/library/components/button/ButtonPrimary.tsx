@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button, ButtonProps } from "./Button";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
@@ -48,61 +47,112 @@ export const ButtonPrimaryDisabled: React.FC<ButtonProps> = (props) => {
 
 export const ButtonPrimaryArrowRight: React.FC<ButtonProps> = (props) => {
   return (
-    <Button {...props} rightIcon={<ArrowRightIcon className="w-4 h-5" />} variant="primary" className={variantStyles.initial} />
+    <Button
+      {...props}
+      rightIcon={<ArrowRightIcon className="w-4 h-5" />}
+      variant="primary"
+      className={variantStyles.initial}
+    />
   );
 };
 
 export const ButtonPrimaryArrowHover: React.FC<ButtonProps> = (props) => {
   return (
-    <Button {...props} rightIcon={<ArrowRightIcon className="w-4 h-5" />} variant="primary" className={variantStyles.hover} />
+    <Button
+      {...props}
+      rightIcon={<ArrowRightIcon className="w-4 h-5" />}
+      variant="primary"
+      className={variantStyles.hover}
+    />
   );
 };
 
 export const ButtonPrimaryArrowActive: React.FC<ButtonProps> = (props) => {
   return (
-    <Button {...props} rightIcon={<ArrowRightIcon className="w-4 h-5" />} variant="primary" className={variantStyles.active} />
+    <Button
+      {...props}
+      rightIcon={<ArrowRightIcon className="w-4 h-5" />}
+      variant="primary"
+      className={variantStyles.active}
+    />
   );
 };
 
 export const ButtonPrimaryArrowFocus: React.FC<ButtonProps> = (props) => {
   return (
-    <Button {...props} rightIcon={<ArrowRightIcon className="w-4 h-5" />} variant="primary" className={variantStyles.focus} />
+    <Button
+      {...props}
+      rightIcon={<ArrowRightIcon className="w-4 h-5" />}
+      variant="primary"
+      className={variantStyles.focus}
+    />
   );
 };
 
 export const ButtonPrimaryArrowDisabled: React.FC<ButtonProps> = (props) => {
   return (
-    <Button {...props} rightIcon={<ArrowRightIcon className="w-4 h-5" />} variant="primary" className={variantStyles.disabled} />
+    <Button
+      {...props}
+      rightIcon={<ArrowRightIcon className="w-4 h-5" />}
+      variant="primary"
+      className={variantStyles.disabled}
+    />
   );
 };
 
 export const ButtonPrimaryArrowLeft: React.FC<ButtonProps> = (props) => {
   return (
-    <Button {...props} rightIcon={<ArrowLeftIcon className="w-4 h-5" />} variant="primary" className={variantStyles.initial} />
+    <Button
+      {...props}
+      rightIcon={<ArrowLeftIcon className="w-4 h-5" />}
+      variant="primary"
+      className={variantStyles.initial}
+    />
   );
 };
 
 export const ButtonPrimaryArrowLeftHover: React.FC<ButtonProps> = (props) => {
   return (
-    <Button {...props} rightIcon={<ArrowLeftIcon className="w-4 h-5" />} variant="primary" className={variantStyles.hover} />
+    <Button
+      {...props}
+      rightIcon={<ArrowLeftIcon className="w-4 h-5" />}
+      variant="primary"
+      className={variantStyles.hover}
+    />
   );
 };
 
 export const ButtonPrimaryArrowLeftActive: React.FC<ButtonProps> = (props) => {
   return (
-    <Button {...props} rightIcon={<ArrowLeftIcon className="w-4 h-5" />} variant="primary" className={variantStyles.active} />
+    <Button
+      {...props}
+      rightIcon={<ArrowLeftIcon className="w-4 h-5" />}
+      variant="primary"
+      className={variantStyles.active}
+    />
   );
 };
 
 export const ButtonPrimaryArrowLeftFocus: React.FC<ButtonProps> = (props) => {
   return (
-    <Button {...props} rightIcon={<ArrowLeftIcon className="w-4 h-5" />} variant="primary" className={variantStyles.focus} />
+    <Button
+      {...props}
+      rightIcon={<ArrowLeftIcon className="w-4 h-5" />}
+      variant="primary"
+      className={variantStyles.focus}
+    />
   );
 };
 
-export const ButtonPrimaryArrowLeftDisabled: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryArrowLeftDisabled: React.FC<ButtonProps> = (
+  props,
+) => {
   return (
-    <Button {...props} rightIcon={<ArrowLeftIcon className="w-4 h-5" />} variant="primary" className={variantStyles.disabled} />
+    <Button
+      {...props}
+      rightIcon={<ArrowLeftIcon className="w-4 h-5" />}
+      variant="primary"
+      className={variantStyles.disabled}
+    />
   );
 };
-

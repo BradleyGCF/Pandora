@@ -1,8 +1,8 @@
-import { cn } from '@/modules/core/utils'
-import type { SVGAttributes } from 'react'
+import { cn } from "@/modules/core/utils";
+import type { SVGAttributes } from "react";
 
 interface Props extends SVGAttributes<SVGSVGElement> {
-  class?: string
+  class?: string;
 }
 
 export const Loader = ({ ...props }: Props) => {
@@ -11,7 +11,7 @@ export const Loader = ({ ...props }: Props) => {
       aria-hidden="true"
       role="status"
       {...props}
-      className={cn('h-[1rem] w-[1rem] animate-spin', props.className)}
+      className={cn("h-[1rem] w-[1rem] animate-spin", props.className)}
       viewBox="0 0 100 101"
       fill="none"
     >
@@ -26,5 +26,5 @@ export const Loader = ({ ...props }: Props) => {
         fill="currentColor"
       />
     </svg>
-  )
-}
+  );
+};

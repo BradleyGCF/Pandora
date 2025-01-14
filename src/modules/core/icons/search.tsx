@@ -1,15 +1,15 @@
-import { cn } from '@/modules/core/utils'
-import type { SVGAttributes } from 'react'
+import { cn } from "@/modules/core/utils";
+import type { SVGAttributes } from "react";
 
 interface Props extends SVGAttributes<SVGSVGElement> {
-  class?: string
+  class?: string;
 }
 
 export const Search = ({ ...props }: Props) => {
   return (
     <svg
       {...props}
-      className={cn('h-[1rem] w-[1rem]', props.className)}
+      className={cn("h-[1rem] w-[1rem]", props.className)}
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -23,5 +23,5 @@ export const Search = ({ ...props }: Props) => {
         />
       </g>
     </svg>
-  )
-}
+  );
+};

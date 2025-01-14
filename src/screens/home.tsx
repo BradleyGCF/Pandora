@@ -157,7 +157,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
-      <h2>Text</h2>
+        <h2>Text</h2>
         <ButtonTextArrowRight onClick={() => console.log("Text clicked")}>
           Button
         </ButtonTextArrowRight>

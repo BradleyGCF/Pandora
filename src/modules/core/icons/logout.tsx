@@ -1,8 +1,8 @@
-import { cn } from '@/modules/core/utils'
-import type { SVGAttributes } from 'react'
+import { cn } from "@/modules/core/utils";
+import type { SVGAttributes } from "react";
 
 interface Props extends SVGAttributes<SVGSVGElement> {
-  class?: string
+  class?: string;
 }
 
 export const Logout = ({ ...props }: Props) => {
@@ -14,7 +14,7 @@ export const Logout = ({ ...props }: Props) => {
       viewBox="0 0 14 12"
       fill="none"
       {...props}
-      className={cn('h-[1.2rem] w-[1.2rem]', props.className)}
+      className={cn("h-[1.2rem] w-[1.2rem]", props.className)}
     >
       <title>Logout</title>
       <path
@@ -24,5 +24,5 @@ export const Logout = ({ ...props }: Props) => {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
+  );
+};

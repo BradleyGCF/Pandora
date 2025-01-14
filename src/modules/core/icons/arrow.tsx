@@ -1,25 +1,25 @@
-import { cn } from '@/modules/core/utils'
-import type { SVGAttributes } from 'react'
+import { cn } from "@/modules/core/utils";
+import type { SVGAttributes } from "react";
 
 const Rotations = {
-  top: 'rotate-90',
-  bottom: '-rotate-90',
-  right: 'rotate-180',
-  left: 'rotate-40',
-}
+  top: "rotate-90",
+  bottom: "-rotate-90",
+  right: "rotate-180",
+  left: "rotate-40",
+};
 
-type Directions = keyof typeof Rotations
+type Directions = keyof typeof Rotations;
 
 interface Props extends SVGAttributes<SVGSVGElement> {
-  class?: string
-  direction?: Directions
+  class?: string;
+  direction?: Directions;
 }
 
-export const Arrow = ({ direction = 'right', ...props }: Props) => {
+export const Arrow = ({ direction = "right", ...props }: Props) => {
   return (
     <svg
       {...props}
-      className={cn('h-4 w-4', props.className, Rotations[direction])}
+      className={cn("h-4 w-4", props.className, Rotations[direction])}
       viewBox="0 0 17 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -34,5 +34,5 @@ export const Arrow = ({ direction = 'right', ...props }: Props) => {
         />
       </g>
     </svg>
-  )
-}
+  );
+};

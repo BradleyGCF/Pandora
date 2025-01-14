@@ -1,7 +1,7 @@
-import { Routes } from '@/routes'
-import { Link } from 'react-router-dom'
-import { MenuDesktop } from './menuDesktop'
-import { MenuMobile } from './menuMobile'
+import { Routes } from "@/routes";
+import { Link } from "react-router-dom";
+import { MenuDesktop } from "./menuDesktop";
+import { MenuMobile } from "./menuMobile";
 
 export function Header() {
   return (
@@ -11,7 +11,11 @@ export function Header() {
         aria-label="Global"
       >
         <div className="flex items-center justify-between">
-          <Link className="flex-none text-xl font-semibold dark:text-white" to={Routes.home} aria-label="Brand">
+          <Link
+            className="flex-none text-xl font-semibold dark:text-white"
+            to={Routes.home}
+            aria-label="Brand"
+          >
             Brand
           </Link>
           <div className="sm:hidden">
@@ -22,5 +26,5 @@ export function Header() {
         <MenuDesktop />
       </nav>
     </header>
-  )
+  );
 }

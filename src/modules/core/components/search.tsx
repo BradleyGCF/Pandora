@@ -1,23 +1,23 @@
-import { Search as SearchIcon } from '@/modules/core/icons'
-import { useNavigate } from 'react-router-dom'
+import { Search as SearchIcon } from "@/modules/core/icons";
+import { useNavigate } from "react-router-dom";
 
 export default function Search() {
-  const navigate = useNavigate()
-  const url = new URL(globalThis.location.href)
+  const navigate = useNavigate();
+  const url = new URL(globalThis.location.href);
 
   const handlerSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
+    event.preventDefault();
 
-    const form = new FormData(event.currentTarget)
+    const form = new FormData(event.currentTarget);
 
-    const q = form.get('q') as string
+    const q = form.get("q") as string;
 
-    console.log(q)
+    console.log(q);
 
-    q?.length > 0 ? url.searchParams.set('q', q) : url.searchParams.delete('q')
+    q?.length > 0 ? url.searchParams.set("q", q) : url.searchParams.delete("q");
 
-    navigate(url.pathname + url.search)
-  }
+    navigate(url.pathname + url.search);
+  };
 
   return (
     <form
@@ -28,12 +28,15 @@ export default function Search() {
         placeholder="Buscar"
         type="search"
         className="bg-transparent outline-none w-full"
-        defaultValue={String(url.searchParams.get('q') || '')}
+        defaultValue={String(url.searchParams.get("q") || "")}
         name="q"
       />
-      <button type="submit" className="bg-neutral-50 text-neutral-500 rounded-lg p-2">
+      <button
+        type="submit"
+        className="bg-neutral-50 text-neutral-500 rounded-lg p-2"
+      >
         <SearchIcon />
       </button>
     </form>
-  )
+  );
 }

@@ -1,34 +1,37 @@
-import { useState } from 'react'
+import { useState } from "react";
 
 export const $LocalStorageKey = {
-  SessionToken: 'SessionToken',
-} as const
+  SessionToken: "SessionToken",
+} as const;
 
-type LocalStorageKey = (typeof $LocalStorageKey)[keyof typeof $LocalStorageKey]
+type LocalStorageKey = (typeof $LocalStorageKey)[keyof typeof $LocalStorageKey];
 
-export const useLocalStorage = (key: LocalStorageKey, initialValue?: string) => {
+export const useLocalStorage = (
+  key: LocalStorageKey,
+  initialValue?: string,
+) => {
   const [storedValue, setStoredValue] = useState(() => {
-    let item: string | null = null
+    let item: string | null = null;
     try {
-      item = window.localStorage.getItem(key)
-      return item ? JSON.parse(item) : initialValue
+      item = window.localStorage.getItem(key);
+      return item ? JSON.parse(item) : initialValue;
     } catch (_) {
-      return item || initialValue
+      return item || initialValue;
     }
-  })
+  });
 
   const setValue = (value: string) => {
     try {
-      const valueToStore = value
-      setStoredValue(valueToStore)
-      window.localStorage.setItem(key, JSON.stringify(valueToStore))
+      const valueToStore = value;
+      setStoredValue(valueToStore);
+      window.localStorage.setItem(key, JSON.stringify(valueToStore));
     } catch (error) {
-      console.error(error)
+      console.error(error);
     }
-  }
+  };
 
   return {
     value: storedValue,
     setValue,
-  }
-}
+  };
+};

@@ -1,18 +1,17 @@
 version: 2
 updates:
   - package-ecosystem: npm
-    directory: '/'
+    directory: "/"
     schedule:
       interval: monthly
-      time: '04:00'
+      time: "04:00"
     open-pull-requests-limit: 10
     ignore:
-      - dependency-name: 'react'
-      - dependency-name: 'react-dom'
-      - dependency-name: '@biomejs/biome'
-      
+      - dependency-name: "react"
+      - dependency-name: "react-dom"
+      - dependency-name: "@biomejs/biome"
 
-  - package-ecosystem: 'github-actions'
-    directory: '/'
+  - package-ecosystem: "github-actions"
+    directory: "/"
     schedule:
-      interval: 'monthly'
+      interval: "monthly"

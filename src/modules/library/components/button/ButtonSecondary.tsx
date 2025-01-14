@@ -49,26 +49,51 @@ export const ButtonSecondaryDisabled: React.FC<ButtonProps> = (props) => {
 
 export const ButtonSecondaryArrowRight: React.FC<ButtonProps> = (props) => {
   return (
-    <Button rightIcon={<ArrowRightIcon className="w-4 h-5" />} {...props} variant="secondary" className={variantStyles.initial} />
+    <Button
+      rightIcon={<ArrowRightIcon className="w-4 h-5" />}
+      {...props}
+      variant="secondary"
+      className={variantStyles.initial}
+    />
   );
 };
 export const ButtonSecondaryArrowHover: React.FC<ButtonProps> = (props) => {
   return (
-    <Button rightIcon={<ArrowRightIcon className="w-4 h-5" />} {...props} variant="secondary" className={variantStyles.hover} />
+    <Button
+      rightIcon={<ArrowRightIcon className="w-4 h-5" />}
+      {...props}
+      variant="secondary"
+      className={variantStyles.hover}
+    />
   );
 };
 export const ButtonSecondaryArrowActive: React.FC<ButtonProps> = (props) => {
   return (
-    <Button rightIcon={<ArrowRightIcon className="w-4 h-5" />} {...props} variant="secondary" className={variantStyles.active} />
+    <Button
+      rightIcon={<ArrowRightIcon className="w-4 h-5" />}
+      {...props}
+      variant="secondary"
+      className={variantStyles.active}
+    />
   );
 };
 export const ButtonSecondaryArrowFocus: React.FC<ButtonProps> = (props) => {
   return (
-    <Button rightIcon={<ArrowRightIcon className="w-4 h-5" />} {...props} variant="secondary" className={variantStyles.focus} />
+    <Button
+      rightIcon={<ArrowRightIcon className="w-4 h-5" />}
+      {...props}
+      variant="secondary"
+      className={variantStyles.focus}
+    />
   );
 };
 export const ButtonSecondaryArrowDisabled: React.FC<ButtonProps> = (props) => {
   return (
-    <Button rightIcon={<ArrowRightIcon className="w-4 h-5" />} {...props} variant="secondary" className={variantStyles.disabled} />
+    <Button
+      rightIcon={<ArrowRightIcon className="w-4 h-5" />}
+      {...props}
+      variant="secondary"
+      className={variantStyles.disabled}
+    />
   );
 };

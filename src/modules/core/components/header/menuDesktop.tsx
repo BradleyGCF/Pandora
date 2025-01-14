@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
-import { cn } from '../../utils'
-import { NavLinks } from './links'
-import { UserNavar } from './userNav'
+import { Link } from "react-router-dom";
+import { cn } from "../../utils";
+import { NavLinks } from "./links";
+import { UserNavar } from "./userNav";
 
 export function MenuDesktop() {
   return (
@@ -11,8 +11,10 @@ export function MenuDesktop() {
           <Link
             key={link.label}
             className={cn(
-              'font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-neutral-400 dark:hover:text-neutral-500',
-              location.pathname.includes(link.href) ? 'text-blue-600 sm:py-6 dark:text-blue-500' : ''
+              "font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-neutral-400 dark:hover:text-neutral-500",
+              location.pathname.includes(link.href)
+                ? "text-blue-600 sm:py-6 dark:text-blue-500"
+                : "",
             )}
             to={link.href}
           >
@@ -24,5 +26,5 @@ export function MenuDesktop() {
         </div>
       </div>
     </div>
-  )
+  );
 }

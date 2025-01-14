@@ -1,21 +1,31 @@
-import { useSession } from '@/modules/core/hooks/useSession'
-import { Popover, PopoverContent, PopoverTrigger } from '@/modules/core/ui/popover'
-import { Routes } from '@/routes'
-import { Link } from 'react-router-dom'
-import { $SessionStatus } from '../../enum'
-import { Logout } from '../../icons'
-import { ButtonVariants } from '../../ui/button'
-import { cn } from '../../utils'
-import { Avatar } from '../avatar'
-import { NavLinks } from './links'
+import { useSession } from "@/modules/core/hooks/useSession";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/modules/core/ui/popover";
+import { Routes } from "@/routes";
+import { Link } from "react-router-dom";
+import { $SessionStatus } from "../../enum";
+import { Logout } from "../../icons";
+import { ButtonVariants } from "../../ui/button";
+import { cn } from "../../utils";
+import { Avatar } from "../avatar";
+import { NavLinks } from "./links";
 
 export const MenuMobile = () => {
-  const { user, signOut, status } = useSession()
+  const { user, signOut, status } = useSession();
 
   return (
     <Popover>
       <PopoverTrigger className="hs-collapse-toggle size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700">
-        <svg className="hs-collapse-open:hidden size-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <svg
+          className="hs-collapse-open:hidden size-4"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
           <title>Menu</title>
           <path
             fillRule="evenodd"
@@ -36,8 +46,11 @@ export const MenuMobile = () => {
       <PopoverContent className="w-60 flex flex-col bg-white text-black">
         <div className="flex flex-col gap-y-4">
           {status === $SessionStatus.AUTHENTICATED && (
-            <Link to={Routes.user.profile} className="flex justify-center font-semibold">
-              <Avatar src="" alt={user?.email || 'U'} />
+            <Link
+              to={Routes.user.profile}
+              className="flex justify-center font-semibold"
+            >
+              <Avatar src="" alt={user?.email || "U"} />
             </Link>
           )}
 
@@ -45,8 +58,10 @@ export const MenuMobile = () => {
             <Link
               key={link.label}
               className={cn(
-                'font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-neutral-400 dark:hover:text-neutral-500',
-                location.pathname.includes(link.href) ? 'text-blue-600 sm:py-6 dark:text-blue-500' : ''
+                "font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-neutral-400 dark:hover:text-neutral-500",
+                location.pathname.includes(link.href)
+                  ? "text-blue-600 sm:py-6 dark:text-blue-500"
+                  : "",
               )}
               to={link.href}
             >
@@ -55,7 +70,13 @@ export const MenuMobile = () => {
           ))}
 
           {status === $SessionStatus.UNAUTHENTICATED ? (
-            <Link to={Routes.logIn} className={cn(ButtonVariants(), 'flex justify-center font-semibold')}>
+            <Link
+              to={Routes.logIn}
+              className={cn(
+                ButtonVariants(),
+                "flex justify-center font-semibold",
+              )}
+            >
               Iniciar sesión
             </Link>
           ) : (
@@ -71,5 +92,5 @@ export const MenuMobile = () => {
         </div>
       </PopoverContent>
     </Popover>
-  )
-}
+  );
+};

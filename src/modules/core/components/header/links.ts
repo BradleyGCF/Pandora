@@ -1,16 +1,16 @@
-import { Routes } from '@/routes'
+import { Routes } from "@/routes";
 
 export const NavLinks = [
   {
-    label: 'Home',
+    label: "Home",
     href: Routes.home,
   },
   {
-    label: 'Log in',
+    label: "Log in",
     href: Routes.logIn,
   },
   {
-    label: 'Sign up',
+    label: "Sign up",
     href: Routes.signUp,
   },
-]
+];

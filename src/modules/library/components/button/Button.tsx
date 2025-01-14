@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export type ButtonProps = {
   children: React.ReactNode;
@@ -6,47 +6,50 @@ export type ButtonProps = {
   disabled?: boolean;
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
-  iconPosition?: 'left' | 'right';
+  iconPosition?: "left" | "right";
   onClick?: () => void;
-  variant?: 'primary' | 'secondary' | 'text';  // Puedes añadir más variantes si lo necesitas
+  variant?: "primary" | "secondary" | "text"; // Puedes añadir más variantes si lo necesitas
 };
 
 export const Button: React.FC<ButtonProps> = ({
   children,
-  className = '',
+  className = "",
   disabled = false,
   leftIcon,
   rightIcon,
   onClick,
-  variant = 'primary',
+  variant = "primary",
 }) => {
   // Estilos según el tipo de variante
-  const baseStyles = 'py-2 px-4 rounded focus:outline-none transition-all';
+  const baseStyles = "py-2 px-4 rounded focus:outline-none transition-all";
   const variantStyles = {
-    primary: '',
-    secondary: '',
-    text: '',
+    primary: "",
+    secondary: "",
+    text: "",
   };
 
-  const disabledStyles = 'bg-gray-400 text-gray-600 cursor-not-allowed';
+  const disabledStyles = "bg-gray-400 text-gray-600 cursor-not-allowed";
 
   return (
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`${baseStyles} ${variantStyles[variant]} ${disabled ? disabledStyles : ''} ${className}`}
-    ><div className={`flex items-center justify-center gap-5`}>
-    {/* {icon && iconPosition === 'left' && (
+      className={`${baseStyles} ${variantStyles[variant]} ${disabled ? disabledStyles : ""} ${className}`}
+    >
+      <div className={`flex items-center justify-center gap-5`}>
+        {/* {icon && iconPosition === 'left' && (
       <span className="w-5 h-5">{icon}</span>
     )}
     {children}
     {icon && iconPosition === 'right' && (
       <span className="w-5 h-5">{icon}</span>
     )} */}
-    {leftIcon && <span className="w-5 h-5">{leftIcon}</span>}   {/* Ícono izquierdo */}
+        {leftIcon && <span className="w-5 h-5">{leftIcon}</span>}{" "}
+        {/* Ícono izquierdo */}
         {children}
-        {rightIcon && <span className="w-5 h-5">{rightIcon}</span>} {/* Ícono derecho */}
-  </div>
+        {rightIcon && <span className="w-5 h-5">{rightIcon}</span>}{" "}
+        {/* Ícono derecho */}
+      </div>
     </button>
   );
 };

@@ -1,21 +1,28 @@
-import { Routes } from '@/routes'
+import { Routes } from "@/routes";
 
 export function Footer() {
   return (
     <footer className="mt-auto w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto border-t">
       <div className="text-center container">
         <div>
-          <a className="flex-none text-xl font-semibold text-black dark:text-white" href={Routes.home} aria-label="Brand">
+          <a
+            className="flex-none text-xl font-semibold text-black dark:text-white"
+            href={Routes.home}
+            aria-label="Brand"
+          >
             Brand
           </a>
         </div>
 
         <div className="mt-3">
           <p className="text-gray-500 dark:text-neutral-500">
-            We're part of the{' '}
-            <a className="font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-500 dark:hover:text-blue-400" href="/">
+            We're part of the{" "}
+            <a
+              className="font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-500 dark:hover:text-blue-400"
+              href="/"
+            >
               Htmlstream
-            </a>{' '}
+            </a>{" "}
             family.
           </p>
         </div>
@@ -88,5 +95,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

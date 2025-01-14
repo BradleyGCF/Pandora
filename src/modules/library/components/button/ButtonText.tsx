@@ -39,30 +39,55 @@ export const ButtonTextDisabled: React.FC<ButtonProps> = (props) => {
 
 export const ButtonTextArrowRight: React.FC<ButtonProps> = (props) => {
   return (
-    <Button rightIcon={<ArrowRightIcon className="w-4 h-5" />} {...props} variant="text" className={variantStyles.initial} />
+    <Button
+      rightIcon={<ArrowRightIcon className="w-4 h-5" />}
+      {...props}
+      variant="text"
+      className={variantStyles.initial}
+    />
   );
 };
 
 export const ButtonTextArrowHover: React.FC<ButtonProps> = (props) => {
   return (
-    <Button rightIcon={<ArrowRightIcon className="w-4 h-5" />} {...props} variant="text" className={variantStyles.hover} />
+    <Button
+      rightIcon={<ArrowRightIcon className="w-4 h-5" />}
+      {...props}
+      variant="text"
+      className={variantStyles.hover}
+    />
   );
 };
 
 export const ButtonTextArrowActive: React.FC<ButtonProps> = (props) => {
   return (
-    <Button rightIcon={<ArrowRightIcon className="w-4 h-5" />} {...props} variant="text" className={variantStyles.active} />
+    <Button
+      rightIcon={<ArrowRightIcon className="w-4 h-5" />}
+      {...props}
+      variant="text"
+      className={variantStyles.active}
+    />
   );
 };
 
 export const ButtonTextArrowFocus: React.FC<ButtonProps> = (props) => {
   return (
-    <Button rightIcon={<ArrowRightIcon className="w-4 h-5" />} {...props} variant="text" className={variantStyles.focus} />
+    <Button
+      rightIcon={<ArrowRightIcon className="w-4 h-5" />}
+      {...props}
+      variant="text"
+      className={variantStyles.focus}
+    />
   );
 };
 
 export const ButtonTextArrowDisabled: React.FC<ButtonProps> = (props) => {
   return (
-    <Button rightIcon={<ArrowRightIcon className="w-4 h-5" />} {...props} variant="text" className={variantStyles.disabled} />
+    <Button
+      rightIcon={<ArrowRightIcon className="w-4 h-5" />}
+      {...props}
+      variant="text"
+      className={variantStyles.disabled}
+    />
   );
 };

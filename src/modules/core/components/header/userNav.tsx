@@ -1,25 +1,32 @@
-import { useSession } from '@/modules/core/hooks/useSession'
-import { Popover, PopoverContent, PopoverTrigger } from '@/modules/core/ui/popover'
-import { Routes } from '@/routes'
-import { Link } from 'react-router-dom'
-import { Logout, Person } from '../../icons'
-import { Avatar } from '../avatar'
+import { useSession } from "@/modules/core/hooks/useSession";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/modules/core/ui/popover";
+import { Routes } from "@/routes";
+import { Link } from "react-router-dom";
+import { Logout, Person } from "../../icons";
+import { Avatar } from "../avatar";
 
 export const UserNavar = () => {
-  const { user, signOut } = useSession()
+  const { user, signOut } = useSession();
 
   if (!user)
     return (
-      <Link className="flex items-center gap-x-2 font-medium text-gray-500 hover:text-blue-600" to={Routes.logIn}>
+      <Link
+        className="flex items-center gap-x-2 font-medium text-gray-500 hover:text-blue-600"
+        to={Routes.logIn}
+      >
         <Person />
         Log in
       </Link>
-    )
+    );
 
   return (
     <Popover>
       <PopoverTrigger>
-        <Avatar src="" alt={user?.email || 'U'} />
+        <Avatar src="" alt={user?.email || "U"} />
       </PopoverTrigger>
       <PopoverContent className="w-60 flex flex-col bg-white text-black">
         <div>
@@ -41,5 +48,5 @@ export const UserNavar = () => {
         </div>
       </PopoverContent>
     </Popover>
-  )
-}
+  );
+};
