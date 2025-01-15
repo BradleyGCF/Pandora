@@ -1,8 +1,19 @@
 {
-  "name": "pandora",
-  "private": true,
-  "version": "0.2.0",
+  "name": "pandora-components",
+  "version": "0.0.3",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/pandora-components.umd.cjs",
+  "module": "./dist/pandora-components.js",
+  "exports": {
+    ".": {
+      "import": "./dist/pandora-components.js",
+      "require": "./dist/pandora-components.umd.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
   "scripts": {
     "dev": "vite",
     "start": "vite --host",
@@ -10,6 +21,10 @@
     "preview": "vite preview",
     "lint": "yarn format && yarn lint:check && yarn lint:apply",
     "test": "cypress run --spec ./cypress/e2e/* --browser chrome"
+  },
+  "peerDependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -63,6 +78,7 @@
     "ts-node": "10.9.2",
     "typescript": "5.5.4",
     "vite": "5.4.0",
+    "vite-plugin-dts": "^4.5.0",
     "vite-plugin-node-polyfills": "0.22.0",
     "vite-tsconfig-paths": "5.0.1",
     "vitest": "2.0.5"

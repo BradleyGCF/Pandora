@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import { Button, ButtonProps } from "./Button";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
 
@@ -15,62 +15,88 @@ const variantStyles = {
     "bg-[hsl(var(--disabled-background-primary))] text-white w-[var(--button-width)] h-[var(--button-height)] p-[var(--button-padding)]] border-4 border-[#BFDBFE] outline-none ring-2 ring-[#BFDBFE] font-[var(--font-weight)]",
 };
 
-export const ButtonPrimary: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimary: React.FC<PropsWithChildren<ButtonProps>> = ({
+  children,
+  ...props
+}) => {
   return (
     <Button
       {...props}
       variant="primary"
       className={variantStyles.initial}
       border="large"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryHover: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryHover: React.FC<PropsWithChildren<ButtonProps>> = ({
+  children,
+  ...props
+}) => {
   return (
     <Button
       {...props}
       variant="primary"
       className={variantStyles.hover}
       border="large"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryActive: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryActive: React.FC<PropsWithChildren<ButtonProps>> = ({
+  children,
+  ...props
+}) => {
   return (
     <Button
       {...props}
       variant="primary"
       className={variantStyles.active}
       border="large"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryFocus: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryFocus: React.FC<PropsWithChildren<ButtonProps>> = ({
+  children,
+  ...props
+}) => {
   return (
     <Button
       {...props}
       variant="primary"
       className={variantStyles.focus}
       border="large"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryDisabled: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryDisabled: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
       variant="primary"
       className={variantStyles.disabled}
       border="large"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryArrowRight: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryArrowRight: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -78,11 +104,15 @@ export const ButtonPrimaryArrowRight: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.initial}
       border="large"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryArrowHover: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryArrowHover: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -90,11 +120,15 @@ export const ButtonPrimaryArrowHover: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.hover}
       border="large"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryArrowActive: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryArrowActive: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -102,11 +136,15 @@ export const ButtonPrimaryArrowActive: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.active}
       border="large"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryArrowFocus: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryArrowFocus: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -114,11 +152,15 @@ export const ButtonPrimaryArrowFocus: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.focus}
       border="large"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryArrowDisabled: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryArrowDisabled: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -126,11 +168,15 @@ export const ButtonPrimaryArrowDisabled: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.disabled}
       border="large"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryArrowLeft: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryArrowLeft: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -138,11 +184,15 @@ export const ButtonPrimaryArrowLeft: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.initial}
       border="large"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryArrowLeftHover: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryArrowLeftHover: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -150,11 +200,15 @@ export const ButtonPrimaryArrowLeftHover: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.hover}
       border="large"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryArrowLeftActive: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryArrowLeftActive: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -162,11 +216,15 @@ export const ButtonPrimaryArrowLeftActive: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.active}
       border="large"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryArrowLeftFocus: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryArrowLeftFocus: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -174,13 +232,15 @@ export const ButtonPrimaryArrowLeftFocus: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.focus}
       border="large"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryArrowLeftDisabled: React.FC<ButtonProps> = (
-  props
-) => {
+export const ButtonPrimaryArrowLeftDisabled: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -188,66 +248,91 @@ export const ButtonPrimaryArrowLeftDisabled: React.FC<ButtonProps> = (
       variant="primary"
       className={variantStyles.disabled}
       border="large"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryMedium: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryMedium: React.FC<PropsWithChildren<ButtonProps>> = ({
+  children,
+  ...props
+}) => {
   return (
     <Button
       {...props}
       variant="primary"
       border="medium"
       className={variantStyles.initial}
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryMediumHover: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryMediumHover: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
       variant="primary"
       border="medium"
       className={variantStyles.hover}
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryMediumActive: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryMediumActive: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
       variant="primary"
       border="medium"
       className={variantStyles.active}
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryMediumFocus: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryMediumFocus: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
       variant="primary"
       border="medium"
       className={variantStyles.focus}
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryMediumDisabled: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryMediumDisabled: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
       variant="primary"
       border="medium"
       className={variantStyles.disabled}
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryMediumArrow: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryMediumArrow: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -255,11 +340,15 @@ export const ButtonPrimaryMediumArrow: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.initial}
       border="medium"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryMediumArrowHover: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryMediumArrowHover: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -267,11 +356,15 @@ export const ButtonPrimaryMediumArrowHover: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.hover}
       border="medium"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryMediumArrowActive: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryMediumArrowActive: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -279,11 +372,15 @@ export const ButtonPrimaryMediumArrowActive: React.FC<ButtonProps> = (props) => 
       variant="primary"
       className={variantStyles.active}
       border="medium"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryMediumArrowFocus: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryMediumArrowFocus: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -291,11 +388,15 @@ export const ButtonPrimaryMediumArrowFocus: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.focus}
       border="medium"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryMediumArrowDisabled: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryMediumArrowDisabled: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -303,11 +404,15 @@ export const ButtonPrimaryMediumArrowDisabled: React.FC<ButtonProps> = (props) =
       variant="primary"
       className={variantStyles.disabled}
       border="medium"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryMediumLeft: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryMediumLeft: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -315,11 +420,15 @@ export const ButtonPrimaryMediumLeft: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.initial}
       border="medium"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryMediumLeftHover: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryMediumLeftHover: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -327,11 +436,15 @@ export const ButtonPrimaryMediumLeftHover: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.hover}
       border="medium"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryMediumLeftActive: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryMediumLeftActive: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -339,11 +452,15 @@ export const ButtonPrimaryMediumLeftActive: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.active}
       border="medium"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryMediumLeftFocus: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryMediumLeftFocus: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -351,11 +468,15 @@ export const ButtonPrimaryMediumLeftFocus: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.focus}
       border="medium"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryMediumLeftDisabled: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryMediumLeftDisabled: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -363,67 +484,91 @@ export const ButtonPrimaryMediumLeftDisabled: React.FC<ButtonProps> = (props) =>
       variant="primary"
       className={variantStyles.disabled}
       border="medium"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimarySmall: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimarySmall: React.FC<PropsWithChildren<ButtonProps>> = ({
+  children,
+  ...props
+}) => {
   return (
     <Button
       {...props}
       variant="primary"
       className={variantStyles.initial}
       border="small"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimarySmallHover: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimarySmallHover: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
       variant="primary"
       className={variantStyles.hover}
       border="small"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimarySmallActive: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimarySmallActive: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
       variant="primary"
       className={variantStyles.active}
       border="small"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimarySmallFocus: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimarySmallFocus: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
       variant="primary"
       className={variantStyles.focus}
       border="small"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimarySmallDisabled: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimarySmallDisabled: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
       variant="primary"
       className={variantStyles.disabled}
       border="small"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-
-export const ButtonPrimaryArrowSmall: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryArrowSmall: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -431,11 +576,15 @@ export const ButtonPrimaryArrowSmall: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.initial}
       border="small"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryArrowSmallHover: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryArrowSmallHover: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -443,11 +592,15 @@ export const ButtonPrimaryArrowSmallHover: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.hover}
       border="small"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryArrowSmallActive: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryArrowSmallActive: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -455,11 +608,15 @@ export const ButtonPrimaryArrowSmallActive: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.active}
       border="small"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryArrowSmallFocus: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryArrowSmallFocus: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -467,11 +624,15 @@ export const ButtonPrimaryArrowSmallFocus: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.focus}
       border="small"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryArrowSmallDisabled: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryArrowSmallDisabled: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -479,11 +640,15 @@ export const ButtonPrimaryArrowSmallDisabled: React.FC<ButtonProps> = (props) =>
       variant="primary"
       className={variantStyles.disabled}
       border="small"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimarySmallLeft: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimarySmallLeft: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -491,11 +656,15 @@ export const ButtonPrimarySmallLeft: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.initial}
       border="small"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimarySmallLeftHover: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimarySmallLeftHover: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -503,11 +672,15 @@ export const ButtonPrimarySmallLeftHover: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.hover}
       border="small"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimarySmallLeftActive: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimarySmallLeftActive: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -515,11 +688,15 @@ export const ButtonPrimarySmallLeftActive: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.active}
       border="small"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimarySmallLeftFocus: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimarySmallLeftFocus: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -527,11 +704,15 @@ export const ButtonPrimarySmallLeftFocus: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.focus}
       border="small"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimarySmallLeftDisabled: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimarySmallLeftDisabled: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -539,66 +720,91 @@ export const ButtonPrimarySmallLeftDisabled: React.FC<ButtonProps> = (props) => 
       variant="primary"
       className={variantStyles.disabled}
       border="small"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryNormal: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryNormal: React.FC<PropsWithChildren<ButtonProps>> = ({
+  children,
+  ...props
+}) => {
   return (
     <Button
       {...props}
       variant="primary"
       border="normal"
       className={variantStyles.initial}
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryNormalHover: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryNormalHover: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
       variant="primary"
       border="normal"
       className={variantStyles.hover}
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryNormalActive: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryNormalActive: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
       variant="primary"
       border="normal"
       className={variantStyles.active}
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryNormalFocus: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryNormalFocus: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
       variant="primary"
       border="normal"
       className={variantStyles.focus}
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryNormalDisabled: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryNormalDisabled: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
       variant="primary"
       border="normal"
       className={variantStyles.disabled}
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryNormalLeft: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryNormalLeft: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -606,11 +812,15 @@ export const ButtonPrimaryNormalLeft: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.initial}
       border="normal"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryNormalLeftHover: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryNormalLeftHover: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -618,11 +828,15 @@ export const ButtonPrimaryNormalLeftHover: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.hover}
       border="normal"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryNormalLeftActive: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryNormalLeftActive: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -630,11 +844,15 @@ export const ButtonPrimaryNormalLeftActive: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.initial}
       border="normal"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryNormalLeftFocus: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryNormalLeftFocus: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -642,11 +860,15 @@ export const ButtonPrimaryNormalLeftFocus: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.focus}
       border="normal"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryNormalLeftDisabled: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryNormalLeftDisabled: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -654,11 +876,15 @@ export const ButtonPrimaryNormalLeftDisabled: React.FC<ButtonProps> = (props) =>
       variant="primary"
       className={variantStyles.disabled}
       border="normal"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryNormalRight: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryNormalRight: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -666,11 +892,15 @@ export const ButtonPrimaryNormalRight: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.initial}
       border="normal"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryNormalRightHover: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryNormalRightHover: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -678,11 +908,15 @@ export const ButtonPrimaryNormalRightHover: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.hover}
       border="normal"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryNormalRightActive: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryNormalRightActive: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -690,11 +924,15 @@ export const ButtonPrimaryNormalRightActive: React.FC<ButtonProps> = (props) => 
       variant="primary"
       className={variantStyles.active}
       border="normal"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryNormalRightFocus: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryNormalRightFocus: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -702,11 +940,15 @@ export const ButtonPrimaryNormalRightFocus: React.FC<ButtonProps> = (props) => {
       variant="primary"
       className={variantStyles.focus}
       border="normal"
-    />
+    >
+      {children}
+    </Button>
   );
 };
 
-export const ButtonPrimaryNormalRightDisabled: React.FC<ButtonProps> = (props) => {
+export const ButtonPrimaryNormalRightDisabled: React.FC<
+  PropsWithChildren<ButtonProps>
+> = ({ children, ...props }) => {
   return (
     <Button
       {...props}
@@ -714,6 +956,8 @@ export const ButtonPrimaryNormalRightDisabled: React.FC<ButtonProps> = (props) =
       variant="primary"
       className={variantStyles.disabled}
       border="normal"
-    />
+    >
+      {children}
+    </Button>
   );
 };

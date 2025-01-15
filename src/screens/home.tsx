@@ -1,4 +1,8 @@
-import { ButtonPrimary, ButtonSecondary, ButtonText } from "../modules/library/components/button/index";
+import {
+  ButtonPrimary,
+  ButtonSecondary,
+  ButtonText,
+} from "../modules/library/components/button/index";
 
 export default function Home() {
   return (
@@ -7,7 +11,6 @@ export default function Home() {
         {/* NO ICON */}
         <h2>Primary</h2>
         <ButtonPrimary.ButtonPrimary
-          onClick={() => console.log("Primary clicked")}
           children="Button"
         />
         <ButtonPrimary.ButtonPrimaryHover

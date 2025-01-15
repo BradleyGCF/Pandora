@@ -1,4 +1,4 @@
-export * from "./loader";
+export * from "./Loader";
 export * from "./logout";
 export * from "./arrow";
 export * from "./person";
