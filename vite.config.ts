@@ -28,8 +28,8 @@ export default defineConfig(() => {
     build: {
       lib: {
         entry: resolve(__dirname, 'src/modules/library/components/main.ts'),
-        name: 'Pandora',
-        fileName: 'pandora',
+        name: 'pandora_components',
+        fileName: 'pandora_components',
       },
       rollupOptions: {
         external: ["react", "react-dom", "react/jsx-runtime"],

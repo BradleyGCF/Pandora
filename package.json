@@ -1,16 +1,16 @@
 {
-  "name": "pandora-components",
-  "version": "0.0.3",
+  "name": "pandora_components",
+  "version": "0.0.2",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/pandora-components.umd.cjs",
-  "module": "./dist/pandora-components.js",
+  "main": "./dist/pandora_components.umd.cjs",
+  "module": "./dist/pandora_components.js",
   "exports": {
     ".": {
-      "import": "./dist/pandora-components.js",
-      "require": "./dist/pandora-components.umd.cjs"
+      "import": "./dist/pandora_components.js",
+      "require": "./dist/pandora_components.umd.cjs"
     },
     "./dist/style.css": "./dist/style.css"
   },
