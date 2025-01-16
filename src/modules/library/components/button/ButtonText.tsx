@@ -20,7 +20,7 @@ export const ButtonText: React.FC<PropsWithChildren<ButtonProps>> = ({
   ...props
 }) => {
   return (
-    <Button {...props} variant="text" className={variantStyles.initial}>
+    <Button {...props} variant="text" border="large" className={variantStyles.initial}>
       {children}
     </Button>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import clsx from "clsx";
 
 export type ButtonProps = {
   children: React.ReactNode;
@@ -42,7 +43,13 @@ export const Button: React.FC<ButtonProps> = ({
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`${baseStyles} ${variantStyles[variant]} ${borderRadiusVariants[border]} ${disabled ? disabledStyles : ""} ${className}`}
+      className={clsx(
+        baseStyles,
+        variantStyles[variant],
+        borderRadiusVariants[border],
+        { [disabledStyles]: disabled },
+        className
+      )}
     >
       <div className={`flex items-center justify-center gap-5`}>
         {leftIcon && <span className="w-5 h-5">{leftIcon}</span>}{" "}

@@ -1,6 +1,7 @@
 import React, { PropsWithChildren } from "react";
 import { Button, ButtonProps } from "./Button";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
+import clsx from "clsx";
 
 const variantStyles = {
   initial:
@@ -16,14 +17,14 @@ const variantStyles = {
 };
 
 export const ButtonPrimary: React.FC<PropsWithChildren<ButtonProps>> = ({
-  children,
+  children, className = "",
   ...props
 }) => {
   return (
     <Button
       {...props}
       variant="primary"
-      className={variantStyles.initial}
+      className={clsx(variantStyles.initial, className)}
       border="large"
     >
       {children}
