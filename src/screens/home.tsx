@@ -1,3 +1,4 @@
+// import { ButtonPrimary } from '../modules/library/components/button/ButtonPrimary';
 import {
   ButtonPrimary,
   ButtonSecondary,
@@ -10,9 +11,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
         {/* NO ICON */}
         <h2>Primary</h2>
-        <ButtonPrimary.ButtonPrimary
-          children="Button"
-        />
+        <ButtonPrimary.ButtonPrimary>boton</ButtonPrimary.ButtonPrimary>
         <ButtonPrimary.ButtonPrimaryHover
           onClick={() => console.log("Primary clicked")}
           children="Button"
@@ -79,7 +78,6 @@ export default function Home() {
         />
       </div>
 
-      {/* RIGHT ICON */}
       <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
         <h2>Primary</h2>
         <ButtonPrimary.ButtonPrimaryArrowRight
@@ -152,7 +150,6 @@ export default function Home() {
         />
       </div>
 
-      {/* LEFT ICON */}
       <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
         <h2>Primary</h2>
         <ButtonPrimary.ButtonPrimaryArrowLeft

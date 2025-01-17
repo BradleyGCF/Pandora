@@ -9,6 +9,12 @@ module.exports = {
     "./index.html",
   ],
   prefix: "",
+  safelist: [
+    "bg-[hsl(var(--initial-primary))]",
+    "w-[var(--button-width)]",
+    "h-[var(--button-height)]",
+    "p-[var(--button-padding)]",
+  ],
   theme: {
     container: {
       center: true,
@@ -74,5 +80,6 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require('tailwindcss'),]
+  
 };

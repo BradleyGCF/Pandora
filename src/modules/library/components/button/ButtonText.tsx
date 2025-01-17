@@ -4,7 +4,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
 
 const variantStyles = {
   initial:
-    'border-transparent text-sky-500 font-[var(--font-weight)] "rounded-[var(--border-radius)] w-[var(--button-width)] h-[var(--button-height)] p-[var(--button-padding)]]',
+    'text-sky-500 font-[var(--font-weight)] "rounded-[var(--border-radius)] w-[var(--button-width)] h-[var(--button-height)] p-[var(--button-padding)]]',
   hover:
     'text-sky-500 hover:text-white font-[var(--font-weight)] "rounded-[var(--border-radius)] w-[var(--button-width)] h-[var(--button-height)] p-[var(--button-padding)]] hover:bg-[hsl(var(--hover-background-primary))]',
   active:

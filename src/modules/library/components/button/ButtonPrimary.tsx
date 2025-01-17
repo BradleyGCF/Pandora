@@ -1,11 +1,12 @@
 import React, { PropsWithChildren } from "react";
 import { Button, ButtonProps } from "./Button";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
-import clsx from "clsx";
+import { twMerge } from 'tailwind-merge'
+
 
 const variantStyles = {
   initial:
-    "bg-[hsl(var(--initial-primary))] text-white w-[var(--button-width)] h-[var(--button-height)] p-[var(--button-padding)]] font-[var(--font-weight)]",
+    `bg-[hsl(var(--initial-primary))] text-white w-[var(--button-width)] h-[var(--button-height)] p-[var(--button-padding)] font-[var(--font-weight)]`,
   hover:
     "bg-[hsl(var(--hover-primary))] hover:bg-[hsl(var(--hover-background-primary))] text-white w-[var(--button-width)] h-[var(--button-height)] p-[var(--button-padding)]] font-[var(--font-weight)]",
   active:
@@ -17,14 +18,15 @@ const variantStyles = {
 };
 
 export const ButtonPrimary: React.FC<PropsWithChildren<ButtonProps>> = ({
-  children, className = "",
+  children,
+  className,
   ...props
 }) => {
   return (
     <Button
       {...props}
       variant="primary"
-      className={clsx(variantStyles.initial, className)}
+      className={twMerge(`${variantStyles.initial} ${className}`)}
       border="large"
     >
       {children}
@@ -34,13 +36,14 @@ export const ButtonPrimary: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonPrimaryHover: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
     <Button
       {...props}
       variant="primary"
-      className={variantStyles.hover}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="large"
     >
       {children}
@@ -50,6 +53,7 @@ export const ButtonPrimaryHover: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonPrimaryActive: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
@@ -66,13 +70,14 @@ export const ButtonPrimaryActive: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonPrimaryFocus: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
     <Button
       {...props}
       variant="primary"
-      className={variantStyles.focus}
+      className={twMerge(`${variantStyles.focus} ${className}`)}
       border="large"
     >
       {children}
@@ -113,13 +118,14 @@ export const ButtonPrimaryArrowRight: React.FC<
 
 export const ButtonPrimaryArrowHover: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
+    
       {...props}
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       variant="primary"
-      className={variantStyles.hover}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="large"
     >
       {children}
