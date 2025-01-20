@@ -1,6 +1,7 @@
 import React, { PropsWithChildren } from "react";
 import { Button, ButtonProps } from "./Button";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
+import { twMerge } from "tailwind-merge";
 
 const variantStyles = {
   initial:
@@ -17,10 +18,16 @@ const variantStyles = {
 
 export const ButtonText: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
-    <Button {...props} variant="text" border="large" className={variantStyles.initial}>
+    <Button
+      {...props}
+      variant="text"
+      border="large"
+      className={twMerge(`${variantStyles.initial} ${className}`)}
+    >
       {children}
     </Button>
   );
@@ -28,13 +35,14 @@ export const ButtonText: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonTextHover: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.hover}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="large"
     >
       {children}
@@ -44,13 +52,14 @@ export const ButtonTextHover: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonTextActive: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.active}
+      className={twMerge(`${variantStyles.active} ${className}`)}
       border="large"
     >
       {children}
@@ -60,13 +69,14 @@ export const ButtonTextActive: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonTextFocus: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.focus}
+      className={twMerge(`${variantStyles.focus} ${className}`)}
       border="large"
     >
       {children}
@@ -76,13 +86,14 @@ export const ButtonTextFocus: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonTextDisabled: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.disabled}
+      className={twMerge(`${variantStyles.disabled} ${className}`)}
       border="large"
     >
       {children}
@@ -92,6 +103,7 @@ export const ButtonTextDisabled: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonTextArrowRight: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
@@ -99,7 +111,7 @@ export const ButtonTextArrowRight: React.FC<PropsWithChildren<ButtonProps>> = ({
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.initial}
+      className={twMerge(`${variantStyles.initial} ${className}`)}
       border="large"
     >
       {children}
@@ -109,6 +121,7 @@ export const ButtonTextArrowRight: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonTextArrowHover: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
@@ -116,7 +129,7 @@ export const ButtonTextArrowHover: React.FC<PropsWithChildren<ButtonProps>> = ({
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.hover}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="large"
     >
       {children}
@@ -126,13 +139,13 @@ export const ButtonTextArrowHover: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonTextArrowActive: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.active}
+      className={twMerge(`${variantStyles.active} ${className}`)}
       border="large"
     >
       {children}
@@ -142,6 +155,7 @@ export const ButtonTextArrowActive: React.FC<
 
 export const ButtonTextArrowFocus: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
@@ -149,7 +163,7 @@ export const ButtonTextArrowFocus: React.FC<PropsWithChildren<ButtonProps>> = ({
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.focus}
+      className={twMerge(`${variantStyles.focus} ${className}`)}
       border="large"
     >
       {children}
@@ -159,13 +173,13 @@ export const ButtonTextArrowFocus: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonTextArrowDisabled: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.disabled}
+      className={twMerge(`${variantStyles.disabled} ${className}`)}
       border="large"
     >
       {children}
@@ -175,13 +189,13 @@ export const ButtonTextArrowDisabled: React.FC<
 
 export const ButtonTextArrowLeftInitial: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.initial}
+      className={twMerge(`${variantStyles.initial} ${className}`)}
       border="large"
     >
       {children}
@@ -191,13 +205,13 @@ export const ButtonTextArrowLeftInitial: React.FC<
 
 export const ButtonTextArrowLeftHover: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.hover}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="large"
     >
       {children}
@@ -207,13 +221,13 @@ export const ButtonTextArrowLeftHover: React.FC<
 
 export const ButtonTextArrowLeftActive: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.active}
+      className={twMerge(`${variantStyles.active} ${className}`)}
       border="large"
     >
       {children}
@@ -223,13 +237,13 @@ export const ButtonTextArrowLeftActive: React.FC<
 
 export const ButtonTextArrowLeftFocus: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.focus}
+      className={twMerge(`${variantStyles.focus} ${className}`)}
       border="large"
     >
       {children}
@@ -239,13 +253,13 @@ export const ButtonTextArrowLeftFocus: React.FC<
 
 export const ButtonTextArrowLeftDisabled: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.disabled}
+      className={twMerge(`${variantStyles.disabled} ${className}`)}
       border="large"
     >
       {children}
@@ -255,13 +269,14 @@ export const ButtonTextArrowLeftDisabled: React.FC<
 
 export const ButtonTextMedium: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.initial}
+      className={twMerge(`${variantStyles.initial} ${className}`)}
       border="medium"
     >
       {children}
@@ -271,12 +286,12 @@ export const ButtonTextMedium: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonTextMediumHover: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.hover}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="medium"
     >
       {children}
@@ -286,12 +301,12 @@ export const ButtonTextMediumHover: React.FC<
 
 export const ButtonTextMediumActive: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.active}
+      className={twMerge(`${variantStyles.active} ${className}`)}
       border="medium"
     >
       {children}
@@ -301,12 +316,12 @@ export const ButtonTextMediumActive: React.FC<
 
 export const ButtonTextMediumFocus: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.focus}
+      className={twMerge(`${variantStyles.focus} ${className}`)}
       border="medium"
     >
       {children}
@@ -316,12 +331,12 @@ export const ButtonTextMediumFocus: React.FC<
 
 export const ButtonTextMediumDisabled: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.disabled}
+      className={twMerge(`${variantStyles.disabled} ${className}`)}
       border="medium"
     >
       {children}
@@ -331,13 +346,13 @@ export const ButtonTextMediumDisabled: React.FC<
 
 export const ButtonTextMediumArrow: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.initial}
+      className={twMerge(`${variantStyles.initial} ${className}`)}
       border="medium"
     >
       {children}
@@ -347,13 +362,13 @@ export const ButtonTextMediumArrow: React.FC<
 
 export const ButtonTextMediumArrowHover: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.hover}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="medium"
     >
       {children}
@@ -363,13 +378,13 @@ export const ButtonTextMediumArrowHover: React.FC<
 
 export const ButtonTextMediumArrowActive: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.active}
+      className={twMerge(`${variantStyles.active} ${className}`)}
       border="medium"
     >
       {children}
@@ -379,13 +394,13 @@ export const ButtonTextMediumArrowActive: React.FC<
 
 export const ButtonTextMediumArrowFocus: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.focus}
+      className={twMerge(`${variantStyles.focus} ${className}`)}
       border="medium"
     >
       {children}
@@ -395,13 +410,13 @@ export const ButtonTextMediumArrowFocus: React.FC<
 
 export const ButtonTextMediumArrowDisabled: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.disabled}
+      className={twMerge(`${variantStyles.disabled} ${className}`)}
       border="medium"
     >
       {children}
@@ -411,6 +426,7 @@ export const ButtonTextMediumArrowDisabled: React.FC<
 
 export const ButtonTextMediumLeft: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
@@ -418,7 +434,7 @@ export const ButtonTextMediumLeft: React.FC<PropsWithChildren<ButtonProps>> = ({
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.initial}
+      className={twMerge(`${variantStyles.initial} ${className}`)}
       border="medium"
     >
       {children}
@@ -428,13 +444,13 @@ export const ButtonTextMediumLeft: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonTextMediumLeftHover: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.hover}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="medium"
     >
       {children}
@@ -444,13 +460,13 @@ export const ButtonTextMediumLeftHover: React.FC<
 
 export const ButtonTextMediumLeftActive: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.active}
+      className={twMerge(`${variantStyles.active} ${className}`)}
       border="medium"
     >
       {children}
@@ -460,13 +476,13 @@ export const ButtonTextMediumLeftActive: React.FC<
 
 export const ButtonTextMediumLeftFocus: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.focus}
+      className={twMerge(`${variantStyles.focus} ${className}`)}
       border="medium"
     >
       {children}
@@ -476,13 +492,13 @@ export const ButtonTextMediumLeftFocus: React.FC<
 
 export const ButtonTextMediumLeftDisabled: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.disabled}
+      className={twMerge(`${variantStyles.disabled} ${className}`)}
       border="medium"
     >
       {children}
@@ -492,13 +508,14 @@ export const ButtonTextMediumLeftDisabled: React.FC<
 
 export const ButtonTextSmall: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.initial}
+      className={twMerge(`${variantStyles.initial} ${className}`)}
       border="small"
     >
       {children}
@@ -508,13 +525,14 @@ export const ButtonTextSmall: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonTextSmallHover: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.hover}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="small"
     >
       {children}
@@ -524,12 +542,12 @@ export const ButtonTextSmallHover: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonTextSmallActive: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.active}
+      className={twMerge(`${variantStyles.active} ${className}`)}
       border="small"
     >
       {children}
@@ -539,13 +557,14 @@ export const ButtonTextSmallActive: React.FC<
 
 export const ButtonTextSmallFocus: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.focus}
+      className={twMerge(`${variantStyles.focus} ${className}`)}
       border="small"
     >
       {children}
@@ -555,12 +574,12 @@ export const ButtonTextSmallFocus: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonTextSmallDisabled: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.disabled}
+      className={twMerge(`${variantStyles.disabled} ${className}`)}
       border="small"
     >
       {children}
@@ -570,6 +589,7 @@ export const ButtonTextSmallDisabled: React.FC<
 
 export const ButtonTextSmallRight: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
@@ -577,7 +597,7 @@ export const ButtonTextSmallRight: React.FC<PropsWithChildren<ButtonProps>> = ({
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.initial}
+      className={twMerge(`${variantStyles.initial} ${className}`)}
       border="small"
     >
       {children}
@@ -587,13 +607,13 @@ export const ButtonTextSmallRight: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonTextSmallRightHover: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.hover}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="small"
     >
       {children}
@@ -603,13 +623,13 @@ export const ButtonTextSmallRightHover: React.FC<
 
 export const ButtonTextSmallRightActive: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.active}
+      className={twMerge(`${variantStyles.active} ${className}`)}
       border="small"
     >
       {children}
@@ -619,13 +639,13 @@ export const ButtonTextSmallRightActive: React.FC<
 
 export const ButtonTextSmallRightFocus: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.focus}
+      className={twMerge(`${variantStyles.focus} ${className}`)}
       border="small"
     >
       {children}
@@ -635,13 +655,13 @@ export const ButtonTextSmallRightFocus: React.FC<
 
 export const ButtonTextSmallRightDisabled: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.disabled}
+      className={twMerge(`${variantStyles.disabled} ${className}`)}
       border="small"
     >
       {children}
@@ -651,6 +671,7 @@ export const ButtonTextSmallRightDisabled: React.FC<
 
 export const ButtonTextSmallLeft: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
@@ -658,7 +679,7 @@ export const ButtonTextSmallLeft: React.FC<PropsWithChildren<ButtonProps>> = ({
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.initial}
+      className={twMerge(`${variantStyles.initial} ${className}`)}
       border="small"
     >
       {children}
@@ -668,13 +689,13 @@ export const ButtonTextSmallLeft: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonTextSmallLeftHover: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.hover}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="small"
     >
       {children}
@@ -684,13 +705,13 @@ export const ButtonTextSmallLeftHover: React.FC<
 
 export const ButtonTextSmallLeftActive: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.active}
+      className={twMerge(`${variantStyles.active} ${className}`)}
       border="small"
     >
       {children}
@@ -700,13 +721,13 @@ export const ButtonTextSmallLeftActive: React.FC<
 
 export const ButtonTextSmallLeftFocus: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.focus}
+      className={twMerge(`${variantStyles.focus} ${className}`)}
       border="small"
     >
       {children}
@@ -716,13 +737,13 @@ export const ButtonTextSmallLeftFocus: React.FC<
 
 export const ButtonTextSmallLeftDisabled: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.disabled}
+      className={twMerge(`${variantStyles.disabled} ${className}`)}
       border="small"
     >
       {children}
@@ -732,12 +753,12 @@ export const ButtonTextSmallLeftDisabled: React.FC<
 
 export const ButtonTextNormalInitial: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.initial}
+      className={twMerge(`${variantStyles.initial} ${className}`)}
       border="normal"
     >
       {children}
@@ -747,12 +768,12 @@ export const ButtonTextNormalInitial: React.FC<
 
 export const ButtonTextNormalHover: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.hover}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="normal"
     >
       {children}
@@ -762,12 +783,12 @@ export const ButtonTextNormalHover: React.FC<
 
 export const ButtonTextNormalActive: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.active}
+      className={twMerge(`${variantStyles.active} ${className}`)}
       border="normal"
     >
       {children}
@@ -777,12 +798,12 @@ export const ButtonTextNormalActive: React.FC<
 
 export const ButtonTextNormalFocus: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.focus}
+      className={twMerge(`${variantStyles.focus} ${className}`)}
       border="normal"
     >
       {children}
@@ -792,12 +813,12 @@ export const ButtonTextNormalFocus: React.FC<
 
 export const ButtonTextNormalDisabled: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       {...props}
       variant="text"
-      className={variantStyles.disabled}
+      className={twMerge(`${variantStyles.disabled} ${className}`)}
       border="normal"
     >
       {children}
@@ -807,6 +828,7 @@ export const ButtonTextNormalDisabled: React.FC<
 
 export const ButtonTextNormalLeft: React.FC<PropsWithChildren<ButtonProps>> = ({
   children,
+  className,
   ...props
 }) => {
   return (
@@ -814,7 +836,7 @@ export const ButtonTextNormalLeft: React.FC<PropsWithChildren<ButtonProps>> = ({
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.initial}
+      className={twMerge(`${variantStyles.initial} ${className}`)}
       border="normal"
     >
       {children}
@@ -824,13 +846,13 @@ export const ButtonTextNormalLeft: React.FC<PropsWithChildren<ButtonProps>> = ({
 
 export const ButtonTextNormalLeftHover: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.hover}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="normal"
     >
       {children}
@@ -840,13 +862,13 @@ export const ButtonTextNormalLeftHover: React.FC<
 
 export const ButtonTextNormalLeftActive: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.active}
+      className={twMerge(`${variantStyles.active} ${className}`)}
       border="normal"
     >
       {children}
@@ -856,13 +878,13 @@ export const ButtonTextNormalLeftActive: React.FC<
 
 export const ButtonTextNormalLeftFocus: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.focus}
+      className={twMerge(`${variantStyles.focus} ${className}`)}
       border="normal"
     >
       {children}
@@ -872,13 +894,13 @@ export const ButtonTextNormalLeftFocus: React.FC<
 
 export const ButtonTextNormalLeftDisabled: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       leftIcon={<ArrowLeftIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.disabled}
+      className={twMerge(`${variantStyles.disabled} ${className}`)}
       border="normal"
     >
       {children}
@@ -888,13 +910,13 @@ export const ButtonTextNormalLeftDisabled: React.FC<
 
 export const ButtonTextNormalRight: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.initial}
+      className={twMerge(`${variantStyles.initial} ${className}`)}
       border="normal"
     >
       {children}
@@ -904,13 +926,13 @@ export const ButtonTextNormalRight: React.FC<
 
 export const ButtonTextNormalRightHover: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.hover}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="normal"
     >
       {children}
@@ -920,13 +942,13 @@ export const ButtonTextNormalRightHover: React.FC<
 
 export const ButtonTextNormalRightActive: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.active}
+      className={twMerge(`${variantStyles.active} ${className}`)}
       border="normal"
     >
       {children}
@@ -936,13 +958,13 @@ export const ButtonTextNormalRightActive: React.FC<
 
 export const ButtonTextNormalRightFocus: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.focus}
+      className={twMerge(`${variantStyles.focus} ${className}`)}
       border="normal"
     >
       {children}
@@ -952,13 +974,13 @@ export const ButtonTextNormalRightFocus: React.FC<
 
 export const ButtonTextNormalRightDisabled: React.FC<
   PropsWithChildren<ButtonProps>
-> = ({ children, ...props }) => {
+> = ({ children, className, ...props }) => {
   return (
     <Button
       rightIcon={<ArrowRightIcon className="w-4 h-5" />}
       {...props}
       variant="text"
-      className={variantStyles.disabled}
+      className={twMerge(`${variantStyles.disabled} ${className}`)}
       border="normal"
     >
       {children}

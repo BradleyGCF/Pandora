@@ -52,6 +52,14 @@
     --button-height: 48px;
     --button-padding: 10px;
     --border-secondary: 207, 90%, 54%;
+
+    --background-input: 0, 0%, 95%;
+    --input-width: 328px;
+    --input-height: 50px;
+    --input-padding: 10px;
+    --hover-border-default: 208, 79%, 51%;
+    --text-color-default: 0, 0%, 51%;
+    --text-color-disabled: 0, 0%, 51%;
   }
 
   .dark {
