@@ -60,6 +60,11 @@
     --hover-border-default: 208, 79%, 51%;
     --text-color-default: 0, 0%, 51%;
     --text-color-disabled: 0, 0%, 51%;
+    --radius-input-large: 32px;
+    --radius-input-small: 10px;
+    --radius-input-normal: 0px;
+    --icon-color-: 0, 0%, 22%;
+    --icon-color-disabled: 0, 0%, 51%;
   }
 
   .dark {

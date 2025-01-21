@@ -1,0 +1,13 @@
+2025/01/21 Components y Screen - Valentina Rincon
+    Cambios:
+        - Creados varios componentes inputs en \InputDefault.tsx
+        - Creados varios componentes inputs en \InputBorder.tsx
+        - Creados varios componentes inputs en \InputLine.tsx
+        - Rendereizacion de los Inputs en \screens\home.tsx
+        - Añadir cambios en el archivo Input.tsx para personalizar los componentes.
+        - Añadir estilos para los Input en \globals.css.
+        - Realizar build para comprobar la renderizacion de los componentes en otro proyecto.
+        - Cambiar version de libreria para la instalcion en otro proyecto en package.json.
+        - Exportar componentes Input para empaquetarlos en main.ts.
+    Observaciones:
+        - Continuar con la creacion de más componentes Input faltantes.

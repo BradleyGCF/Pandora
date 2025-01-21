@@ -1,23 +1,32 @@
+import { UserIcon } from "@heroicons/react/24/solid";
 import React from "react";
 
 export type InputProps = {
+  border?: "small" | "large" | "normal";
   children: React.ReactNode;
   className?: string;
   disabled?: boolean;
-  leftIcon?: React.ReactNode;
-  iconPosition?: "left" | "right";
+  error?: boolean;
+  helperText?: string;
+  iconColor?: string;
+  label?: string;
   onClick?: () => void;
+  showIcon?: boolean;
   variant?: "default" | "border" | "line";
-  border?: "small" | "medium" | "large" | "normal";
 };
 
 export const Input: React.FC<InputProps> = ({
+  border = "small",
   children,
   className = "",
   disabled = false,
+  error = false,
+  helperText,
+  iconColor = "text-gray-400",
+  label,
   onClick,
+  showIcon = false,
   variant = "default",
-  border = "small",
 }) => {
   const baseStyles = "py-2 px-4 rounded focus:outline-none transition-all";
   const variantStyles = {
@@ -27,23 +36,32 @@ export const Input: React.FC<InputProps> = ({
   };
 
   const borderRadiusVariants = {
-    small: "rounded-[var(--border-radius-small)]",
-    medium: "rounded-[var(--border-radius-medium)]",
-    large: "rounded-[var(--border-radius-large)]",
+    small: "rounded-[var(--radius-input-small)]",
+    large: "rounded-[var(--radius-input-large)]",
     normal: "rounded-[var(--border-radius-normal)]",
   };
 
   const disabledStyles = "bg-gray-400 text-gray-600 cursor-not-allowed";
+  const errorStyles = "ring-red-400 focus:border-red-500";
 
   return (
-    <div className={`flex items-center justify-center gap-5`}>
-      <input
-        type="text"
-        onClick={onClick}
-        disabled={disabled}
-        placeholder={typeof children === "string" ? children : ""}
-        className={`${baseStyles} ${variantStyles[variant]} ${borderRadiusVariants[border]} ${disabled ? disabledStyles : ""} ${className}`}
-      />
+    <div className="flex flex-col gap-1">
+      {label && <label className="text-gray-700 font-medium">{label}</label>}
+      <div className="relative flex items-center">
+        {showIcon && (
+          <UserIcon className={`w-5 h-5 absolute left-5 ${iconColor}`} />
+        )}
+        <input
+          type="text"
+          onClick={onClick}
+          disabled={disabled}
+          placeholder={typeof children === "string" ? children : ""}
+          className={`${baseStyles} ${variantStyles[variant]} ${borderRadiusVariants[border]} ${disabled ? disabledStyles : ""} ${showIcon ? "pl-12" : "pl-4"} ${error ? errorStyles : ""} ${className}`}
+        />
+      </div>
+      {helperText && (
+        <span className="text-sm text-gray-500">{helperText}</span>
+      )}
     </div>
   );
 };

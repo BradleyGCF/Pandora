@@ -6,7 +6,6 @@ export type ButtonProps = {
   disabled?: boolean;
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
-  iconPosition?: "left" | "right";
   onClick?: () => void;
   variant?: "primary" | "secondary" | "text";
   border?: "small" | "medium" | "large" | "normal";
