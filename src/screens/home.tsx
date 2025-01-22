@@ -8,6 +8,11 @@ import {
   ButtonSecondary,
   ButtonText,
 } from "../modules/library/components/button/index";
+import {
+  TextAreaBorder,
+  TextAreaNormal,
+  TextAreaRounded,
+} from "@/modules/library/components/textarea";
 
 export default function Home() {
   return (
@@ -1211,6 +1216,291 @@ export default function Home() {
           <InputLine.LabeledInputLineHelperTextHoverIcon children="Label placeholder" />
           <InputLine.LabeledInputLineHelperTextActiveIcon children="Label placeholder" />
           <InputLine.LabeledInputLineHelperTextDisabledIcon children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Default</h2>
+          <InputDefault.LabeledInputHelperTextLargeIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperTextLargeHoverIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperTextLargeActiveIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperTextLargeDisabledIcon children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Border</h2>
+          <InputBorder.LabeledInputBorderHelperTextLargeIcon children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperTextLargeHoverIcon children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperTextLargeActiveIcon children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperTextLargeDisabledIcon children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Line</h2>
+          <InputLine.LabeledInputLineHelperTextIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperTextHoverIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperTextActiveIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperTextDisabledIcon children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Default</h2>
+          <InputDefault.LabeledInputHelperTextNormalIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperTextNormalHoverIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperTextNormalActiveIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperTextNormalDisabledIcon children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Border</h2>
+          <InputBorder.LabeledInputBorderHelperTextNormalIcon children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperTextNormalHoverIcon children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperTextNormalActiveIcon children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperTextNormalDisabledIcon children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Line</h2>
+          <InputLine.LabeledInputLineHelperTextIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperTextHoverIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperTextActiveIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperTextDisabledIcon children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Default</h2>
+          <InputDefault.LabeledInputHelperTextSmallIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperTextSmallHoverIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperTextSmallActiveIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperTextSmallDisabledIconError children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Border</h2>
+          <InputBorder.LabeledInputBorderHelperTextSmallIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperTextSmallHoverIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperTextSmallActiveIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperTextSmallDisabledIconError children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Line</h2>
+          <InputLine.LabeledInputLineHelperTextIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperTextHoverIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperTextActiveIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperTextDisabledIconError children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Default</h2>
+          <InputDefault.LabeledInputHelperTextLargeIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperTextLargeHoverIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperTextLargeActiveIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperTextLargeDisabledIconError children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Border</h2>
+          <InputBorder.LabeledInputBorderHelperTextLargeIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperTextLargeHoverIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperTextLargeActiveIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperTextLargeDisabledIconError children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Line</h2>
+          <InputLine.LabeledInputLineHelperTextIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperTextHoverIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperTextActiveIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperTextDisabledIconError children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Default</h2>
+          <InputDefault.LabeledInputHelperTextNormalIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperTextNormalHoverIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperTextNormalActiveIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperTextNormalDisabledIconError children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Border</h2>
+          <InputBorder.LabeledInputBorderHelperTextNormalIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperTextNormalHoverIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperTextNormalActiveIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperTextNormalDisabledIconError children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Line</h2>
+          <InputLine.LabeledInputLineHelperTextIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperTextHoverIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperTextActiveIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperTextDisabledIconError children="Label placeholder" />
+        </div>
+      </div>
+      <div className="grid grid-cols-3 gap-2">
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Rounded</h2>
+          <TextAreaRounded.TextAreaRoundedSmDefault children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedSmHover children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedSmActive children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedSmDisabled children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Border</h2>
+          <TextAreaBorder.TextAreaBorderRoundedSmDefault children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedSmHover children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedSmActive children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedSmDisabled children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Rounded</h2>
+          <TextAreaNormal.TextAreaNormalSmDefault children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalSmHover children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalSmActive children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalSmDisabled children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Border</h2>
+          <TextAreaBorder.TextAreaBorderNormalSmDefault children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalSmHover children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalSmActive children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalSmDisabled children="Label placeholder" />
+        </div>
+      </div>
+      <div className="grid grid-cols-3 gap-2">
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Rounded Medium</h2>
+          <TextAreaRounded.TextAreaRoundedMdDefault children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedMdHover children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedMdActive children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedMdDisabled children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Border Medium</h2>
+          <TextAreaBorder.TextAreaBorderRoundedMdDefault children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedMdHover children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedMdActive children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedMdDisabled children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Normal Medium</h2>
+          <TextAreaNormal.TextAreaNormalMdDefault children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalMdHover children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalMdActive children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalMdDisabled children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Border Medium</h2>
+          <TextAreaBorder.TextAreaBorderNormalMdDefault children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalMdHover children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalMdActive children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalMdDisabled children="Label placeholder" />
+        </div>
+      </div>
+      <div className="grid grid-cols-3 gap-2">
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Rounded Large</h2>
+          <TextAreaRounded.TextAreaRoundedLgDefault children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedLgHover children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedLgActive children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedLgDisabled children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Border Large</h2>
+          <TextAreaBorder.TextAreaBorderRoundedLgDefault children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedLgHover children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedLgActive children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedLgDisabled children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Normal Large</h2>
+          <TextAreaNormal.TextAreaNormalLgDefault children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalLgHover children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalLgActive children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalLgDisabled children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Border Large</h2>
+          <TextAreaBorder.TextAreaBorderNormalLgDefault children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalLgHover children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalLgActive children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalLgDisabled children="Label placeholder" />
+        </div>
+      </div>
+      <div className="grid grid-cols-3 gap-2">
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Rounded Small Error</h2>
+          <TextAreaRounded.TextAreaRoundedSmDefaultError children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedSmHoverError children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedSmActiveError children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedSmDisabledError children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Border</h2>
+          <TextAreaBorder.TextAreaBorderRoundedSmDefaultError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedSmHoverError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedSmActiveError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedSmDisabledError children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Rounded</h2>
+          <TextAreaNormal.TextAreaNormalSmDefaultError children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalSmHoverError children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalSmActiveError children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalSmDisabledError children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Border Normal Small Error</h2>
+          <TextAreaBorder.TextAreaBorderNormalSmDefaultError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalSmHoverError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalSmActiveError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalSmDisabledError children="Label placeholder" />
+        </div>
+      </div>
+      <div className="grid grid-cols-3 gap-2">
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Rounded Small Error</h2>
+          <TextAreaRounded.TextAreaRoundedMdDefaultError children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedMdHoverError children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedMdActiveError children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedMdDisabledError children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Border</h2>
+          <TextAreaBorder.TextAreaBorderRoundedMdDefaultError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedMdHoverError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedMdActiveError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedMdDisabledError children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Nrormal Error</h2>
+          <TextAreaNormal.TextAreaNormalMdDefaultError children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalMdHoverError children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalMdActiveError children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalMdDisabledError children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Border</h2>
+          <TextAreaBorder.TextAreaBorderNormalMdDefaultError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalMdHoverError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalMdActiveError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalMdDisabledError children="Label placeholder" />
+        </div>
+      </div>
+      <div className="grid grid-cols-3 gap-2">
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Rounded Small Error</h2>
+          <TextAreaRounded.TextAreaRoundedLgDefaultError children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedLgHoverError children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedLgActiveError children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedLgDisabledError children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Border</h2>
+          <TextAreaBorder.TextAreaBorderRoundedLgDefaultError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedLgHoverError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedLgActiveError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedLgDisabledError children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Nrormal Error</h2>
+          <TextAreaNormal.TextAreaNormalLgDefaultError children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalLgHoverError children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalLgActiveError children="Label placeholder" />
+          <TextAreaNormal.TextAreaNormalLgDisabledError children="Label placeholder" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <h2>Border</h2>
+          <TextAreaBorder.TextAreaBorderNormalLgDefaultError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalLgHoverError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalLgActiveError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalLgDisabledError children="Label placeholder" />
         </div>
       </div>
     </div>

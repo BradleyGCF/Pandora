@@ -46,7 +46,7 @@ export const Input: React.FC<InputProps> = ({
 
   return (
     <div className="flex flex-col gap-1">
-      {label && <label className="text-gray-700 font-medium">{label}</label>}
+      {label && <label className="text-gray-500 font-medium">{label}</label>}
       <div className="relative flex items-center">
         {showIcon && (
           <UserIcon className={`w-5 h-5 absolute left-5 ${iconColor}`} />

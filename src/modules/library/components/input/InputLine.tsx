@@ -458,3 +458,102 @@ export const LabeledInputLineHelperTextDisabledIcon: React.FC<
     </Input>
   );
 };
+
+export const LabeledInputLineHelperTextIconError: React.FC<
+  PropsWithChildren<InputProps>
+> = ({
+  children,
+  className,
+  label = "Input Label",
+  helperText = "Input Helper Text",
+  ...props
+}) => {
+  return (
+    <Input
+      {...props}
+      variant="line"
+      className={twMerge(`${variantStyles.default} ${className} border-red-400`)}
+      label={label}
+      helperText={helperText}
+      showIcon={true}
+      iconColor="text-[hsl(var(--icon-color))]"
+      error={true}
+    >
+      {children}
+    </Input>
+  );
+};
+
+export const LabeledInputLineHelperTextHoverIconError: React.FC<
+  PropsWithChildren<InputProps>
+> = ({
+  children,
+  className,
+  label = "Input Label",
+  helperText = "Input Helper Text",
+  ...props
+}) => {
+  return (
+    <Input
+      {...props}
+      variant="line"
+      className={twMerge(`${variantStyles.hover} ${className} border-red-400`)}
+      label={label}
+      helperText={helperText}
+      showIcon={true}
+      iconColor="text-[hsl(var(--icon-color))]"
+      error={true}
+    >
+      {children}
+    </Input>
+  );
+};
+
+export const LabeledInputLineHelperTextActiveIconError: React.FC<
+  PropsWithChildren<InputProps>
+> = ({
+  children,
+  className,
+  label = "Input Label",
+  helperText = "Input Helper Text",
+  ...props
+}) => {
+  return (
+    <Input
+      {...props}
+      variant="line"
+      className={twMerge(`${variantStyles.active} ${className} border-red-400`)}
+      label={label}
+      helperText={helperText}
+      showIcon={true}
+      iconColor="text-[hsl(var(--icon-color))]"
+      error={true}
+    >
+      {children}
+    </Input>
+  );
+};
+
+export const LabeledInputLineHelperTextDisabledIconError: React.FC<
+  PropsWithChildren<InputProps>
+> = ({
+  children,
+  className,
+  label = "Input Label",
+  helperText = "Input Helper Text",
+  ...props
+}) => {
+  return (
+    <Input
+      {...props}
+      variant="line"
+      className={twMerge(`${variantStyles.disabled} ${className}`)}
+      label={label}
+      helperText={helperText}
+      showIcon={true}
+      iconColor="text-[hsl(var(--icon-color-disabled))]"
+    >
+      {children}
+    </Input>
+  );
+};

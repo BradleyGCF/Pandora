@@ -11,3 +11,18 @@
         - Exportar componentes Input para empaquetarlos en main.ts.
     Observaciones:
         - Continuar con la creacion de más componentes Input faltantes.
+
+2025/01/22 Components y Screen - Valentina Rincon
+    Cambios:
+        - Creados varios componentes inputs faltantes en \InputDefault.tsx
+        - Creados varios componentes inputs faltantes en \InputBorder.tsx
+        - Creados varios componentes inputs faltantes en \InputLine.tsx
+        - Creada carpeta textarea en \components
+        - Creado componentes textarea base en \TextArea.tsx
+        - Creados varios componentes textarea en \TextAreaNormal.tsx
+        - Creados varios componentes textarea en \TextAreaBorder.tsx
+        - Creados varios componentes textarea en \TextAreaRounded.tsx
+        - Rendereizacion de los componentes Inputs faltantes agregados en \screens\home.tsx
+        - Cambiar background para TextArea e Input en \globals.css
+    Observaciones:
+        - Iniciar con la creacion de componentes DropDown mañana.
