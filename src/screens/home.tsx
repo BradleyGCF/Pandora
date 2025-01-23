@@ -1226,7 +1226,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.LabeledInputBorderHelperLg children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperLgIcon children="Label placeholder" />
           <InputBorder.LabeledInputBorderHelperLgHoverIcon children="Label placeholder" />
           <InputBorder.LabeledInputBorderHelperLgActiveIcon children="Label placeholder" />
           <InputBorder.LabeledInputBorderHelperLgDisabledIcon children="Label placeholder" />
@@ -1289,7 +1289,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.LabeledInputBorderHelperLgError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperLgIconError children="Label placeholder" />
           <InputBorder.LabeledInputBorderHelperLgHoverIconError children="Label placeholder" />
           <InputBorder.LabeledInputBorderHelperLgActiveIconError children="Label placeholder" />
           <InputBorder.LabeledInputBorderHelperLgDisabledIconError children="Label placeholder" />
@@ -1326,14 +1326,14 @@ export default function Home() {
       <div className="grid grid-cols-3 gap-2">
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Rounded</h2>
-          <TextAreaRounded.TextAreaRoundedSmDefault children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedSmDef children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedSmHover children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedSmActive children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedSmDisabled children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <TextAreaBorder.TextAreaBorderRoundedSmDefault children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedSmDef children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedSmHover children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedSmActive children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedSmDisabled children="Label placeholder" />
@@ -1347,7 +1347,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <TextAreaBorder.TextAreaBorderNormalSmDefault children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalSmDef children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalSmHover children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalSmActive children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalSmDisabled children="Label placeholder" />
@@ -1356,14 +1356,14 @@ export default function Home() {
       <div className="grid grid-cols-3 gap-2">
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Rounded Medium</h2>
-          <TextAreaRounded.TextAreaRoundedMdDefault children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedMdDef children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedMdHover children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedMdActive children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedMdDisabled children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border Medium</h2>
-          <TextAreaBorder.TextAreaBorderRoundedMdDefault children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedMdDef children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedMdHover children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedMdActive children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedMdDisabled children="Label placeholder" />
@@ -1377,7 +1377,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border Medium</h2>
-          <TextAreaBorder.TextAreaBorderNormalMdDefault children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalMdDef children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalMdHover children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalMdActive children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalMdDisabled children="Label placeholder" />
@@ -1386,14 +1386,14 @@ export default function Home() {
       <div className="grid grid-cols-3 gap-2">
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Rounded Large</h2>
-          <TextAreaRounded.TextAreaRoundedLgDefault children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedLgDef children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedLgHover children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedLgActive children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedLgDisabled children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border Large</h2>
-          <TextAreaBorder.TextAreaBorderRoundedLgDefault children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedLgDef children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedLgHover children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedLgActive children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedLgDisabled children="Label placeholder" />
@@ -1407,7 +1407,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border Large</h2>
-          <TextAreaBorder.TextAreaBorderNormalLgDefault children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalLgDef children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalLgHover children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalLgActive children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalLgDisabled children="Label placeholder" />
@@ -1416,14 +1416,14 @@ export default function Home() {
       <div className="grid grid-cols-3 gap-2">
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Rounded Small Error</h2>
-          <TextAreaRounded.TextAreaRoundedSmDefaultError children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedSmDefError children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedSmHoverError children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedSmActiveError children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedSmDisabledError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <TextAreaBorder.TextAreaBorderRoundedSmDefaultError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedSmDefError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedSmHoverError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedSmActiveError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedSmDisabledError children="Label placeholder" />
@@ -1437,7 +1437,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border Normal Small Error</h2>
-          <TextAreaBorder.TextAreaBorderNormalSmDefaultError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalSmDefError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalSmHoverError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalSmActiveError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalSmDisabledError children="Label placeholder" />
@@ -1446,14 +1446,14 @@ export default function Home() {
       <div className="grid grid-cols-3 gap-2">
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Rounded Small Error</h2>
-          <TextAreaRounded.TextAreaRoundedMdDefaultError children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedMdDefError children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedMdHoverError children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedMdActiveError children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedMdDisabledError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <TextAreaBorder.TextAreaBorderRoundedMdDefaultError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedMdDefError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedMdHoverError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedMdActiveError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedMdDisabledError children="Label placeholder" />
@@ -1467,7 +1467,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <TextAreaBorder.TextAreaBorderNormalMdDefaultError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalMdDefError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalMdHoverError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalMdActiveError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalMdDisabledError children="Label placeholder" />
@@ -1476,14 +1476,14 @@ export default function Home() {
       <div className="grid grid-cols-3 gap-2">
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Rounded Small Error</h2>
-          <TextAreaRounded.TextAreaRoundedLgDefaultError children="Label placeholder" />
+          <TextAreaRounded.TextAreaRoundedLgDefError children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedLgHoverError children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedLgActiveError children="Label placeholder" />
           <TextAreaRounded.TextAreaRoundedLgDisabledError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <TextAreaBorder.TextAreaBorderRoundedLgDefaultError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderRoundedLgDefError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedLgHoverError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedLgActiveError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderRoundedLgDisabledError children="Label placeholder" />
@@ -1497,7 +1497,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <TextAreaBorder.TextAreaBorderNormalLgDefaultError children="Label placeholder" />
+          <TextAreaBorder.TextAreaBorderNormalLgDefError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalLgHoverError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalLgActiveError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalLgDisabledError children="Label placeholder" />

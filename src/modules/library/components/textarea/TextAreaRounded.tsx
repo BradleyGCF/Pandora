@@ -13,7 +13,7 @@ const variantStyles = {
     "bg-[hsl(var(--background-color))] text-[hsl(var(--text-color-disabled))] p-[var(--input-padding)] border-1 outline-none ring-1 ring-[#e0e0e0]",
 };
 
-export const TextAreaRoundedSmDefault: React.FC<
+export const TextAreaRoundedSmDef: React.FC<
   PropsWithChildren<TextAreaProps>
 > = ({
   children,
@@ -114,7 +114,7 @@ export const TextAreaRoundedSmDisabled: React.FC<
   );
 };
 
-export const TextAreaRoundedMdDefault: React.FC<
+export const TextAreaRoundedMdDef: React.FC<
   PropsWithChildren<TextAreaProps>
 > = ({
   children,
@@ -215,7 +215,7 @@ export const TextAreaRoundedMdDisabled: React.FC<
   );
 };
 
-export const TextAreaRoundedLgDefault: React.FC<
+export const TextAreaRoundedLgDef: React.FC<
   PropsWithChildren<TextAreaProps>
 > = ({
   children,
@@ -316,7 +316,7 @@ export const TextAreaRoundedLgDisabled: React.FC<
   );
 };
 
-export const TextAreaRoundedSmDefaultError: React.FC<
+export const TextAreaRoundedSmDefError: React.FC<
   PropsWithChildren<TextAreaProps>
 > = ({
   children,
@@ -429,7 +429,7 @@ export const TextAreaRoundedSmDisabledError: React.FC<
   );
 };
 
-export const TextAreaRoundedMdDefaultError: React.FC<
+export const TextAreaRoundedMdDefError: React.FC<
   PropsWithChildren<TextAreaProps>
 > = ({
   children,
@@ -542,7 +542,7 @@ export const TextAreaRoundedMdDisabledError: React.FC<
   );
 };
 
-export const TextAreaRoundedLgDefaultError: React.FC<
+export const TextAreaRoundedLgDefError: React.FC<
   PropsWithChildren<TextAreaProps>
 > = ({
   children,

@@ -13,7 +13,7 @@ const variantStyles = {
     " ext-[hsl(var(--text-color-disabled))] p-[var(--input-padding)] border-1 outline-none ring-1 ring-[#e0e0e0]",
 };
 
-export const TextAreaBorderRoundedSmDefault: React.FC<PropsWithChildren<TextAreaProps>> = ({
+export const TextAreaBorderRoundedSmDef: React.FC<PropsWithChildren<TextAreaProps>> = ({
   children,
   className,
   cols = 40,
@@ -106,7 +106,7 @@ export const TextAreaBorderRoundedSmDisabled: React.FC<PropsWithChildren<TextAre
   );
 };
 
-export const TextAreaBorderNormalSmDefault: React.FC<PropsWithChildren<TextAreaProps>> = ({
+export const TextAreaBorderNormalSmDef: React.FC<PropsWithChildren<TextAreaProps>> = ({
   children,
   className,
   cols = 40,
@@ -199,7 +199,7 @@ export const TextAreaBorderNormalSmDisabled: React.FC<PropsWithChildren<TextArea
   );
 };
 
-export const TextAreaBorderRoundedMdDefault: React.FC<PropsWithChildren<TextAreaProps>> = ({
+export const TextAreaBorderRoundedMdDef: React.FC<PropsWithChildren<TextAreaProps>> = ({
   children,
   className,
   label = "Input Label",
@@ -292,7 +292,7 @@ export const TextAreaBorderRoundedMdDisabled: React.FC<PropsWithChildren<TextAre
   );
 };
 
-export const TextAreaBorderNormalMdDefault: React.FC<PropsWithChildren<TextAreaProps>> = ({
+export const TextAreaBorderNormalMdDef: React.FC<PropsWithChildren<TextAreaProps>> = ({
   children,
   className,
   label = "Input Label",
@@ -385,7 +385,7 @@ export const TextAreaBorderNormalMdDisabled: React.FC<PropsWithChildren<TextArea
   );
 };
 
-export const TextAreaBorderRoundedLgDefault: React.FC<PropsWithChildren<TextAreaProps>> = ({
+export const TextAreaBorderRoundedLgDef: React.FC<PropsWithChildren<TextAreaProps>> = ({
   children,
   className,
   label = "Input Label",
@@ -478,7 +478,7 @@ export const TextAreaBorderRoundedLgDisabled: React.FC<PropsWithChildren<TextAre
   );
 };
 
-export const TextAreaBorderNormalLgDefault: React.FC<PropsWithChildren<TextAreaProps>> = ({
+export const TextAreaBorderNormalLgDef: React.FC<PropsWithChildren<TextAreaProps>> = ({
   children,
   className,
   label = "Input Label",
@@ -571,7 +571,7 @@ export const TextAreaBorderNormalLgDisabled: React.FC<PropsWithChildren<TextArea
   );
 };
 
-export const TextAreaBorderRoundedSmDefaultError: React.FC<PropsWithChildren<TextAreaProps>> = ({
+export const TextAreaBorderRoundedSmDefError: React.FC<PropsWithChildren<TextAreaProps>> = ({
   children,
   className,
   errorText = "Error Message",
@@ -676,7 +676,7 @@ export const TextAreaBorderRoundedSmDisabledError: React.FC<PropsWithChildren<Te
   );
 };
 
-export const TextAreaBorderNormalSmDefaultError: React.FC<PropsWithChildren<TextAreaProps>> = ({
+export const TextAreaBorderNormalSmDefError: React.FC<PropsWithChildren<TextAreaProps>> = ({
   children,
   className,
   errorText = "Error Message",
@@ -781,7 +781,7 @@ export const TextAreaBorderNormalSmDisabledError: React.FC<PropsWithChildren<Tex
   );
 };
 
-export const TextAreaBorderRoundedMdDefaultError: React.FC<PropsWithChildren<TextAreaProps>> = ({
+export const TextAreaBorderRoundedMdDefError: React.FC<PropsWithChildren<TextAreaProps>> = ({
   children,
   className,
   errorText = "Error Message",
@@ -886,7 +886,7 @@ export const TextAreaBorderRoundedMdDisabledError: React.FC<PropsWithChildren<Te
   );
 };
 
-export const TextAreaBorderNormalMdDefaultError: React.FC<PropsWithChildren<TextAreaProps>> = ({
+export const TextAreaBorderNormalMdDefError: React.FC<PropsWithChildren<TextAreaProps>> = ({
   children,
   className,
   errorText = "Error Message",
@@ -991,7 +991,7 @@ export const TextAreaBorderNormalMdDisabledError: React.FC<PropsWithChildren<Tex
   );
 };
 
-export const TextAreaBorderRoundedLgDefaultError: React.FC<PropsWithChildren<TextAreaProps>> = ({
+export const TextAreaBorderRoundedLgDefError: React.FC<PropsWithChildren<TextAreaProps>> = ({
   children,
   className,
   errorText = "Error Message",
@@ -1096,7 +1096,7 @@ export const TextAreaBorderRoundedLgDisabledError: React.FC<PropsWithChildren<Te
   );
 };
 
-export const TextAreaBorderNormalLgDefaultError: React.FC<PropsWithChildren<TextAreaProps>> = ({
+export const TextAreaBorderNormalLgDefError: React.FC<PropsWithChildren<TextAreaProps>> = ({
   children,
   className,
   errorText = "Error Message",

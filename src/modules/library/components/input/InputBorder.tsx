@@ -1226,7 +1226,7 @@ export const LabeledInputBorderHelperSmDisabledIcon: React.FC<
   );
 };
 
-export const LabeledInputBorderDefHelperLg: React.FC<
+export const LabeledInputBorderHelperLgIcon: React.FC<
   PropsWithChildren<InputProps>
 > = ({
   children,
@@ -1532,7 +1532,7 @@ export const LabeledInputBorderHelperSmDisabledIconError: React.FC<
   );
 };
 
-export const LabeledInputBorderHelperLgError: React.FC<
+export const LabeledInputBorderHelperLgIconError: React.FC<
   PropsWithChildren<InputProps>
 > = ({
   children,
