@@ -30,18 +30,18 @@ export const Input: React.FC<InputProps> = ({
 }) => {
   const baseStyles = "py-2 px-4 rounded focus:outline-none transition-all";
   const variantStyles = {
-    default: "",
     border: "",
+    default: "",
     line: "",
   };
 
   const borderRadiusVariants = {
-    small: "rounded-[var(--radius-input-small)]",
     large: "rounded-[var(--radius-input-large)]",
     normal: "rounded-[var(--border-radius-normal)]",
+    small: "rounded-[var(--radius-input-small)]",
   };
 
-  const disabledStyles = "bg-gray-400 text-gray-600 cursor-not-allowed";
+  const disabledStyles = "cursor-not-allowed";
   const errorStyles = "ring-red-400 focus:border-red-500";
 
   return (

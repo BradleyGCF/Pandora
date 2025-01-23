@@ -883,17 +883,17 @@ export default function Home() {
       <div className="grid grid-cols-3 gap-2">
         <div className="flex flex-col items-center justify-center max-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.InputDefaultSmall children="Label placeholder" />
-          <InputDefault.InputDefaultHoverSmall children="Label placeholder" />
-          <InputDefault.InputDefaultActiveSmall children="Label placeholder" />
-          <InputDefault.InputDefaultDisabledSmall children="Label placeholder" />
+          <InputDefault.InputDefSm children="Label placeholder" />
+          <InputDefault.InputDefHoverSm children="Label placeholder" />
+          <InputDefault.InputDefActiveSm children="Label placeholder" />
+          <InputDefault.InputDefDisabledSm children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.InputBorderSmall children="Label placeholder" />
-          <InputBorder.InputBorderHoverSmall children="Label placeholder" />
-          <InputBorder.InputBorderActiveSmall children="Label placeholder" />
-          <InputBorder.InputBorderDisabledSmall children="Label placeholder" />
+          <InputBorder.InputBorderSm children="Label placeholder" />
+          <InputBorder.InputBorderHoverSm children="Label placeholder" />
+          <InputBorder.InputBorderActiveSm children="Label placeholder" />
+          <InputBorder.InputBorderDisabledSm children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
@@ -904,17 +904,17 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.InputDefaultLarge children="Label placeholder" />
-          <InputDefault.InputDefaultHoverLarge children="Label placeholder" />
-          <InputDefault.InputDefaultActiveLarge children="Label placeholder" />
-          <InputDefault.InputDefaultDisabledLarge children="Label placeholder" />
+          <InputDefault.InputDefLg children="Label placeholder" />
+          <InputDefault.InputDefHoverLg children="Label placeholder" />
+          <InputDefault.InputDefActiveLg children="Label placeholder" />
+          <InputDefault.InputDefDisabledLg children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.InputBorderLarge children="Label placeholder" />
-          <InputBorder.InputBorderHoverLarge children="Label placeholder" />
-          <InputBorder.InputBorderActiveLarge children="Label placeholder" />
-          <InputBorder.InputBorderDisabledLarge children="Label placeholder" />
+          <InputBorder.InputBorderLg children="Label placeholder" />
+          <InputBorder.InputBorderHoverLg children="Label placeholder" />
+          <InputBorder.InputBorderActiveLg children="Label placeholder" />
+          <InputBorder.InputBorderDisabledLg children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
@@ -925,17 +925,17 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.InputDefaultNormal children="Label placeholder" />
-          <InputDefault.InputDefaultHoverNormal children="Label placeholder" />
-          <InputDefault.InputDefaultActiveNormal children="Label placeholder" />
-          <InputDefault.InputDefaultDisabledNormal children="Label placeholder" />
+          <InputDefault.InputDefNm children="Label placeholder" />
+          <InputDefault.InputDefHoverNm children="Label placeholder" />
+          <InputDefault.InputDefActiveNm children="Label placeholder" />
+          <InputDefault.InputDefDisabledNm children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.InputBorderNormal children="Label placeholder" />
-          <InputBorder.InputBorderHoverNormal children="Label placeholder" />
-          <InputBorder.InputBorderActiveNormal children="Label placeholder" />
-          <InputBorder.InputBorderDisabledNormal children="Label placeholder" />
+          <InputBorder.InputBorderNm children="Label placeholder" />
+          <InputBorder.InputBorderHoverNm children="Label placeholder" />
+          <InputBorder.InputBorderActiveNm children="Label placeholder" />
+          <InputBorder.InputBorderDisabledNm children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
@@ -946,17 +946,17 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.InputDefaultSmallIcon children="Label placeholder" />
-          <InputDefault.InputDefaultHoverSmallIcon children="Label placeholder" />
-          <InputDefault.InputDefaultActiveSmallIcon children="Label placeholder" />
-          <InputDefault.InputDefaultDisabledSmallIcon children="Label placeholder" />
+          <InputDefault.InputDefSmIcon children="Label placeholder" />
+          <InputDefault.InputDefHoverSmIcon children="Label placeholder" />
+          <InputDefault.InputDefActiveSmIcon children="Label placeholder" />
+          <InputDefault.InputDefDisabledSmIcon children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.InputBorderSmallIcon children="Label placeholder" />
-          <InputBorder.InputBorderHoverSmallIcon children="Label placeholder" />
-          <InputBorder.InputBorderActiveSmallIcon children="Label placeholder" />
-          <InputBorder.InputBorderDisabledSmallIcon children="Label placeholder" />
+          <InputBorder.InputBorderSmIcon children="Label placeholder" />
+          <InputBorder.InputBorderHoverSmIcon children="Label placeholder" />
+          <InputBorder.InputBorderActiveSmIcon children="Label placeholder" />
+          <InputBorder.InputBorderDisabledSmIcon children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
@@ -967,17 +967,17 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.InputDefaultLargeIcon children="Label placeholder" />
-          <InputDefault.InputDefaultHoverLargeIcon children="Label placeholder" />
-          <InputDefault.InputDefaultActiveLargeIcon children="Label placeholder" />
-          <InputDefault.InputDefaultDisabledLargeIcon children="Label placeholder" />
+          <InputDefault.InputDefLgIcon children="Label placeholder" />
+          <InputDefault.InputDefHoverLgIcon children="Label placeholder" />
+          <InputDefault.InputDefActiveLgIcon children="Label placeholder" />
+          <InputDefault.InputDefDisabledLgIcon children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.InputBorderLargeIcon children="Label placeholder" />
-          <InputBorder.InputBorderHoverLargeIcon children="Label placeholder" />
-          <InputBorder.InputBorderActiveLargeIcon children="Label placeholder" />
-          <InputBorder.InputBorderDisabledLargeIcon children="Label placeholder" />
+          <InputBorder.InputBorderLgIcon children="Label placeholder" />
+          <InputBorder.InputBorderHoverLgIcon children="Label placeholder" />
+          <InputBorder.InputBorderActiveLgIcon children="Label placeholder" />
+          <InputBorder.InputBorderDisabledLgIcon children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
@@ -988,17 +988,17 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.InputDefaultNormalIcon children="Label placeholder" />
-          <InputDefault.InputDefaultHoverNormalIcon children="Label placeholder" />
-          <InputDefault.InputDefaultActiveNormalIcon children="Label placeholder" />
-          <InputDefault.InputDefaultDisabledNormalIcon children="Label placeholder" />
+          <InputDefault.InputDefNmIcon children="Label placeholder" />
+          <InputDefault.InputDefHoverNmIcon children="Label placeholder" />
+          <InputDefault.InputDefActiveNmIcon children="Label placeholder" />
+          <InputDefault.InputDefDisabledNmIcon children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.InputBorderNormalIcon children="Label placeholder" />
-          <InputBorder.InputBorderHoverNormalIcon children="Label placeholder" />
-          <InputBorder.InputBorderActiveNormalIcon children="Label placeholder" />
-          <InputBorder.InputBorderDisabledNormalIcon children="Label placeholder" />
+          <InputBorder.InputBorderNmIcon children="Label placeholder" />
+          <InputBorder.InputBorderHoverNmIcon children="Label placeholder" />
+          <InputBorder.InputBorderActiveNmIcon children="Label placeholder" />
+          <InputBorder.InputBorderDisabledNmIcon children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
@@ -1009,17 +1009,17 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center max-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.InputDefaultSmallError children="Label placeholder" />
-          <InputDefault.InputDefaultHoverSmallError children="Label placeholder" />
-          <InputDefault.InputDefaultActiveSmallError children="Label placeholder" />
-          <InputDefault.InputDefaultDisabledSmallError children="Label placeholder" />
+          <InputDefault.InputDefSmError children="Label placeholder" />
+          <InputDefault.InputDefHoverSmError children="Label placeholder" />
+          <InputDefault.InputDefActiveSmError children="Label placeholder" />
+          <InputDefault.InputDefDisabledSmError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center max-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.InputBorderSmallError children="Label placeholder" />
-          <InputBorder.InputBorderHoverSmallError children="Label placeholder" />
-          <InputBorder.InputBorderActiveSmallError children="Label placeholder" />
-          <InputBorder.InputBorderDisabledSmallError children="Label placeholder" />
+          <InputBorder.InputBorderSmError children="Label placeholder" />
+          <InputBorder.InputBorderHoverSmError children="Label placeholder" />
+          <InputBorder.InputBorderActiveSmError children="Label placeholder" />
+          <InputBorder.InputBorderDisabledSmError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
@@ -1030,17 +1030,17 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.InputDefaultLargeError children="Label placeholder" />
-          <InputDefault.InputDefaultHoverLargeError children="Label placeholder" />
-          <InputDefault.InputDefaultActiveLargeError children="Label placeholder" />
-          <InputDefault.InputDefaultDisabledLargeError children="Label placeholder" />
+          <InputDefault.InputDefLgError children="Label placeholder" />
+          <InputDefault.InputDefHoverLgError children="Label placeholder" />
+          <InputDefault.InputDefActiveLgError children="Label placeholder" />
+          <InputDefault.InputDefDisabledLgError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.InputBorderLargeError children="Label placeholder" />
-          <InputBorder.InputBorderHoverLargeError children="Label placeholder" />
-          <InputBorder.InputBorderActiveLargeError children="Label placeholder" />
-          <InputBorder.InputBorderDisabledLargeError children="Label placeholder" />
+          <InputBorder.InputBorderLgError children="Label placeholder" />
+          <InputBorder.InputBorderHoverLgError children="Label placeholder" />
+          <InputBorder.InputBorderActiveLgError children="Label placeholder" />
+          <InputBorder.InputBorderDisabledLgError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
@@ -1051,17 +1051,17 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.InputDefaultNormalError children="Label placeholder" />
-          <InputDefault.InputDefaultHoverNormalError children="Label placeholder" />
-          <InputDefault.InputDefaultActiveNormalError children="Label placeholder" />
-          <InputDefault.InputDefaultDisabledNormalError children="Label placeholder" />
+          <InputDefault.InputDefNmError children="Label placeholder" />
+          <InputDefault.InputDefHoverNmError children="Label placeholder" />
+          <InputDefault.InputDefActiveNmError children="Label placeholder" />
+          <InputDefault.InputDefDisabledNmError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.InputBorderNormalError children="Label placeholder" />
-          <InputBorder.InputBorderHoverNormalError children="Label placeholder" />
-          <InputBorder.InputBorderActiveNormalError children="Label placeholder" />
-          <InputBorder.InputBorderDisabledNormalError children="Label placeholder" />
+          <InputBorder.InputBorderNmError children="Label placeholder" />
+          <InputBorder.InputBorderHoverNmError children="Label placeholder" />
+          <InputBorder.InputBorderActiveNmError children="Label placeholder" />
+          <InputBorder.InputBorderDisabledNmError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
@@ -1072,17 +1072,17 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.InputDefaultSmallIconError children="Label placeholder" />
-          <InputDefault.InputDefaultHoverSmallIconError children="Label placeholder" />
-          <InputDefault.InputDefaultActiveSmallIconError children="Label placeholder" />
-          <InputDefault.InputDefaultDisabledSmallIconError children="Label placeholder" />
+          <InputDefault.InputDefSmIconError children="Label placeholder" />
+          <InputDefault.InputDefHoverSmIconError children="Label placeholder" />
+          <InputDefault.InputDefActiveSmIconError children="Label placeholder" />
+          <InputDefault.InputDefDisabledSmIconError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.InputBorderSmallIconError children="Label placeholder" />
-          <InputBorder.InputBorderHoverSmallIconError children="Label placeholder" />
-          <InputBorder.InputBorderActiveSmallIconError children="Label placeholder" />
-          <InputBorder.InputBorderDisabledSmallIconError children="Label placeholder" />
+          <InputBorder.InputBorderSmIconError children="Label placeholder" />
+          <InputBorder.InputBorderHoverSmIconError children="Label placeholder" />
+          <InputBorder.InputBorderActiveSmIconError children="Label placeholder" />
+          <InputBorder.InputBorderDisabledSmIconError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
@@ -1093,17 +1093,17 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.InputDefaultLargeIconError children="Label placeholder" />
-          <InputDefault.InputDefaultHoverLargeIconError children="Label placeholder" />
-          <InputDefault.InputDefaultActiveLargeIconError children="Label placeholder" />
-          <InputDefault.InputDefaultDisabledLargeIconError children="Label placeholder" />
+          <InputDefault.InputDefLgIconError children="Label placeholder" />
+          <InputDefault.InputDefHoverLgIconError children="Label placeholder" />
+          <InputDefault.InputDefActiveLgIconError children="Label placeholder" />
+          <InputDefault.InputDefDisabledLgIconError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.InputBorderLargeIconError children="Label placeholder" />
-          <InputBorder.InputBorderHoverLargeIconError children="Label placeholder" />
-          <InputBorder.InputBorderActiveLargeIconError children="Label placeholder" />
-          <InputBorder.InputBorderDisabledLargeIconError children="Label placeholder" />
+          <InputBorder.InputBorderLgIconError children="Label placeholder" />
+          <InputBorder.InputBorderHoverLgIconError children="Label placeholder" />
+          <InputBorder.InputBorderActiveLgIconError children="Label placeholder" />
+          <InputBorder.InputBorderDisabledLgIconError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
@@ -1114,17 +1114,17 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.InputDefaultNormalIconError children="Label placeholder" />
-          <InputDefault.InputDefaultHoverNormalIconError children="Label placeholder" />
-          <InputDefault.InputDefaultActiveNormalIconError children="Label placeholder" />
-          <InputDefault.InputDefaultDisabledNormalIconError children="Label placeholder" />
+          <InputDefault.InputDefNmIconError children="Label placeholder" />
+          <InputDefault.InputDefHoverNmIconError children="Label placeholder" />
+          <InputDefault.InputDefActiveNmIconError children="Label placeholder" />
+          <InputDefault.InputDefDisabledNmIconError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.InputBorderNormalIconError children="Label placeholder" />
-          <InputBorder.InputBorderHoverNormalIconError children="Label placeholder" />
-          <InputBorder.InputBorderActiveNormalIconError children="Label placeholder" />
-          <InputBorder.InputBorderDisabledNormalIconError children="Label placeholder" />
+          <InputBorder.InputBorderNmIconError children="Label placeholder" />
+          <InputBorder.InputBorderHoverNmIconError children="Label placeholder" />
+          <InputBorder.InputBorderActiveNmIconError children="Label placeholder" />
+          <InputBorder.InputBorderDisabledNmIconError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
@@ -1135,192 +1135,192 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.LabeledInputHelperTextSmall children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextSmallHover children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextSmallActive children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextSmallDisabled children="Label placeholder" />
+          <InputDefault.LabeledInputHelperSm children="Label placeholder" />
+          <InputDefault.LabeledInputHelperSmHover children="Label placeholder" />
+          <InputDefault.LabeledInputHelperSmActive children="Label placeholder" />
+          <InputDefault.LabeledInputHelperSmDisabled children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.LabeledInputBorderHelperTextSmall children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextSmallHover children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextSmallActive children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextSmallDisabled children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperSm children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperSmHover children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperSmActive children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperSmDisabled children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
-          <InputLine.LabeledInputLineHelperText children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextHover children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextActive children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextDisabled children="Label placeholder" />
+          <InputLine.LabeledInputLineHelper children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperHover children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperActive children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperDisabled children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.LabeledInputHelperTextLarge children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextLargeHover children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextLargeActive children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextLargeDisabled children="Label placeholder" />
+          <InputDefault.LabeledInputHelperLg children="Label placeholder" />
+          <InputDefault.LabeledInputHelperLgHover children="Label placeholder" />
+          <InputDefault.LabeledInputHelperLgActive children="Label placeholder" />
+          <InputDefault.LabeledInputHelperLgDisabled children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.LabeledInputBorderHelperTextLarge children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextLargeHover children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextLargeActive children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextLargeDisabled children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperLg children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperLgHover children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperLgActive children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperLgDisabled children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
-          <InputLine.LabeledInputLineHelperText children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextHover children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextActive children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextDisabled children="Label placeholder" />
+          <InputLine.LabeledInputLineHelper children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperHover children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperActive children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperDisabled children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.LabeledInputHelperTextNormal children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextNormalHover children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextNormalActive children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextNormalDisabled children="Label placeholder" />
+          <InputDefault.LabeledInputHelperNm children="Label placeholder" />
+          <InputDefault.LabeledInputHelperNmHover children="Label placeholder" />
+          <InputDefault.LabeledInputHelperNmActive children="Label placeholder" />
+          <InputDefault.LabeledInputHelperNmDisabled children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.LabeledInputBorderHelperTextNormal children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextNormalHover children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextNormalActive children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextNormalDisabled children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperNm children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperNmHover children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperNmActive children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperNmDisabled children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
-          <InputLine.LabeledInputLineHelperText children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextHover children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextActive children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextDisabled children="Label placeholder" />
+          <InputLine.LabeledInputLineHelper children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperHover children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperActive children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperDisabled children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.LabeledInputHelperTextSmallIcon children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextSmallHoverIcon children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextSmallActiveIcon children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextSmallDisabledIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperSmIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperSmHoverIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperSmActiveIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperSmDisabledIcon children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.LabeledInputBorderHelperTextSmallIcon children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextSmallHoverIcon children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextSmallActiveIcon children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextSmallDisabledIcon children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperSmIcon children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperSmHoverIcon children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperSmActiveIcon children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperSmDisabledIcon children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
-          <InputLine.LabeledInputLineHelperTextIcon children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextHoverIcon children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextActiveIcon children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextDisabledIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperHoverIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperActiveIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperDisabledIcon children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.LabeledInputHelperTextLargeIcon children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextLargeHoverIcon children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextLargeActiveIcon children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextLargeDisabledIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperLgIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperLgHoverIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperLgActiveIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperLgDisabledIcon children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.LabeledInputBorderHelperTextLargeIcon children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextLargeHoverIcon children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextLargeActiveIcon children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextLargeDisabledIcon children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperLg children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperLgHoverIcon children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperLgActiveIcon children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperLgDisabledIcon children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
-          <InputLine.LabeledInputLineHelperTextIcon children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextHoverIcon children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextActiveIcon children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextDisabledIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperHoverIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperActiveIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperDisabledIcon children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.LabeledInputHelperTextNormalIcon children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextNormalHoverIcon children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextNormalActiveIcon children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextNormalDisabledIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperNmIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperNmHoverIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperNmActiveIcon children="Label placeholder" />
+          <InputDefault.LabeledInputHelperNmDisabledIcon children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.LabeledInputBorderHelperTextNormalIcon children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextNormalHoverIcon children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextNormalActiveIcon children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextNormalDisabledIcon children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperNmIcon children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperNmHoverIcon children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperNmActiveIcon children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperNmDisabledIcon children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
-          <InputLine.LabeledInputLineHelperTextIcon children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextHoverIcon children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextActiveIcon children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextDisabledIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperHoverIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperActiveIcon children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperDisabledIcon children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.LabeledInputHelperTextSmallIconError children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextSmallHoverIconError children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextSmallActiveIconError children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextSmallDisabledIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperSmIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperSmHoverIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperSmActiveIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperSmDisabledIconError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.LabeledInputBorderHelperTextSmallIconError children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextSmallHoverIconError children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextSmallActiveIconError children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextSmallDisabledIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperSmIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperSmHoverIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperSmActiveIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperSmDisabledIconError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
-          <InputLine.LabeledInputLineHelperTextIconError children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextHoverIconError children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextActiveIconError children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextDisabledIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperHoverIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperActiveIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperDisabledIconError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.LabeledInputHelperTextLargeIconError children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextLargeHoverIconError children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextLargeActiveIconError children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextLargeDisabledIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperLgIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperLgHoverIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperLgActiveIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperLgDisabledIconError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.LabeledInputBorderHelperTextLargeIconError children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextLargeHoverIconError children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextLargeActiveIconError children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextLargeDisabledIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperLgError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperLgHoverIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperLgActiveIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperLgDisabledIconError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
-          <InputLine.LabeledInputLineHelperTextIconError children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextHoverIconError children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextActiveIconError children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextDisabledIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperHoverIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperActiveIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperDisabledIconError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Default</h2>
-          <InputDefault.LabeledInputHelperTextNormalIconError children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextNormalHoverIconError children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextNormalActiveIconError children="Label placeholder" />
-          <InputDefault.LabeledInputHelperTextNormalDisabledIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperNmIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperNmHoverIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperNmActiveIconError children="Label placeholder" />
+          <InputDefault.LabeledInputHelperNmDisabledIconError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Border</h2>
-          <InputBorder.LabeledInputBorderHelperTextNormalIconError children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextNormalHoverIconError children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextNormalActiveIconError children="Label placeholder" />
-          <InputBorder.LabeledInputBorderHelperTextNormalDisabledIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperNmIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperNmHoverIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperNmActiveIconError children="Label placeholder" />
+          <InputBorder.LabeledInputBorderHelperNmDisabledIconError children="Label placeholder" />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <h2>Line</h2>
-          <InputLine.LabeledInputLineHelperTextIconError children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextHoverIconError children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextActiveIconError children="Label placeholder" />
-          <InputLine.LabeledInputLineHelperTextDisabledIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperHoverIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperActiveIconError children="Label placeholder" />
+          <InputLine.LabeledInputLineHelperDisabledIconError children="Label placeholder" />
         </div>
       </div>
       <div className="grid grid-cols-3 gap-2">
