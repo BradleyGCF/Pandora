@@ -12,8 +12,9 @@ export type InputProps = {
   label?: string;
   onClick?: () => void;
   showIcon?: boolean;
+  type?: string;
   variant?: "default" | "border" | "line";
-};
+} & React.InputHTMLAttributes<HTMLInputElement>;
 
 export const Input: React.FC<InputProps> = ({
   border = "small",
@@ -26,7 +27,9 @@ export const Input: React.FC<InputProps> = ({
   label,
   onClick,
   showIcon = false,
+  type = "text",
   variant = "default",
+  ...rest
 }) => {
   const baseStyles = "py-2 px-4 rounded focus:outline-none transition-all";
   const variantStyles = {
@@ -52,11 +55,12 @@ export const Input: React.FC<InputProps> = ({
           <UserIcon className={`w-5 h-5 absolute left-5 ${iconColor}`} />
         )}
         <input
-          type="text"
-          onClick={onClick}
-          disabled={disabled}
-          placeholder={typeof children === "string" ? children : ""}
           className={`${baseStyles} ${variantStyles[variant]} ${borderRadiusVariants[border]} ${disabled ? disabledStyles : ""} ${showIcon ? "pl-12" : "pl-4"} ${error ? errorStyles : ""} ${className}`}
+          disabled={disabled}
+          onClick={onClick}
+          placeholder={typeof children === "string" ? children : ""}
+          type={type}
+          {...rest}
         />
       </div>
       {helperText && (

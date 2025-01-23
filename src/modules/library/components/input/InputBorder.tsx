@@ -16,6 +16,7 @@ const variantStyles = {
 export const InputBorderSm: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
@@ -33,6 +34,7 @@ export const InputBorderSm: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputBorderHoverSm: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
@@ -50,12 +52,14 @@ export const InputBorderHoverSm: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputBorderActiveSm: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.active} ${className}`)}
+      type={type}
       variant="border"
       {...props}
     >
@@ -67,12 +71,14 @@ export const InputBorderActiveSm: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputBorderDisabledSm: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.disabled} ${className}`)}
+      disabled
       variant="border"
       {...props}
     >
@@ -84,6 +90,7 @@ export const InputBorderDisabledSm: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputBorderLg: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
@@ -101,6 +108,7 @@ export const InputBorderLg: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputBorderHoverLg: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
@@ -118,6 +126,7 @@ export const InputBorderHoverLg: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputBorderActiveLg: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
@@ -135,6 +144,7 @@ export const InputBorderActiveLg: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputBorderDisabledLg: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
@@ -153,6 +163,7 @@ export const InputBorderDisabledLg: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputBorderNm: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
@@ -170,6 +181,7 @@ export const InputBorderNm: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputBorderHoverNm: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
@@ -187,6 +199,7 @@ export const InputBorderHoverNm: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputBorderActiveNm: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
@@ -204,6 +217,7 @@ export const InputBorderActiveNm: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputBorderDisabledNm: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
@@ -222,16 +236,18 @@ export const InputBorderDisabledNm: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputBorderSmIcon: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.default} ${className}`)}
-      variant="border"
-      {...props}
-      showIcon={true}
       iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      variant="border"
+      type={type}
+      {...props}
     >
       {children}
     </Input>
@@ -240,15 +256,16 @@ export const InputBorderSmIcon: React.FC<PropsWithChildren<InputProps>> = ({
 
 export const InputBorderHoverSmIcon: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.hover} ${className}`)}
-      variant="border"
-      {...props}
-      showIcon={true}
       iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      variant="border"
+      type={type}
+      {...props}
     >
       {children}
     </Input>
@@ -257,15 +274,16 @@ export const InputBorderHoverSmIcon: React.FC<
 
 export const InputBorderActiveSmIcon: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.active} ${className}`)}
-      variant="border"
-      {...props}
-      showIcon={true}
       iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      variant="border"
+      type={type}
+      {...props}
     >
       {children}
     </Input>
@@ -274,7 +292,7 @@ export const InputBorderActiveSmIcon: React.FC<
 
 export const InputBorderDisabledSmIcon: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
       border="small"
@@ -283,6 +301,7 @@ export const InputBorderDisabledSmIcon: React.FC<
       iconColor="text-[hsl(var(--icon-color-disabled))]"
       showIcon={true}
       variant="border"
+      type={type}
       {...props}
     >
       {children}
@@ -293,16 +312,18 @@ export const InputBorderDisabledSmIcon: React.FC<
 export const InputBorderLgIcon: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="large"
       className={twMerge(`${variantStyles.default} ${className}`)}
+      iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      type={type}
       variant="border"
       {...props}
-      showIcon={true}
-      iconColor="text-[hsl(var(--icon-color))]"
     >
       {children}
     </Input>
@@ -311,15 +332,16 @@ export const InputBorderLgIcon: React.FC<PropsWithChildren<InputProps>> = ({
 
 export const InputBorderHoverLgIcon: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="large"
-      showIcon={true}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      variant="border"
+      type={type}
+      {...props}
     >
       {children}
     </Input>
@@ -328,15 +350,16 @@ export const InputBorderHoverLgIcon: React.FC<
 
 export const InputBorderActiveLgIcon: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.active} ${className}`)}
       border="large"
-      showIcon={true}
+      className={twMerge(`${variantStyles.active} ${className}`)}
       iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      variant="border"
+      type={type}
+      {...props}
     >
       {children}
     </Input>
@@ -345,7 +368,7 @@ export const InputBorderActiveLgIcon: React.FC<
 
 export const InputBorderDisabledLgIcon: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
       border="large"
@@ -354,6 +377,7 @@ export const InputBorderDisabledLgIcon: React.FC<
       iconColor="text-[hsl(var(--icon-color-disabled))]"
       showIcon={true}
       variant="border"
+      type={type}
       {...props}
     >
       {children}
@@ -364,16 +388,18 @@ export const InputBorderDisabledLgIcon: React.FC<
 export const InputBorderNmIcon: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.default} ${className}`)}
       border="normal"
-      showIcon={true}
+      className={twMerge(`${variantStyles.default} ${className}`)}
       iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -382,15 +408,16 @@ export const InputBorderNmIcon: React.FC<PropsWithChildren<InputProps>> = ({
 
 export const InputBorderHoverNmIcon: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="normal"
-      showIcon={true}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -399,15 +426,16 @@ export const InputBorderHoverNmIcon: React.FC<
 
 export const InputBorderActiveNmIcon: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.active} ${className}`)}
       border="normal"
-      showIcon={true}
+      className={twMerge(`${variantStyles.active} ${className}`)}
       iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -416,7 +444,7 @@ export const InputBorderActiveNmIcon: React.FC<
 
 export const InputBorderDisabledNmIcon: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
       border="normal"
@@ -424,6 +452,7 @@ export const InputBorderDisabledNmIcon: React.FC<
       disabled
       iconColor="text-[hsl(var(--icon-color-disabled))]"
       showIcon={true}
+      type={type}
       variant="border"
       {...props}
     >
@@ -435,15 +464,17 @@ export const InputBorderDisabledNmIcon: React.FC<
 export const InputBorderSmError: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.default} ${className}`)}
+      error={true}
+      type={type}
       variant="border"
       {...props}
-      error={true}
     >
       {children}
     </Input>
@@ -452,14 +483,15 @@ export const InputBorderSmError: React.FC<PropsWithChildren<InputProps>> = ({
 
 export const InputBorderHoverSmError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.hover} ${className}`)}
+      error={true}
+      type={type}
       variant="border"
       {...props}
-      error={true}
     >
       {children}
     </Input>
@@ -468,14 +500,15 @@ export const InputBorderHoverSmError: React.FC<
 
 export const InputBorderActiveSmError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.active} ${className}`)}
+      error={true}
+      type={type}
       variant="border"
       {...props}
-      error={true}
     >
       {children}
     </Input>
@@ -484,14 +517,16 @@ export const InputBorderActiveSmError: React.FC<
 
 export const InputBorderDisabledSmError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.disabled} ${className} ring-1`)}
       border="small"
+      className={twMerge(`${variantStyles.disabled} ${className} ring-1`)}
+      disabled
       error={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -501,15 +536,17 @@ export const InputBorderDisabledSmError: React.FC<
 export const InputBorderLgError: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="large"
       className={twMerge(`${variantStyles.default} ${className}`)}
+      error={true}
+      type={type}
       variant="border"
       {...props}
-      error={true}
     >
       {children}
     </Input>
@@ -518,14 +555,15 @@ export const InputBorderLgError: React.FC<PropsWithChildren<InputProps>> = ({
 
 export const InputBorderHoverLgError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="large"
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       error={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -534,14 +572,15 @@ export const InputBorderHoverLgError: React.FC<
 
 export const InputBorderActiveLgError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.active} ${className}`)}
       border="large"
+      className={twMerge(`${variantStyles.active} ${className}`)}
       error={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -550,14 +589,16 @@ export const InputBorderActiveLgError: React.FC<
 
 export const InputBorderDisabledLgError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.disabled} ${className} ring-1`)}
       border="large"
+      className={twMerge(`${variantStyles.disabled} ${className} ring-1`)}
+      disabled
       error={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -567,15 +608,17 @@ export const InputBorderDisabledLgError: React.FC<
 export const InputBorderNmError: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.default} ${className}`)}
       border="normal"
+      className={twMerge(`${variantStyles.default} ${className}`)}
       error={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -584,14 +627,15 @@ export const InputBorderNmError: React.FC<PropsWithChildren<InputProps>> = ({
 
 export const InputBorderHoverNmError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="normal"
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       error={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -600,14 +644,15 @@ export const InputBorderHoverNmError: React.FC<
 
 export const InputBorderActiveNmError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.active} ${className}`)}
       border="normal"
+      className={twMerge(`${variantStyles.active} ${className}`)}
       error={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -616,14 +661,16 @@ export const InputBorderActiveNmError: React.FC<
 
 export const InputBorderDisabledNmError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.disabled} ${className} ring-1`)}
       border="normal"
+      className={twMerge(`${variantStyles.disabled} ${className} ring-1`)}
+      disabled
       error={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -632,16 +679,17 @@ export const InputBorderDisabledNmError: React.FC<
 
 export const InputBorderSmIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.default} ${className}`)}
+      error={true}
+      iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      type={type}
       variant="border"
       {...props}
-      showIcon={true}
-      iconColor="text-[hsl(var(--icon-color))]"
-      error={true}
     >
       {children}
     </Input>
@@ -650,16 +698,17 @@ export const InputBorderSmIconError: React.FC<
 
 export const InputBorderHoverSmIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.hover} ${className}`)}
+      error={true}
+      iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      type={type}
       variant="border"
       {...props}
-      showIcon={true}
-      iconColor="text-[hsl(var(--icon-color))]"
-      error={true}
     >
       {children}
     </Input>
@@ -668,16 +717,17 @@ export const InputBorderHoverSmIconError: React.FC<
 
 export const InputBorderActiveSmIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.active} ${className}`)}
+      error={true}
+      iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      type={type}
       variant="border"
       {...props}
-      showIcon={true}
-      iconColor="text-[hsl(var(--icon-color))]"
-      error={true}
     >
       {children}
     </Input>
@@ -686,16 +736,18 @@ export const InputBorderActiveSmIconError: React.FC<
 
 export const InputBorderDisabledSmIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.disabled} ${className} ring-1`)}
       border="small"
-      showIcon={true}
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      className={twMerge(`${variantStyles.disabled} ${className} ring-1`)}
+      disabled
       error={true}
+      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -704,16 +756,17 @@ export const InputBorderDisabledSmIconError: React.FC<
 
 export const InputBorderLgIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
       border="large"
       className={twMerge(`${variantStyles.default} ${className}`)}
+      error={true}
+      iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      type={type}
       variant="border"
       {...props}
-      showIcon={true}
-      iconColor="text-[hsl(var(--icon-color))]"
-      error={true}
     >
       {children}
     </Input>
@@ -722,16 +775,17 @@ export const InputBorderLgIconError: React.FC<
 
 export const InputBorderHoverLgIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="large"
-      showIcon={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       error={true}
+      iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -740,16 +794,17 @@ export const InputBorderHoverLgIconError: React.FC<
 
 export const InputBorderActiveLgIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.active} ${className}`)}
       border="large"
-      showIcon={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      className={twMerge(`${variantStyles.active} ${className}`)}
       error={true}
+      iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -758,16 +813,18 @@ export const InputBorderActiveLgIconError: React.FC<
 
 export const InputBorderDisabledLgIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.disabled} ${className} ring-1`)}
       border="large"
-      showIcon={true}
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      className={twMerge(`${variantStyles.disabled} ${className} ring-1`)}
+      disabled
       error={true}
+      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -776,16 +833,17 @@ export const InputBorderDisabledLgIconError: React.FC<
 
 export const InputBorderNmIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.default} ${className}`)}
       border="normal"
-      showIcon={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      className={twMerge(`${variantStyles.default} ${className}`)}
       error={true}
+      iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -794,16 +852,17 @@ export const InputBorderNmIconError: React.FC<
 
 export const InputBorderHoverNmIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="normal"
-      showIcon={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       error={true}
+      iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -812,16 +871,17 @@ export const InputBorderHoverNmIconError: React.FC<
 
 export const InputBorderActiveNmIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.active} ${className}`)}
       border="normal"
-      showIcon={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      className={twMerge(`${variantStyles.active} ${className}`)}
       error={true}
+      iconColor="text-[hsl(var(--icon-color))]"
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -830,16 +890,18 @@ export const InputBorderActiveNmIconError: React.FC<
 
 export const InputBorderDisabledNmIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, ...props }) => {
+> = ({ children, className, type = "text", ...props }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.disabled} ${className} ring-1`)}
       border="normal"
-      showIcon={true}
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      className={twMerge(`${variantStyles.disabled} ${className} ring-1`)}
+      disabled
       error={true}
+      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -851,18 +913,20 @@ export const LabeledInputBorderHelperSm: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.default} ${className}`)}
+      helperText={helperText}
+      label={label}
+      type={type}
       variant="border"
       {...props}
-      label={label}
-      helperText={helperText}
     >
       {children}
     </Input>
@@ -874,18 +938,20 @@ export const LabeledInputBorderHelperSmHover: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.hover} ${className}`)}
+      helperText={helperText}
+      label={label}
+      type={type}
       variant="border"
       {...props}
-      label={label}
-      helperText={helperText}
     >
       {children}
     </Input>
@@ -897,18 +963,20 @@ export const LabeledInputBorderHelperSmActive: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.active} ${className}`)}
+      helperText={helperText}
+      label={label}
+      type={type}
       variant="border"
       {...props}
-      label={label}
-      helperText={helperText}
     >
       {children}
     </Input>
@@ -920,8 +988,9 @@ export const LabeledInputBorderHelperSmDisabled: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
@@ -931,6 +1000,7 @@ export const LabeledInputBorderHelperSmDisabled: React.FC<
       disabled
       helperText={helperText}
       label={label}
+      type={type}
       variant="border"
       {...props}
     >
@@ -944,18 +1014,20 @@ export const LabeledInputBorderHelperLg: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="large"
       className={twMerge(`${variantStyles.default} ${className}`)}
+      helperText={helperText}
+      label={label}
+      type={type}
       variant="border"
       {...props}
-      label={label}
-      helperText={helperText}
     >
       {children}
     </Input>
@@ -967,18 +1039,20 @@ export const LabeledInputBorderHelperLgHover: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="large"
-      label={label}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       helperText={helperText}
+      label={label}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -990,18 +1064,20 @@ export const LabeledInputBorderHelperLgActive: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.active} ${className}`)}
       border="large"
-      label={label}
+      className={twMerge(`${variantStyles.active} ${className}`)}
       helperText={helperText}
+      label={label}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1013,8 +1089,9 @@ export const LabeledInputBorderHelperLgDisabled: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
@@ -1024,6 +1101,7 @@ export const LabeledInputBorderHelperLgDisabled: React.FC<
       disabled
       helperText={helperText}
       label={label}
+      type={type}
       variant="border"
       {...props}
     >
@@ -1037,18 +1115,20 @@ export const LabeledInputBorderHelperNm: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.default} ${className}`)}
       border="normal"
-      label={label}
+      className={twMerge(`${variantStyles.default} ${className}`)}
       helperText={helperText}
+      label={label}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1060,18 +1140,20 @@ export const LabeledInputBorderHelperNmHover: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="normal"
-      label={label}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
       helperText={helperText}
+      label={label}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1083,18 +1165,20 @@ export const LabeledInputBorderHelperNmActive: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.active} ${className}`)}
       border="normal"
-      label={label}
+      className={twMerge(`${variantStyles.active} ${className}`)}
       helperText={helperText}
+      label={label}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1106,8 +1190,9 @@ export const LabeledInputBorderHelperNmDisabled: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
@@ -1117,6 +1202,7 @@ export const LabeledInputBorderHelperNmDisabled: React.FC<
       disabled
       helperText={helperText}
       label={label}
+      type={type}
       variant="border"
       {...props}
     >
@@ -1130,20 +1216,22 @@ export const LabeledInputBorderHelperSmIcon: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.default} ${className}`)}
-      variant="border"
-      {...props}
-      showIcon={true}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1155,20 +1243,22 @@ export const LabeledInputBorderHelperSmHoverIcon: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.hover} ${className}`)}
-      variant="border"
-      {...props}
-      showIcon={true}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1180,20 +1270,22 @@ export const LabeledInputBorderHelperSmActiveIcon: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.active} ${className}`)}
-      variant="border"
-      {...props}
-      showIcon={true}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1205,8 +1297,9 @@ export const LabeledInputBorderHelperSmDisabledIcon: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
@@ -1218,6 +1311,7 @@ export const LabeledInputBorderHelperSmDisabledIcon: React.FC<
       iconColor="text-[hsl(var(--icon-color-disabled))]"
       label={label}
       showIcon={true}
+      type={type}
       variant="border"
       {...props}
     >
@@ -1231,20 +1325,22 @@ export const LabeledInputBorderHelperLgIcon: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="large"
       className={twMerge(`${variantStyles.default} ${className}`)}
-      variant="border"
-      {...props}
-      showIcon={true}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1256,20 +1352,22 @@ export const LabeledInputBorderHelperLgHoverIcon: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="large"
-      showIcon={true}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1281,20 +1379,22 @@ export const LabeledInputBorderHelperLgActiveIcon: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.active} ${className}`)}
       border="large"
-      showIcon={true}
+      className={twMerge(`${variantStyles.active} ${className}`)}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1306,8 +1406,9 @@ export const LabeledInputBorderHelperLgDisabledIcon: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
@@ -1319,6 +1420,7 @@ export const LabeledInputBorderHelperLgDisabledIcon: React.FC<
       iconColor="text-[hsl(var(--icon-color-disabled))]"
       label={label}
       showIcon={true}
+      type={type}
       variant="border"
       {...props}
     >
@@ -1332,20 +1434,22 @@ export const LabeledInputBorderHelperNmIcon: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.default} ${className}`)}
       border="normal"
-      showIcon={true}
+      className={twMerge(`${variantStyles.default} ${className}`)}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1357,20 +1461,22 @@ export const LabeledInputBorderHelperNmHoverIcon: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="normal"
-      showIcon={true}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1382,20 +1488,22 @@ export const LabeledInputBorderHelperNmActiveIcon: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.active} ${className}`)}
       border="normal"
-      showIcon={true}
+      className={twMerge(`${variantStyles.active} ${className}`)}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1407,8 +1515,9 @@ export const LabeledInputBorderHelperNmDisabledIcon: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
@@ -1420,6 +1529,7 @@ export const LabeledInputBorderHelperNmDisabledIcon: React.FC<
       iconColor="text-[hsl(var(--icon-color-disabled))]"
       label={label}
       showIcon={true}
+      type={type}
       variant="border"
       {...props}
     >
@@ -1433,21 +1543,23 @@ export const LabeledInputBorderHelperSmIconError: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.default} ${className}`)}
-      variant="border"
-      {...props}
-      showIcon={true}
+      error={true}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
-      error={true}
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1459,21 +1571,22 @@ export const LabeledInputBorderHelperSmHoverIconError: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.hover} ${className}`)}
-      variant="border"
-      {...props}
-      showIcon={true}
+      error={true}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
-      error={true}
+      showIcon={true}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1485,21 +1598,23 @@ export const LabeledInputBorderHelperSmActiveIconError: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.active} ${className}`)}
-      variant="border"
-      {...props}
-      showIcon={true}
+      error={true}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
-      error={true}
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1511,8 +1626,9 @@ export const LabeledInputBorderHelperSmDisabledIconError: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
@@ -1524,6 +1640,7 @@ export const LabeledInputBorderHelperSmDisabledIconError: React.FC<
       iconColor="text-[hsl(var(--icon-color-disabled))]"
       label={label}
       showIcon={true}
+      type={type}
       variant="border"
       {...props}
     >
@@ -1537,21 +1654,23 @@ export const LabeledInputBorderHelperLgIconError: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
       border="large"
       className={twMerge(`${variantStyles.default} ${className}`)}
-      variant="border"
-      {...props}
-      showIcon={true}
+      error={true}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
-      error={true}
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1563,21 +1682,23 @@ export const LabeledInputBorderHelperLgHoverIconError: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="large"
-      showIcon={true}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
+      error={true}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
-      error={true}
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1589,21 +1710,23 @@ export const LabeledInputBorderHelperLgActiveIconError: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.active} ${className}`)}
       border="large"
-      showIcon={true}
+      className={twMerge(`${variantStyles.active} ${className}`)}
+      error={true}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
-      error={true}
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1615,8 +1738,9 @@ export const LabeledInputBorderHelperLgDisabledIconError: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
@@ -1628,6 +1752,7 @@ export const LabeledInputBorderHelperLgDisabledIconError: React.FC<
       iconColor="text-[hsl(var(--icon-color-disabled))]"
       label={label}
       showIcon={true}
+      type={type}
       variant="border"
       {...props}
     >
@@ -1641,21 +1766,23 @@ export const LabeledInputBorderHelperNmIconError: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.default} ${className}`)}
       border="normal"
-      showIcon={true}
+      className={twMerge(`${variantStyles.default} ${className}`)}
+      error={true}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
-      error={true}
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1667,21 +1794,23 @@ export const LabeledInputBorderHelperNmHoverIconError: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.hover} ${className}`)}
       border="normal"
-      showIcon={true}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
+      error={true}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
-      error={true}
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1693,21 +1822,23 @@ export const LabeledInputBorderHelperNmActiveIconError: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      variant="border"
-      className={twMerge(`${variantStyles.active} ${className}`)}
       border="normal"
-      showIcon={true}
+      className={twMerge(`${variantStyles.active} ${className}`)}
+      error={true}
+      helperText={helperText}
       iconColor="text-[hsl(var(--icon-color))]"
       label={label}
-      helperText={helperText}
-      error={true}
+      showIcon={true}
+      type={type}
+      variant="border"
+      {...props}
     >
       {children}
     </Input>
@@ -1719,8 +1850,9 @@ export const LabeledInputBorderHelperNmDisabledIconError: React.FC<
 > = ({
   children,
   className,
-  label = "Input Label",
   helperText = "Input Helper Text",
+  label = "Input Label",
+  type = "text",
   ...props
 }) => {
   return (
