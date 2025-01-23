@@ -26,3 +26,24 @@
         - Cambiar background para TextArea e Input en \globals.css
     Observaciones:
         - Iniciar con la creacion de componentes DropDown mañana.
+
+2025/01/23 Components y Screen - Valentina Rincon
+    Cambios:
+        - Reorganizar y todos los componentes Input dentro de \InputDefault.tsx
+        - Reorganizar todos los componentes Input dentro de en \InputBorder.tsx
+        - Reorganizar todos los componentes Input dentro de en \InputLine.tsx
+        - Renombrar y organizar las props de los componentes Input dentro de \InputDefault.tsx
+        - Renombrar y organizar las props de los componentes Input dentro de en \InputBorder.tsx
+        - Renombrar y organizar las props de los componentes Input dentro de en \InputLine.tsx
+        - Extender la funcionalidad de los inputs para admitir cualquier atributo type \InputBorder.tsx
+        - Extender la funcionalidad de los inputs para admitir cualquier atributo type \InputLine.tsx
+        - Extender la funcionalidad de los inputs para admitir cualquier atributo type \InputDefault.tsx
+        - Renombrar los componentes TextArea dentro de \TextAreaDefault.tsx
+        - Renombrar los componentes TextArea dentro de en \TextAreaRounded.tsx
+        - Renombrar los componentes TextArea dentro de en \TextAreaNormal.tsx
+        - Organizar importaciones para empaquetar los componentes Input y TextArea en main.ts
+        - Cambiar version de libreria en package.json para renderizar componentes en otro proyecto.
+        - Creada carpeta chips en \components.
+        - Creados componentes chips en \Chips.tsx.
+    Observaciones:
+        - Continuar con la creacion de componentes Chips.
