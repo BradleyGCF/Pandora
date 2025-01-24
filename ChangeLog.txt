@@ -47,3 +47,19 @@
         - Creados componentes chips en \Chips.tsx.
     Observaciones:
         - Continuar con la creacion de componentes Chips.
+
+
+        2025/01/24 Components y Screen - Valentina Rincon
+    Cambios:
+        - Creada carpeta tooltip en \components.
+        - Creado componente tooltip en \Tooltip.tsx.
+        - Creado componente ChipsComponents en \componentes
+        - Modificado el componente Chips para organizar los componentes con y sin icono en \Chips.tsx.
+        - Organizar importaciones para empaquetar los componentes Chips en main.ts
+        - Crear un archivo de barril para componentes chips en \chips\index.ts
+        - Cambiar version de libreria en package.json para renderizar componentes Chips en otro proyecto.
+        - Dar soporte a los componetes Chips para se puedan personalizar.
+        - Renderizar componentes Chips y Tooltip en \home.tsx.
+        - Crear estilos para Chips y Tooltip en \globals.css
+    Observaciones:
+    - Se está trabajando con los estilos del componente Tooltip para renderizarlo y empaquetarlo correctamente.

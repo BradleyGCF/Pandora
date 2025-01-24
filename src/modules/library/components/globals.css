@@ -65,6 +65,22 @@
     --radius-input-normal: 0px;
     --icon-color-: 0, 0%, 22%;
     --icon-color-disabled: 0, 0%, 51%;
+
+    --bg-chips-neutral: 0, 0%, 0%, 0.12;
+    --bg-chips-primary: 210, 79%, 46%, 0.3;
+    --bg-chips-secondary: 291, 64%, 42%, 0.3;
+    --bg-chips-danger: 0, 65%, 51%, 0.3;
+    --bg-chips-warning: 27, 100%, 47%, 0.3;
+    --bg-chips-info: 201, 98%, 41%, 0.3;
+    --bg-chips-success: 123, 46%, 34%, 0.3;
+
+    --bg-tooltip-neutral: 200, 19%, 18%;
+    --bg-tooltip-primary: 216, 85%, 34%;
+    --bg-tooltip-secondary: 124, 55%, 24%;
+    --bg-tooltip-danger: 0, 73%, 41%;
+    --bg-tooltip-warning: 21, 100%, 45%;
+    --bg-tooltip-info: 328, 81%, 29%;
+    --bg-tooltip-success: 267, 75%, 31%;
   }
 
   .dark {

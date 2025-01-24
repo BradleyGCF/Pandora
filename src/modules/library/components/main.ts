@@ -445,3 +445,20 @@ export { TextAreaBorderNormalLgDefError } from "./textarea/TextAreaBorder.tsx";
 export { TextAreaBorderNormalLgHoverError } from "./textarea/TextAreaBorder.tsx";
 export { TextAreaBorderNormalLgActiveError } from "./textarea/TextAreaBorder.tsx";
 export { TextAreaBorderNormalLgDisabledError } from "./textarea/TextAreaBorder.tsx";
+
+export { ChipsNeutral } from "./chips/ChipsComponents.tsx";
+export { ChipsPrimary } from "./chips/ChipsComponents.tsx";
+export { ChipsSecondary } from "./chips/ChipsComponents.tsx";
+export { ChipsDanger } from "./chips/ChipsComponents.tsx";
+export { ChipsWarning } from "./chips/ChipsComponents.tsx";
+export { ChipsInfo} from "./chips/ChipsComponents.tsx";
+export { ChipsSuccess} from "./chips/ChipsComponents.tsx";
+export { ChipsNeutralIcon } from "./chips/ChipsComponents.tsx";
+export { ChipsPrimaryIcon } from "./chips/ChipsComponents.tsx";
+export { ChipsSecondaryIcon } from "./chips/ChipsComponents.tsx";
+export { ChipsDangerIcon } from "./chips/ChipsComponents.tsx";
+export { ChipsWarningIcon } from "./chips/ChipsComponents.tsx";
+export { ChipsInfoIcon } from "./chips/ChipsComponents.tsx";
+export { ChipsSuccessIcon} from "./chips/ChipsComponents.tsx";
+
+export { Tooltip } from "./tooltip/Tooltip.tsx";

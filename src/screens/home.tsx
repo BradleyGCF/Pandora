@@ -1,13 +1,18 @@
+import { ChipsComponents } from "@/modules/library/components/chips";
+import { Tooltip } from '../modules/library/components/tooltip/Tooltip';
+
 import {
   InputBorder,
   InputDefault,
   InputLine,
 } from "@/modules/library/components/input";
+
 import {
   ButtonPrimary,
   ButtonSecondary,
   ButtonText,
 } from "../modules/library/components/button/index";
+
 import {
   TextAreaBorder,
   TextAreaNormal,
@@ -1502,6 +1507,27 @@ export default function Home() {
           <TextAreaBorder.TextAreaBorderNormalLgActiveError children="Label placeholder" />
           <TextAreaBorder.TextAreaBorderNormalLgDisabledError children="Label placeholder" />
         </div>
+      </div>
+      <div className="flex flex-row items-center justify-center min-h-screen space-x-3">
+        <ChipsComponents.ChipsNeutral children="Chip" />
+        <ChipsComponents.ChipsPrimary children="Chip" />
+        <ChipsComponents.ChipsSecondary children="Chip" />
+        <ChipsComponents.ChipsDanger children="Chip" />
+        <ChipsComponents.ChipsWarning children="Chip" />
+        <ChipsComponents.ChipsInfo children="Chip" />
+        <ChipsComponents.ChipsSuccess children="Chip" />
+        <ChipsComponents.ChipsNeutralIcon children="Chip" />
+        <ChipsComponents.ChipsPrimaryIcon children="Chip" />
+        <ChipsComponents.ChipsSecondaryIcon children="Chip" />
+        <ChipsComponents.ChipsDangerIcon children="Chip" />
+        <ChipsComponents.ChipsWarningIcon children="Chip" />
+        <ChipsComponents.ChipsInfoIcon children="Chip" />
+        <ChipsComponents.ChipsSuccessIcon children="Chip" />
+      </div>
+      <div className="flex flex-row items-center justify-center min-h-screen space-x-3">
+      <Tooltip trianglePosition='right' text="Neutral Tooltip" variant="primary">
+        <button className="px-4 py-2 text-white bg-red-200 rounded">Neutral</button>
+      </Tooltip>
       </div>
     </div>
   );

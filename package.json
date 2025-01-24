@@ -1,6 +1,6 @@
 {
   "name": "pandora_components",
-  "version": "0.2.10",
+  "version": "0.3.2",
   "type": "module",
   "files": [
     "dist"
