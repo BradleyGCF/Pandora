@@ -63,3 +63,11 @@
         - Crear estilos para Chips y Tooltip en \globals.css
     Observaciones:
     - Se está trabajando con los estilos del componente Tooltip para renderizarlo y empaquetarlo correctamente.
+
+        2025/01/27 - Components y Screen - Valentina Rincón
+    Cambios:
+        - Refactorización de algunas líneas en los estilos del componente Tooltip en Tooltip.tsx.
+    Observaciones:
+
+        - Modificación de las propiedades del componente Tooltip en Home.tsx.
+        - Actualmente se están ajustando los últimos detalles de los estilos del componente Tooltip.

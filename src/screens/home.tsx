@@ -1524,8 +1524,8 @@ export default function Home() {
         <ChipsComponents.ChipsInfoIcon children="Chip" />
         <ChipsComponents.ChipsSuccessIcon children="Chip" />
       </div>
-      <div className="flex flex-row items-center justify-center min-h-screen space-x-3">
-      <Tooltip trianglePosition='right' text="Neutral Tooltip" variant="primary">
+      <div className="flex items-center justify-center min-h-screen">
+      <Tooltip trianglePosition='top' text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." variant="primary">
         <button className="px-4 py-2 text-white bg-red-200 rounded">Neutral</button>
       </Tooltip>
       </div>
