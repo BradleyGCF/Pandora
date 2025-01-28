@@ -77,7 +77,7 @@ export const Tooltip: React.FC<TooltipProps> = ({
   : triangleColors[variant];
 
   return (
-    <div className="relative group inline-block items-center">
+    <div className="relative group flex justify-center items-center">
       {children}
       <div
         className={`absolute whitespace-nowrap px-4 py-3 text-white text-sm rounded-[6px] hidden group-hover:block ${triangleClass[trianglePosition]} ${variantStyles[variant]}`}

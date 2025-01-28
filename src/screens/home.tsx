@@ -1,5 +1,5 @@
 import { ChipsComponents } from "@/modules/library/components/chips";
-import { Tooltip } from '../modules/library/components/tooltip/Tooltip';
+import { Tooltip } from "../modules/library/components/tooltip/Tooltip";
 
 import {
   InputBorder,
@@ -18,6 +18,7 @@ import {
   TextAreaNormal,
   TextAreaRounded,
 } from "@/modules/library/components/textarea";
+import { Badge } from "@/modules/library/components/badge/Badge";
 
 export default function Home() {
   return (
@@ -1524,10 +1525,64 @@ export default function Home() {
         <ChipsComponents.ChipsInfoIcon children="Chip" />
         <ChipsComponents.ChipsSuccessIcon children="Chip" />
       </div>
-      <div className="flex items-center justify-center min-h-screen">
-      <Tooltip trianglePosition='top' text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." variant="primary">
-        <button className="px-4 py-2 text-white bg-red-200 rounded">Neutral</button>
-      </Tooltip>
+      <div className="flex items-center gap-9 justify-center min-h-screen">
+        <Tooltip trianglePosition="bottom" text="Lorem Ipsum" variant="neutral">
+          <button className="px-4 py-2 text-white bg-blue-950 rounded">
+            Neutral
+          </button>
+        </Tooltip>
+        <Tooltip trianglePosition="bottom" text="Lorem Ipsum" variant="primary">
+          <button className="px-4 py-2 text-white bg-blue-900 rounded">
+            Neutral
+          </button>
+        </Tooltip>
+        <Tooltip trianglePosition="bottom" text="Lorem Ipsum" variant="danger">
+          <button className="px-4 py-2 text-white bg-red-900 rounded">
+            danger
+          </button>
+        </Tooltip>
+        <Tooltip
+          trianglePosition="bottom"
+          text="Lorem Ipsum"
+          variant="secondary"
+        >
+          <button className="px-4 py-2 text-white bg-green-900 rounded">
+            Neutral
+          </button>
+        </Tooltip>
+        <Tooltip trianglePosition="bottom" text="Lorem Ipsum" variant="warning">
+          <button className="px-4 py-2 text-white bg-orange-700 rounded">
+            Neutral
+          </button>
+        </Tooltip>
+        <Tooltip trianglePosition="bottom" text="Lorem Ipsum" variant="info">
+          <button className="px-4 py-2 text-white bg-pink-700 rounded">
+            Neutral
+          </button>
+        </Tooltip>
+        <Tooltip trianglePosition="bottom" text="Lorem Ipsum" variant="success">
+          <button className="px-4 py-2 text-white bg-purple-900 rounded">
+            Neutral
+          </button>
+        </Tooltip>
+        <Tooltip
+          trianglePosition="bottom"
+          text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+          variant="success"
+        >
+          <button className="px-4 py-2 text-white bg-purple-900 rounded">
+            Tooltip Large
+          </button>
+        </Tooltip>
+      </div>
+      <div className="flex flex-wrap items-center justify-center min-h-screen">
+        <Badge
+          variant="pink"
+          title="PlaceHolder"
+          text="PlaceHolder"
+          children="lorem"
+          size="small"
+        />
       </div>
     </div>
   );
