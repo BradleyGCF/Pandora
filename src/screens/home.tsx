@@ -1575,13 +1575,27 @@ export default function Home() {
           </button>
         </Tooltip>
       </div>
-      <div className="flex flex-wrap items-center justify-center min-h-screen">
+      <div className="flex justify-center mb-10">
         <Badge
           variant="pink"
-          title="PlaceHolder"
+          title="PlaceHolder Title"
           text="PlaceHolder"
           children="lorem"
           size="small"
+        />
+        <Badge
+          variant="green"
+          title="PlaceHolder Title"
+          text="PlaceHolder"
+          children="lorem"
+          size="medium"
+        />
+        <Badge
+          variant="black"
+          title="PlaceHolder Title"
+          text="PlaceHolder"
+          children="lorem"
+          size="large"
         />
       </div>
     </div>

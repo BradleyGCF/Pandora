@@ -72,11 +72,10 @@
         - Modificación de las propiedades del componente Tooltip en Home.tsx.
         - Actualmente se están ajustando los últimos detalles de los estilos del componente Tooltip.
 
-        2025/01/28 - Components y Screen - Valentina Rincón
+        2025/01/29 - Components y Screen - Valentina Rincón
     Cambios:
-        - Se finalizaron los ajustes de estilos en el componente Tooltip ubicado en \Tooltip.tsx
-        - Se creó el componente Badge en \Badge.tsx
-        - Se añadió una nueva carpeta llamada badge en la ruta \components
+        - Se corrigieron los problemas de altura y anchura aplicando estilos condicionales según el tamaño (small, medium, large) añadiendo nuevos objetos en \Badge.tsx
+        - Se optimizó la combinación de clases de Tailwind (variantSize[size]) para evitar interferencias en el layout en \Badge.tsx.
+        - Se añadieron más componentes Badge en \home.tsx
     Observaciones:
-
-        - Quedan pendientes algunos ajustes finales para permitir que el tamaño de los componentes Badge sea completamente personalizable.
+        - Se iniciará en la creacion de componentes Alert
