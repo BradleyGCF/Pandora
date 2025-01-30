@@ -462,3 +462,4 @@ export { ChipsInfoIcon } from "./chips/ChipsComponents.tsx";
 export { ChipsSuccessIcon} from "./chips/ChipsComponents.tsx";
 
 export { Tooltip } from "./tooltip/Tooltip.tsx";
+export { Badge } from "./badge/Badge.tsx";

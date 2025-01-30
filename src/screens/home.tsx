@@ -1,5 +1,7 @@
 import { ChipsComponents } from "@/modules/library/components/chips";
 import { Tooltip } from "../modules/library/components/tooltip/Tooltip";
+import { Badge } from "@/modules/library/components/badge/Badge";
+import { AlertFilled } from "@/modules/library/components/alert";
 
 import {
   InputBorder,
@@ -18,7 +20,6 @@ import {
   TextAreaNormal,
   TextAreaRounded,
 } from "@/modules/library/components/textarea";
-import { Badge } from "@/modules/library/components/badge/Badge";
 
 export default function Home() {
   return (
@@ -1597,6 +1598,14 @@ export default function Home() {
           children="lorem"
           size="large"
         />
+      </div>
+      <div className="grid grid-cols-3 gap-10 min-h-screen">
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+        <AlertFilled.ErrorAlert description="{Description}" title="{Title}" size="medium"/>
+        <AlertFilled.WarningAlert description="{Description}" title="{Title}" size="medium"/>
+        <AlertFilled.InfoAlert description="{Description}" title="{Title}" size="medium"/>
+        <AlertFilled.SuccessAlert description="{Description}" title="{Title}" size="medium"/>
+        </div>
       </div>
     </div>
   );

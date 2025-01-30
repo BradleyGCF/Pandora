@@ -1,4 +1,5 @@
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
 export type TooltipProps = {
   children: React.ReactNode;
@@ -10,8 +11,9 @@ export type TooltipProps = {
 
 export const Tooltip: React.FC<TooltipProps> = ({
   children,
-  trianglePosition,
+  className,
   text,
+  trianglePosition,
   variant = "neutral",
 }) => {
   const triangleClass = {
@@ -80,10 +82,10 @@ export const Tooltip: React.FC<TooltipProps> = ({
     <div className="relative group flex justify-center items-center">
       {children}
       <div
-        className={`absolute whitespace-nowrap px-4 py-3 text-white text-sm rounded-[6px] hidden group-hover:block ${triangleClass[trianglePosition]} ${variantStyles[variant]}`}
+        className={twMerge(`absolute whitespace-nowrap px-4 py-3 text-white text-sm rounded-[6px] hidden group-hover:block ${triangleClass[trianglePosition]} ${variantStyles[variant]} ${className}`)}
       >
         {text}
-        <div className={`absolute ${triangleStyles[trianglePosition]} ${triangleBorderColorLeft} ${triangleBorderColorRight}`} />
+        <div className={twMerge(`absolute ${triangleStyles[trianglePosition]} ${triangleBorderColorLeft} ${triangleBorderColorRight} ${className} `)} />
       </div>
     </div>
   );

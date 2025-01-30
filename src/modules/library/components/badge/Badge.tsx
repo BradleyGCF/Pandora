@@ -4,19 +4,19 @@ import { twMerge } from "tailwind-merge";
 export type BadgeProps = {
   children?: string;
   className?: string;
-  variant?: "pink" | "green" | "black" | "blue" | "orange" | "yellow" | "red";
-  title: string;
-  text: string;
   size: "small" | "medium" | "large";
+  text: string;
+  title: string;
+  variant?: "pink" | "green" | "black" | "blue" | "orange" | "yellow" | "red";
 };
 
 export const Badge: React.FC<BadgeProps> = ({
   children,
   className,
-  title = "placeholder",
-  text = "placeholder",
-  variant = "pink",
   size = "large",
+  text = "placeholder",
+  title = "placeholder",
+  variant = "pink",
 }) => {
   const baseStyles =
     " flex items-center justify-center text-white font-bold p-2";
@@ -63,8 +63,8 @@ export const Badge: React.FC<BadgeProps> = ({
           <p className="-rotate-90">{children}</p>
         </div>
         <div className={twMerge(`${borderRadiusSmall} ${variantSize[size]} ${className}`)}>
-          <p className={`${titleAndTextStyles[size]}`}>{title}</p>
-          <span className={`${titleAndTextStyles[size]} text-gray-400`}>{text}</span>
+          <p className={twMerge(`${titleAndTextStyles[size]} ${className}`)}>{title}</p>
+          <span className={twMerge(`${titleAndTextStyles[size]} text-gray-400 ${className}`)}>{text}</span>
         </div>
       </div>
     </div>

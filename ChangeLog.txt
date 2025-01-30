@@ -79,3 +79,17 @@
         - Se añadieron más componentes Badge en \home.tsx
     Observaciones:
         - Se iniciará en la creacion de componentes Alert
+
+    
+        2025/01/29 - Components y Screen - Valentina Rincón
+    Cambios:
+        - Se cambió la version de package.json para empaquetar los componentes Tooltip y Badge.
+        - Se modificaron algunas propiedades del componente Badge para un codigo más limpio en \Badge.tsx
+        - Se trabajó en el componente Tooltip para darle soporte a las clases personalizadas en Tooltip.tsx
+        -  Rendereizacion de los componentes Alert en \screen\home.tsx
+        -  Creado componente base Alert en \alert
+        -  Creado componente AlertFilled en \components\alert
+        - Exportado componente Badge para su uso en otro proyecto en \main.ts
+        - Creado un archivo de barril para los compontes Alert en \alert\index.ts
+    Observaciones:
+        - Se contiuará la creacion de componentes Alert.
