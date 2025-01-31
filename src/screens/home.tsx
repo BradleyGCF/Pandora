@@ -1,7 +1,12 @@
 import { ChipsComponents } from "@/modules/library/components/chips";
 import { Tooltip } from "../modules/library/components/tooltip/Tooltip";
 import { Badge } from "@/modules/library/components/badge/Badge";
-import { AlertFilled } from "@/modules/library/components/alert";
+
+import {
+  AlertFilled,
+  AlertOutlined,
+  AlertStandard,
+} from "@/modules/library/components/alert";
 
 import {
   InputBorder,
@@ -1601,10 +1606,136 @@ export default function Home() {
       </div>
       <div className="grid grid-cols-3 gap-10 min-h-screen">
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
-        <AlertFilled.ErrorAlert description="{Description}" title="{Title}" size="medium"/>
-        <AlertFilled.WarningAlert description="{Description}" title="{Title}" size="medium"/>
-        <AlertFilled.InfoAlert description="{Description}" title="{Title}" size="medium"/>
-        <AlertFilled.SuccessAlert description="{Description}" title="{Title}" size="medium"/>
+          <AlertFilled.ErrorAlert description="{Description}" title="{Title}" />
+          <AlertFilled.WarningAlert
+            description="{Description}"
+            title="{Title}"
+          />
+          <AlertFilled.InfoAlert description="{Description}" title="{Title}" />
+          <AlertFilled.SuccessAlert
+            description="{Description}"
+            title="{Title}"
+          />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <AlertOutlined.ErrorAlertOutlined
+            description="{Description}"
+            title="{Title}"
+          />
+          <AlertOutlined.WarningAlertOutlined
+            description="{Description}"
+            title="{Title}"
+          />
+          <AlertOutlined.InfoAlertOutlined
+            description="{Description}"
+            title="{Title}"
+          />
+          <AlertOutlined.SuccessAlertOutlined
+            description="{Description}"
+            title="{Title}"
+          />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <AlertStandard.ErrorAlertStandard
+            description="{Description}"
+            title="{Title}"
+          />
+          <AlertStandard.WarningAlertStandard
+            description="{Description}"
+            title="{Title}"
+          />
+          <AlertStandard.InfoAlertStandard
+            description="{Description}"
+            title="{Title}"
+          />
+          <AlertStandard.SuccessAlertStandard
+            description="{Description}"
+            title="{Title}"
+          />
+        </div>
+        <div className="flex flex-col items-center justify-center mb-10 space-y-4">
+          <AlertFilled.ErrorAlertSimple title="{Title}" />
+          <AlertFilled.WarningAlertSimple title="{Title}" />
+          <AlertFilled.InfoAlertSimple title="{Title}" />
+          <AlertFilled.SuccessAlertSimple title="{Title}" />
+        </div>
+        <div className="flex flex-col items-center justify-center mb-10 space-y-4">
+          <AlertOutlined.ErrorAlertOutlinedSimple title="{Title}" />
+          <AlertOutlined.WarningAlertOutlinedSimple title="{Title}" />
+          <AlertOutlined.InfoAlertOutlinedSimple title="{Title}" />
+          <AlertOutlined.SuccessAlertOutlinedSimple title="{Title}" />
+        </div>
+        <div className="flex flex-col items-center justify-center mb-10 space-y-4">
+          <AlertStandard.ErrorAlertStandardSimple title="{Title}" />
+          <AlertStandard.WarningAlertStandardSimple title="{Title}" />
+          <AlertStandard.InfoAlertStandardSimple title="{Title}" />
+          <AlertStandard.SuccessAlertStandardSimple title="{Title}" />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <AlertFilled.ErrorAlertClose description="{Description}" title="{Title}" />
+          <AlertFilled.WarningAlertClose
+            description="{Description}"
+            title="{Title}"
+          />
+          <AlertFilled.InfoAlertClose description="{Description}" title="{Title}" />
+          <AlertFilled.SuccessAlertClose
+            description="{Description}"
+            title="{Title}"
+          />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <AlertOutlined.ErrorAlertOutlinedClose
+            description="{Description}"
+            title="{Title}"
+          />
+          <AlertOutlined.WarningAlertOutlinedClose
+            description="{Description}"
+            title="{Title}"
+          />
+          <AlertOutlined.InfoAlertOutlinedClose
+            description="{Description}"
+            title="{Title}"
+          />
+          <AlertOutlined.SuccessAlertOutlinedClose
+            description="{Description}"
+            title="{Title}"
+          />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <AlertStandard.ErrorAlertStandardClose
+            description="{Description}"
+            title="{Title}"
+          />
+          <AlertStandard.WarningAlertStandardClose
+            description="{Description}"
+            title="{Title}"
+          />
+          <AlertStandard.InfoAlertStandardClose
+            description="{Description}"
+            title="{Title}"
+          />
+          <AlertStandard.SuccessAlertStandardClose
+            description="{Description}"
+            title="{Title}"
+          />
+        </div>
+        <div className="flex flex-col items-center justify-center mb-10 space-y-4">
+          <AlertFilled.ErrorAlertSimpleClose title="{Title}" />
+          <AlertFilled.WarningAlertSimpleClose title="{Title}" />
+          <AlertFilled.InfoAlertSimpleClose title="{Title}" />
+          <AlertFilled.SuccessAlertSimpleClose title="{Title}" />
+        </div>
+        <div className="flex flex-col items-center justify-center mb-10 space-y-4">
+          <AlertOutlined.ErrorAlertOutlinedSimpleClose title="{Title}" />
+          <AlertOutlined.WarningAlertOutlinedSimpleClose title="{Title}" />
+          <AlertOutlined.InfoAlertOutlinedSimpleClose title="{Title}" />
+          <AlertOutlined.SuccessAlertOutlinedSimpleClose title="{Title}" />
+        </div>
+        <div className="flex flex-col items-center justify-center mb-10 space-y-4">
+          <AlertStandard.ErrorAlertStandardSimpleClose title="{Title}" />
+          <AlertStandard.WarningAlertStandardSimpleClose title="{Title}" />
+          <AlertStandard.InfoAlertStandardSimpleClose title="{Title}" />
+          <AlertStandard.SuccessAlertStandardSimpleClose title="{Title}" />
         </div>
       </div>
     </div>

@@ -81,15 +81,27 @@
         - Se iniciará en la creacion de componentes Alert
 
     
-        2025/01/29 - Components y Screen - Valentina Rincón
+        2025/01/30 - Components y Screen - Valentina Rincón
     Cambios:
         - Se cambió la version de package.json para empaquetar los componentes Tooltip y Badge.
         - Se modificaron algunas propiedades del componente Badge para un codigo más limpio en \Badge.tsx
         - Se trabajó en el componente Tooltip para darle soporte a las clases personalizadas en Tooltip.tsx
-        -  Rendereizacion de los componentes Alert en \screen\home.tsx
-        -  Creado componente base Alert en \alert
-        -  Creado componente AlertFilled en \components\alert
+        - Rendereizacion de los componentes Alert en \screen\home.tsx
+        - Creado componente base Alert en \alert
+        - Creado componente AlertFilled en \components\alert
         - Exportado componente Badge para su uso en otro proyecto en \main.ts
         - Creado un archivo de barril para los compontes Alert en \alert\index.ts
     Observaciones:
         - Se contiuará la creacion de componentes Alert.
+
+        2025/01/31 - Components y Screen - Valentina Rincón
+    Cambios:
+        - Creado componente AlertOutlined en \components\alert
+        - Creado componente AlertStandard en \components\alert
+        - Modificado componente AlertFilled en propiedades, importaciones e iconos.
+        - Agregados nuevos estilos para los componentes Alert en globals.css
+        - Agregadas importaciones de los componentes AlertOutlined y AlertStandard en index.ts
+        - Renderizados componentes Alert faltantes (AlertOutlined, AlertStandard) en home.tsx
+        - Modificado componente Alert para interactuar correctamente con sus componentes.
+    Observaciones:
+        - Se contiuará con el desarrollo de componentes Alert.

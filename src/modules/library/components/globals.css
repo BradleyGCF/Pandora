@@ -81,6 +81,11 @@
     --bg-tooltip-warning: 21, 100%, 45%;
     --bg-tooltip-info: 328, 81%, 29%;
     --bg-tooltip-success: 267, 75%, 31%;
+
+    --text-error: 1, 50%, 25%;
+    --text-warning: 35, 100%, 20%;
+    --text-info: 199, 98%, 19%;
+    --text-success: 123, 40%, 20%;
   }
 
   .dark {
