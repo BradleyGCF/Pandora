@@ -6,7 +6,7 @@ export type AlertProps = {
   close?: boolean;
   description?: string;
   icon?: React.ReactNode;
-  title: string;
+  title?: string;
   variant?: "filled" | "outlined" | "standard";
 };
 
@@ -33,7 +33,7 @@ export const Alert: React.FC<AlertProps> = ({
     >
       <div className="flex items-center">
         <div className="mr-2">{icon}</div>
-        <h3 className="text-lg font-medium">{title}</h3>
+        <h3 className="text-lg font-medium">{title || description}</h3>
         {close && (
           <button
             type="button"
@@ -45,7 +45,7 @@ export const Alert: React.FC<AlertProps> = ({
           </button>
         )}
       </div>
-      <div className="ml-8 mt-0">{description}</div>
+      {title && description && <div className="ml-8 mt-0">{description}</div>}
     </div>
   );
 };

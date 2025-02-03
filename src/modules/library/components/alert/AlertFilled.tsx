@@ -242,11 +242,9 @@ export const ErrorAlertSimpleClose: React.FC<PropsWithChildren<AlertProps>> = ({
   );
 };
 
-export const WarningAlertSimpleClose: React.FC<PropsWithChildren<AlertProps>> = ({
-  className,
-  title = "{Title}",
-  ...props
-}) => {
+export const WarningAlertSimpleClose: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, title = "{Title}", ...props }) => {
   return (
     <Alert
       className={twMerge(`${variantStyles.warning} ${className}`)}
@@ -276,17 +274,131 @@ export const InfoAlertSimpleClose: React.FC<PropsWithChildren<AlertProps>> = ({
   );
 };
 
-export const SuccessAlertSimpleClose: React.FC<PropsWithChildren<AlertProps>> = ({
-  className,
-  title = "{Title}",
-  ...props
-}) => {
+export const SuccessAlertSimpleClose: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, title = "{Title}", ...props }) => {
   return (
     <Alert
       className={twMerge(`${variantStyles.success} ${className}`)}
       close={true}
       icon={<CheckCircleIcon className="w-6 h-6 text-white" />}
       title={title}
+      variant="filled"
+      {...props}
+    ></Alert>
+  );
+};
+
+export const ErrorAlertDescription: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, description = "{Description}", ...props }) => {
+  return (
+    <Alert
+      className={twMerge(`${variantStyles.error} ${className}`)}
+      description={description}
+      icon={<ExclamationCircleIcon className="w-6 h-6 text-white" />}
+      variant="filled"
+      {...props}
+    ></Alert>
+  );
+};
+
+export const WarningAlertDescription: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, description = "{Description}", ...props }) => {
+  return (
+    <Alert
+      className={twMerge(`${variantStyles.warning} ${className}`)}
+      description={description}
+      icon={<ExclamationTriangleIcon className="w-6 h-6 text-white" />}
+      variant="filled"
+      {...props}
+    ></Alert>
+  );
+};
+
+export const InfoAlertDescription: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, description = "{Description}", ...props }) => {
+  return (
+    <Alert
+      className={twMerge(`${variantStyles.info} ${className}`)}
+      description={description}
+      icon={<InformationCircleIcon className="w-6 h-6 text-white" />}
+      variant="filled"
+      {...props}
+    ></Alert>
+  );
+};
+
+export const SuccessAlertDescription: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, description = "{Description}", ...props }) => {
+  return (
+    <Alert
+      className={twMerge(`${variantStyles.success} ${className}`)}
+      description={description}
+      icon={<CheckCircleIcon className="w-6 h-6 text-white" />}
+      variant="filled"
+      {...props}
+    ></Alert>
+  );
+};
+
+export const ErrorAlertDescriptionClose: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, description = "{Description}", ...props }) => {
+  return (
+    <Alert
+      className={twMerge(`${variantStyles.error} ${className}`)}
+      close={true}
+      description={description}
+      icon={<ExclamationCircleIcon className="w-6 h-6 text-white" />}
+      variant="filled"
+      {...props}
+    ></Alert>
+  );
+};
+
+export const WarningAlertDescriptionClose: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, description = "{Description}", ...props }) => {
+  return (
+    <Alert
+      className={twMerge(`${variantStyles.warning} ${className}`)}
+      close={true}
+      description={description}
+      icon={<ExclamationTriangleIcon className="w-6 h-6 text-white" />}
+      variant="filled"
+      {...props}
+    ></Alert>
+  );
+};
+
+export const InfoAlertDescriptionClose: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, description = "{Description}", ...props }) => {
+  return (
+    <Alert
+      className={twMerge(`${variantStyles.info} ${className}`)}
+      close={true}
+      description={description}
+      icon={<InformationCircleIcon className="w-6 h-6 text-white" />}
+      variant="filled"
+      {...props}
+    ></Alert>
+  );
+};
+
+export const SuccessAlertDescriptionClose: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, description = "{Description}", ...props }) => {
+  return (
+    <Alert
+      className={twMerge(`${variantStyles.success} ${className}`)}
+      close={true}
+      description={description}
+      icon={<CheckCircleIcon className="w-6 h-6 text-white" />}
       variant="filled"
       {...props}
     ></Alert>

@@ -286,3 +286,119 @@ export const SuccessAlertStandardSimpleClose: React.FC<
     ></Alert>
   );
 };
+
+export const ErrorAlertStandardDescription: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, description = "{Description}", ...props }) => {
+  return (
+    <Alert
+      className={twMerge(`${variantStyles.error} ${className}`)}
+      icon={<ExclamationCircleIcon className="w-6 h-6 text-red-700" />}
+      description={description}
+      variant="standard"
+      {...props}
+    ></Alert>
+  );
+};
+
+export const WarningAlertStandardDescription: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, description = "{Description}", ...props }) => {
+  return (
+    <Alert
+      className={twMerge(`${variantStyles.warning} ${className}`)}
+      icon={<ExclamationTriangleIcon className="w-6 h-6 text-orange-700" />}
+      description={description}
+      variant="standard"
+      {...props}
+    ></Alert>
+  );
+};
+
+export const InfoAlertStandardDescription: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, description = "{Description}", ...props }) => {
+  return (
+    <Alert
+      className={twMerge(`${variantStyles.info} ${className}`)}
+      icon={<InformationCircleIcon className="w-6 h-6 text-sky-700" />}
+      description={description}
+      variant="standard"
+      {...props}
+    ></Alert>
+  );
+};
+
+export const SuccessAlertStandardDescription: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, description = "{Description}", ...props }) => {
+  return (
+    <Alert
+      className={twMerge(`${variantStyles.success} ${className}`)}
+      icon={<CheckCircleIcon className="w-6 h-6 text-green-800" />}
+      description={description}
+      variant="standard"
+      {...props}
+    ></Alert>
+  );
+};
+
+export const ErrorAlertStandardDescriptionClose: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, description = "{Description}", ...props }) => {
+  return (
+    <Alert
+      className={twMerge(`${variantStyles.error} ${className}`)}
+      close={true}
+      icon={<ExclamationCircleIcon className="w-6 h-6 text-red-700" />}
+      description={description}
+      variant="standard"
+      {...props}
+    ></Alert>
+  );
+};
+
+export const WarningAlertStandardDescriptionClose: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, description = "{Description}", ...props }) => {
+  return (
+    <Alert
+      className={twMerge(`${variantStyles.warning} ${className}`)}
+      close={true}
+      icon={<ExclamationTriangleIcon className="w-6 h-6 text-orange-700" />}
+      description={description}
+      variant="standard"
+      {...props}
+    ></Alert>
+  );
+};
+
+export const InfoAlertStandardDescriptionClose: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, description = "{Description}", ...props }) => {
+  return (
+    <Alert
+      className={twMerge(`${variantStyles.info} ${className}`)}
+      close={true}
+      icon={<InformationCircleIcon className="w-6 h-6 text-sky-700" />}
+      description={description}
+      variant="standard"
+      {...props}
+    ></Alert>
+  );
+};
+
+export const SuccessAlertStandardDescriptionClose: React.FC<
+  PropsWithChildren<AlertProps>
+> = ({ className, description = "{Description}", ...props }) => {
+  return (
+    <Alert
+      className={twMerge(`${variantStyles.success} ${className}`)}
+      close={true}
+      icon={<CheckCircleIcon className="w-6 h-6 text-green-800" />}
+      description={description}
+      variant="standard"
+      {...props}
+    ></Alert>
+  );
+};
