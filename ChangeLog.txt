@@ -94,14 +94,19 @@
     Observaciones:
         - Se contiuará la creacion de componentes Alert.
 
-        2025/01/31 - Components y Screen - Valentina Rincón
+        2025/02/03 - Components y Screen - Valentina Rincón
     Cambios:
-        - Creado componente AlertOutlined en \components\alert
-        - Creado componente AlertStandard en \components\alert
-        - Modificado componente AlertFilled en propiedades, importaciones e iconos.
-        - Agregados nuevos estilos para los componentes Alert en globals.css
-        - Agregadas importaciones de los componentes AlertOutlined y AlertStandard en index.ts
-        - Renderizados componentes Alert faltantes (AlertOutlined, AlertStandard) en home.tsx
+        - Creados componentes faltantes de AlertOutlined en AlertOutlined.tsx
+        - Creados componentes faltantes de AlertStandard en AlertStandard.tsx
+        - Creados componentes faltantes de AlertFilled en AlertFilled.tsx
+        - Renderizados componentes Alert faltantes (AlertFilled, AlertOutlined, AlertStandard) en home.tsx
         - Modificado componente Alert para interactuar correctamente con sus componentes.
+        - Modificado componente TextArea para refactorizar los componentes TextAreaEliminados en \TextArea.tsx.
+        - Eliminado componente TextAreaBorder en \textarea
+        - Eliminado componente TextAreaNormal en \textarea
+        - Eliminado componente TextAreaRounded en \textarea
+        - Creado componente TextAreaComponents para refactorizar los anteriores en TextAreaComponents.tsx
+        - Modificadas exportaciones para los componentes textarea en main.ts
+        - Modificadas exportaciones para renderizar componentes textarea en index.ts
+        - Modificadas importaciones para renderizar componentes textarea en \screen\home.tsx
     Observaciones:
-        - Se contiuará con el desarrollo de componentes Alert.
