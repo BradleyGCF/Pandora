@@ -21,6 +21,7 @@ import {
 } from "../modules/library/components/atoms/button/index";
 
 import { TextAreaComponents } from "@/modules/library/components/atoms/textarea";
+import Form from "@/modules/library/components/molecules/Form/Form";
 
 export default function Home() {
   return (
@@ -1603,6 +1604,9 @@ export default function Home() {
           <AlertStandard.InfoAlertStandardDescriptionClose />
           <AlertStandard.SuccessAlertStandardDescriptionClose />
         </div>
+      </div>
+      <div className="flex flex-col items-center justify-center mb-10 space-y-4">
+      <Form/>
       </div>
     </div>
   );
