@@ -110,3 +110,17 @@
         - Modificadas exportaciones para renderizar componentes textarea en index.ts
         - Modificadas importaciones para renderizar componentes textarea en \screen\home.tsx
     Observaciones:
+
+2025/02/05 - Components y Screen - Valentina Rincón
+    Cambios:
+        - Creada carpeta atoms en \components
+        - Creada carpeta molecules en \components
+        - Creada carpeta organisms en \components
+        - Creada carpeta templates en \components
+        - Creado componente Form en molecules\Form
+        - Implementados componentes Button e Input para la creacion del formularion en Form.tsx
+        - Implementados componentes Button e Input para la creacion del formularion en Form.tsx
+        - Movidas carpetas alert, badge, button, chips, input, textarea, tooltip en \atoms  
+        - Eliminada carpeta core ya que en el momento no se le está implementando funcionalidad.
+        - Renderizado componente Form en \home
+    Observaciones: Se continuara trabajando en el componente form
