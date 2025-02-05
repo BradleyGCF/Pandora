@@ -1,26 +1,26 @@
-import { ChipsComponents } from "@/modules/library/components/chips";
-import { Tooltip } from "../modules/library/components/tooltip/Tooltip";
-import { Badge } from "@/modules/library/components/badge/Badge";
+import { ChipsComponents } from "@/modules/library/components/atoms/chips";
+import { Tooltip } from "../modules/library/components/atoms/tooltip/Tooltip";
+import { Badge } from "@/modules/library/components/atoms/badge/Badge";
 
 import {
   AlertFilled,
   AlertOutlined,
   AlertStandard,
-} from "@/modules/library/components/alert";
+} from "@/modules/library/components/atoms/alert";
 
 import {
   InputBorder,
   InputDefault,
   InputLine,
-} from "@/modules/library/components/input";
+} from "@/modules/library/components/atoms/input";
 
 import {
   ButtonPrimary,
   ButtonSecondary,
   ButtonText,
-} from "../modules/library/components/button/index";
+} from "../modules/library/components/atoms/button/index";
 
-import { TextAreaComponents } from "@/modules/library/components/textarea";
+import { TextAreaComponents } from "@/modules/library/components/atoms/textarea";
 
 export default function Home() {
   return (
