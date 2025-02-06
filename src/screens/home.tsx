@@ -21,7 +21,11 @@ import {
 } from "../modules/library/components/atoms/button/index";
 
 import { TextAreaComponents } from "@/modules/library/components/atoms/textarea";
-import Form from "@/modules/library/components/molecules/Form/Form";
+import {
+  DefaultForm,
+  DefaultFormMedium,
+  DefaultFormNormal,
+} from "@/modules/library/components/molecules/Form";
 
 export default function Home() {
   return (
@@ -30,7 +34,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           {/* NO ICON */}
           <h2>Primary</h2>
-          <ButtonPrimary.ButtonPrimary>boton</ButtonPrimary.ButtonPrimary>
+          <ButtonPrimary.ButtonPrimary children="Button" />
           <ButtonPrimary.ButtonPrimaryHover
             onClick={() => console.log("Primary clicked")}
             children="Button"
@@ -1332,13 +1336,13 @@ export default function Home() {
           <InputLine.LabeledInputLineHelperDisabledIconError children="Label placeholder" />
         </div>
       </div>
-        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
-          <h2>Border</h2>
-          <TextAreaComponents.TextAreaDefault children="Enter a description..." />
-          <TextAreaComponents.TextAreaFocus children="Enter a description..." />
-          <TextAreaComponents.TextAreaDisabled children="Enter a description..." />
-          <TextAreaComponents.TextAreaError children="Enter a description..." />
-          <TextAreaComponents.TextAreaErrorFocused children="Enter a description..." />
+      <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+        <h2>Border</h2>
+        <TextAreaComponents.TextAreaDefault children="Enter a description..." />
+        <TextAreaComponents.TextAreaFocus children="Enter a description..." />
+        <TextAreaComponents.TextAreaDisabled children="Enter a description..." />
+        <TextAreaComponents.TextAreaError children="Enter a description..." />
+        <TextAreaComponents.TextAreaErrorFocused children="Enter a description..." />
       </div>
       <div className="flex flex-row items-center justify-center min-h-screen space-x-3">
         <ChipsComponents.ChipsNeutral children="Chip" />
@@ -1605,8 +1609,10 @@ export default function Home() {
           <AlertStandard.SuccessAlertStandardDescriptionClose />
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center mb-10 space-y-4">
-      <Form/>
+      <div className="flex items-center justify-center min-h-screen">
+        <DefaultFormMedium.FormMedium />
+        <DefaultForm.Form />
+        <DefaultFormNormal.FormNormal />
       </div>
     </div>
   );

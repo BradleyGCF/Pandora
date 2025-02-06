@@ -8,7 +8,7 @@ export type InputProps = {
   disabled?: boolean;
   error?: boolean;
   helperText?: string;
-  iconColor?: string;
+  icon?: React.ReactNode;
   label?: string;
   onClick?: () => void;
   showIcon?: boolean;
@@ -23,7 +23,7 @@ export const Input: React.FC<InputProps> = ({
   disabled = false,
   error = false,
   helperText,
-  iconColor = "text-gray-400",
+  icon,
   label,
   onClick,
   showIcon = false,
@@ -51,8 +51,8 @@ export const Input: React.FC<InputProps> = ({
     <div className="flex flex-col gap-1">
       {label && <label className="text-gray-500 font-medium">{label}</label>}
       <div className="relative flex items-center">
-        {showIcon && (
-          <UserIcon className={`w-5 h-5 absolute left-5 ${iconColor}`} />
+        {showIcon && icon && (
+          <span className="absolute left-4">{icon}</span>
         )}
         <input
           className={`${baseStyles} ${variantStyles[variant]} ${borderRadiusVariants[border]} ${disabled ? disabledStyles : ""} ${showIcon ? "pl-12" : "pl-4"} ${error ? errorStyles : ""} ${className}`}

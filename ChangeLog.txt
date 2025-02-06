@@ -124,3 +124,12 @@
         - Eliminada carpeta core ya que en el momento no se le está implementando funcionalidad.
         - Renderizado componente Form en \home
     Observaciones: Se continuara trabajando en el componente form
+
+    2025/02/05 - Components y Screen - Valentina Rincón
+    Cambios:
+        - Creado componente DefaultFormMedium en \Form\DefaultFormMedium.tsx
+        - Creado componente DefaultFormNormal en \Form\DefaultFormNormal.tsx
+        - Creado archivo de barril para exportar los componentes Form en \index.ts 
+        - Modificados componentes (Input.tsx, InputBorder.tsx, InputDefault.tsx, InputLine) para darle soporte en la personalizacion de icons. 
+        - Renombrado componente Form a DefaultForm en \Form\DefaultForm.tsx
+    Observaciones: Se continuara trabajando en el componente form

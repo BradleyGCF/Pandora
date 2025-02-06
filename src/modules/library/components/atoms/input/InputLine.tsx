@@ -1,6 +1,7 @@
 import { PropsWithChildren } from "react";
 import { twMerge } from "tailwind-merge";
 import { Input, InputProps } from "./Input";
+import { UserIcon } from "@heroicons/react/24/solid";
 
 const variantStyles = {
   default:
@@ -89,13 +90,14 @@ export const InputLineDisabled: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputLineIcon: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  icon,
   type = "text",
   ...props
 }) => {
   return (
     <Input
       className={twMerge(`${variantStyles.default} ${className}`)}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       showIcon={true}
       type={type}
       variant="line"
@@ -109,17 +111,18 @@ export const InputLineIcon: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputLineHoverIcon: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  icon,
   type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
+      className={twMerge(`${variantStyles.hover} ${className}`)}
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
+      showIcon={true}
       type={type}
       variant="line"
-      className={twMerge(`${variantStyles.hover} ${className}`)}
-      showIcon={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      {...props}
     >
       {children}
     </Input>
@@ -129,6 +132,7 @@ export const InputLineHoverIcon: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputLineActiveIcon: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  icon,
   type = "text",
   ...props
 }) => {
@@ -139,7 +143,7 @@ export const InputLineActiveIcon: React.FC<PropsWithChildren<InputProps>> = ({
       variant="line"
       className={twMerge(`${variantStyles.active} ${className}`)}
       showIcon={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
     >
       {children}
     </Input>
@@ -149,18 +153,19 @@ export const InputLineActiveIcon: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputLineDisabledIcon: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  icon,
   type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      type={type}
-      variant="line"
       className={twMerge(`${variantStyles.disabled} ${className}`)}
       disabled
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-500" />}
       showIcon={true}
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      type={type}
+      variant="line"
+      {...props}
     >
       {children}
     </Input>
@@ -245,6 +250,7 @@ export const InputLineDisabledError: React.FC<
 export const InputLineIconError: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  icon,
   type = "text",
   ...props
 }) => {
@@ -257,7 +263,7 @@ export const InputLineIconError: React.FC<PropsWithChildren<InputProps>> = ({
         `${variantStyles.default} ${className} border-red-400`
       )}
       showIcon={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       error={true}
     >
       {children}
@@ -267,7 +273,7 @@ export const InputLineIconError: React.FC<PropsWithChildren<InputProps>> = ({
 
 export const InputLineHoverIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, type = "text", ...props }) => {
+> = ({ children, className, icon, type = "text", ...props }) => {
   return (
     <Input
       {...props}
@@ -275,7 +281,7 @@ export const InputLineHoverIconError: React.FC<
       variant="line"
       className={twMerge(`${variantStyles.hover} ${className} border-red-400`)}
       showIcon={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       error={true}
     >
       {children}
@@ -285,7 +291,7 @@ export const InputLineHoverIconError: React.FC<
 
 export const InputLineActiveIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, type = "text", ...props }) => {
+> = ({ children, className, icon, type = "text", ...props }) => {
   return (
     <Input
       {...props}
@@ -293,7 +299,7 @@ export const InputLineActiveIconError: React.FC<
       variant="line"
       className={twMerge(`${variantStyles.active} ${className} border-red-400`)}
       showIcon={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       error={true}
     >
       {children}
@@ -303,7 +309,7 @@ export const InputLineActiveIconError: React.FC<
 
 export const InputLineDisabledIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, type = "text", ...props }) => {
+> = ({ children, className, icon, type = "text", ...props }) => {
   return (
     <Input
       className={twMerge(
@@ -311,7 +317,7 @@ export const InputLineDisabledIconError: React.FC<
       )}
       disabled
       error={true}
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-500" />}
       showIcon={true}
       type={type}
       variant="line"
@@ -422,6 +428,7 @@ export const LabeledInputLineHelperIcon: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -431,7 +438,7 @@ export const LabeledInputLineHelperIcon: React.FC<
       className={twMerge(`${variantStyles.default} ${className}`)}
       disabled
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       label={label}
       showIcon={true}
       type={type}
@@ -449,6 +456,7 @@ export const LabeledInputLineHelperHoverIcon: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -457,7 +465,7 @@ export const LabeledInputLineHelperHoverIcon: React.FC<
     <Input
       className={twMerge(`${variantStyles.hover} ${className}`)}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       label={label}
       showIcon={true}
       type={type}
@@ -475,6 +483,7 @@ export const LabeledInputLineHelperActiveIcon: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -483,7 +492,7 @@ export const LabeledInputLineHelperActiveIcon: React.FC<
     <Input
       className={twMerge(`${variantStyles.active} ${className}`)}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       label={label}
       showIcon={true}
       type={type}
@@ -501,6 +510,7 @@ export const LabeledInputLineHelperDisabledIcon: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -510,7 +520,7 @@ export const LabeledInputLineHelperDisabledIcon: React.FC<
       className={twMerge(`${variantStyles.disabled} ${className}`)}
       disabled
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-500" />}
       label={label}
       showIcon={true}
       type={type}
@@ -528,6 +538,7 @@ export const LabeledInputLineHelperIconError: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -540,7 +551,7 @@ export const LabeledInputLineHelperIconError: React.FC<
       disabled
       error={true}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       label={label}
       showIcon={true}
       type={type}
@@ -558,6 +569,7 @@ export const LabeledInputLineHelperHoverIconError: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -567,7 +579,7 @@ export const LabeledInputLineHelperHoverIconError: React.FC<
       className={twMerge(`${variantStyles.hover} ${className} border-red-400`)}
       error={true}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       label={label}
       showIcon={true}
       type={type}
@@ -585,6 +597,7 @@ export const LabeledInputLineHelperActiveIconError: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -594,7 +607,7 @@ export const LabeledInputLineHelperActiveIconError: React.FC<
       className={twMerge(`${variantStyles.active} ${className} border-red-400`)}
       error={true}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       label={label}
       showIcon={true}
       type={type}
@@ -612,6 +625,7 @@ export const LabeledInputLineHelperDisabledIconError: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -621,7 +635,7 @@ export const LabeledInputLineHelperDisabledIconError: React.FC<
       className={twMerge(`${variantStyles.disabled} ${className}`)}
       disabled
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       label={label}
       showIcon={true}
       type={type}

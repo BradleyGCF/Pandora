@@ -1,6 +1,7 @@
 import { PropsWithChildren } from "react";
 import { twMerge } from "tailwind-merge";
 import { Input, InputProps } from "./Input";
+import { UserIcon } from "@heroicons/react/24/solid";
 
 const variantStyles = {
   default:
@@ -247,6 +248,7 @@ export const InputDefDisabledNm: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputDefSmIcon: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  icon,
   type = "text",
   ...props
 }) => {
@@ -254,7 +256,7 @@ export const InputDefSmIcon: React.FC<PropsWithChildren<InputProps>> = ({
     <Input
       border="small"
       className={twMerge(`${variantStyles.default} ${className}`)}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       showIcon={true}
       type={type}
       variant="default"
@@ -268,6 +270,7 @@ export const InputDefSmIcon: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputDefHoverSmIcon: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  icon,
   type = "text",
   ...props
 }) => {
@@ -275,7 +278,7 @@ export const InputDefHoverSmIcon: React.FC<PropsWithChildren<InputProps>> = ({
     <Input
       border="small"
       className={twMerge(`${variantStyles.hover} ${className}`)}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       showIcon={true}
       type={type}
       variant="default"
@@ -289,6 +292,7 @@ export const InputDefHoverSmIcon: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputDefActiveSmIcon: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  icon,
   type = "text",
   ...props
 }) => {
@@ -296,7 +300,7 @@ export const InputDefActiveSmIcon: React.FC<PropsWithChildren<InputProps>> = ({
     <Input
       border="small"
       className={twMerge(`${variantStyles.active} ${className}`)}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       showIcon={true}
       type={type}
       variant="default"
@@ -309,13 +313,13 @@ export const InputDefActiveSmIcon: React.FC<PropsWithChildren<InputProps>> = ({
 
 export const InputDefDisabledSmIcon: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, type = "text", ...props }) => {
+> = ({ children, className, icon, type = "text", ...props }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.disabled} ${className}`)}
       disabled
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-500" />}
       showIcon={true}
       type={type}
       variant="default"
@@ -329,6 +333,7 @@ export const InputDefDisabledSmIcon: React.FC<
 export const InputDefLgIcon: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  icon,
   type = "text",
   ...props
 }) => {
@@ -336,7 +341,7 @@ export const InputDefLgIcon: React.FC<PropsWithChildren<InputProps>> = ({
     <Input
       border="large"
       className={twMerge(`${variantStyles.default} ${className}`)}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       showIcon={true}
       type={type}
       variant="default"
@@ -350,6 +355,7 @@ export const InputDefLgIcon: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputDefHoverLgIcon: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  icon,
   type = "text",
   ...props
 }) => {
@@ -357,7 +363,7 @@ export const InputDefHoverLgIcon: React.FC<PropsWithChildren<InputProps>> = ({
     <Input
       border="large"
       className={twMerge(`${variantStyles.hover} ${className}`)}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       showIcon={true}
       type={type}
       variant="default"
@@ -371,6 +377,7 @@ export const InputDefHoverLgIcon: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputDefActiveLgIcon: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  icon,
   type = "text",
   ...props
 }) => {
@@ -378,7 +385,7 @@ export const InputDefActiveLgIcon: React.FC<PropsWithChildren<InputProps>> = ({
     <Input
       border="large"
       className={twMerge(`${variantStyles.active} ${className}`)}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       showIcon={true}
       type={type}
       variant="default"
@@ -391,13 +398,13 @@ export const InputDefActiveLgIcon: React.FC<PropsWithChildren<InputProps>> = ({
 
 export const InputDefDisabledLgIcon: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, type = "text", ...props }) => {
+> = ({ children, className, icon, type = "text", ...props }) => {
   return (
     <Input
       border="large"
       className={twMerge(`${variantStyles.disabled} ${className}`)}
       disabled
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-500" />}
       showIcon={true}
       type={type}
       variant="default"
@@ -411,6 +418,7 @@ export const InputDefDisabledLgIcon: React.FC<
 export const InputDefNmIcon: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  icon,
   type = "text",
   ...props
 }) => {
@@ -418,7 +426,7 @@ export const InputDefNmIcon: React.FC<PropsWithChildren<InputProps>> = ({
     <Input
       border="normal"
       className={twMerge(`${variantStyles.default} ${className}`)}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       showIcon={true}
       type={type}
       variant="default"
@@ -432,6 +440,7 @@ export const InputDefNmIcon: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputDefHoverNmIcon: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  icon,
   type = "text",
   ...props
 }) => {
@@ -439,7 +448,7 @@ export const InputDefHoverNmIcon: React.FC<PropsWithChildren<InputProps>> = ({
     <Input
       border="normal"
       className={twMerge(`${variantStyles.hover} ${className}`)}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       showIcon={true}
       type={type}
       variant="default"
@@ -453,6 +462,7 @@ export const InputDefHoverNmIcon: React.FC<PropsWithChildren<InputProps>> = ({
 export const InputDefActiveNmIcon: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  icon,
   type = "text",
   ...props
 }) => {
@@ -460,7 +470,7 @@ export const InputDefActiveNmIcon: React.FC<PropsWithChildren<InputProps>> = ({
     <Input
       border="normal"
       className={twMerge(`${variantStyles.active} ${className}`)}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       showIcon={true}
       type={type}
       variant="default"
@@ -473,13 +483,13 @@ export const InputDefActiveNmIcon: React.FC<PropsWithChildren<InputProps>> = ({
 
 export const InputDefDisabledNmIcon: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, type = "text", ...props }) => {
+> = ({ children, className, icon, type = "text", ...props }) => {
   return (
     <Input
       border="normal"
       className={twMerge(`${variantStyles.disabled} ${className}`)}
       disabled
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-500" />} 
       showIcon={true}
       type={type}
       variant="default"
@@ -727,6 +737,7 @@ export const InputDefDisabledNmError: React.FC<
 export const InputDefSmIconError: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  icon,
   type = "text",
   ...props
 }) => {
@@ -735,7 +746,7 @@ export const InputDefSmIconError: React.FC<PropsWithChildren<InputProps>> = ({
       border="small"
       className={twMerge(`${variantStyles.default} ${className}`)}
       error={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       showIcon={true}
       type={type}
       variant="default"
@@ -748,13 +759,13 @@ export const InputDefSmIconError: React.FC<PropsWithChildren<InputProps>> = ({
 
 export const InputDefHoverSmIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, type = "text", ...props }) => {
+> = ({ children, className, icon, type = "text", ...props }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.hover} ${className}`)}
       error={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       showIcon={true}
       type={type}
       variant="default"
@@ -767,13 +778,13 @@ export const InputDefHoverSmIconError: React.FC<
 
 export const InputDefActiveSmIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, type = "text", ...props }) => {
+> = ({ children, className, icon, type = "text", ...props }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.active} ${className}`)}
       error={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       showIcon={true}
       type={type}
       variant="default"
@@ -786,14 +797,14 @@ export const InputDefActiveSmIconError: React.FC<
 
 export const InputDefDisabledSmIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, type = "text", ...props }) => {
+> = ({ children, className, icon, type = "text", ...props }) => {
   return (
     <Input
       border="small"
       className={twMerge(`${variantStyles.disabled} ${className} ring-1`)}
       disabled
       error={true}
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-500" />} 
       showIcon={true}
       type={type}
       variant="default"
@@ -807,6 +818,7 @@ export const InputDefDisabledSmIconError: React.FC<
 export const InputDefLgIconError: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  icon,
   type = "text",
   ...props
 }) => {
@@ -815,7 +827,7 @@ export const InputDefLgIconError: React.FC<PropsWithChildren<InputProps>> = ({
       border="large"
       className={twMerge(`${variantStyles.default} ${className}`)}
       error={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       showIcon={true}
       type={type}
       variant="default"
@@ -828,13 +840,13 @@ export const InputDefLgIconError: React.FC<PropsWithChildren<InputProps>> = ({
 
 export const InputDefHoverLgIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, type = "text", ...props }) => {
+> = ({ children, className, icon, type = "text", ...props }) => {
   return (
     <Input
       border="large"
       className={twMerge(`${variantStyles.hover} ${className}`)}
       error={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       showIcon={true}
       type={type}
       variant="default"
@@ -847,13 +859,13 @@ export const InputDefHoverLgIconError: React.FC<
 
 export const InputDefActiveLgIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, type = "text", ...props }) => {
+> = ({ children, className, icon, type = "text", ...props }) => {
   return (
     <Input
       border="large"
       className={twMerge(`${variantStyles.active} ${className}`)}
       error={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       showIcon={true}
       type={type}
       variant="default"
@@ -866,14 +878,14 @@ export const InputDefActiveLgIconError: React.FC<
 
 export const InputDefDisabledLgIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, type = "text", ...props }) => {
+> = ({ children, className, icon, type = "text", ...props }) => {
   return (
     <Input
       border="large"
       className={twMerge(`${variantStyles.disabled} ${className} ring-1`)}
       disabled
       error={true}
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-500" />} 
       showIcon={true}
       type={type}
       variant="default"
@@ -887,6 +899,7 @@ export const InputDefDisabledLgIconError: React.FC<
 export const InputDefNmIconError: React.FC<PropsWithChildren<InputProps>> = ({
   children,
   className,
+  icon,
   type = "text",
   ...props
 }) => {
@@ -895,7 +908,7 @@ export const InputDefNmIconError: React.FC<PropsWithChildren<InputProps>> = ({
       border="normal"
       className={twMerge(`${variantStyles.default} ${className}`)}
       error={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       showIcon={true}
       type={type}
       variant="default"
@@ -908,13 +921,13 @@ export const InputDefNmIconError: React.FC<PropsWithChildren<InputProps>> = ({
 
 export const InputDefHoverNmIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, type = "text", ...props }) => {
+> = ({ children, className, icon, type = "text", ...props }) => {
   return (
     <Input
       border="normal"
       className={twMerge(`${variantStyles.hover} ${className}`)}
       error={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       showIcon={true}
       type={type}
       variant="default"
@@ -927,13 +940,13 @@ export const InputDefHoverNmIconError: React.FC<
 
 export const InputDefActiveNmIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, type = "text", ...props }) => {
+> = ({ children, className, icon, type = "text", ...props }) => {
   return (
     <Input
       border="normal"
       className={twMerge(`${variantStyles.active} ${className}`)}
       error={true}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       showIcon={true}
       type={type}
       variant="default"
@@ -946,14 +959,14 @@ export const InputDefActiveNmIconError: React.FC<
 
 export const InputDefDisabledNmIconError: React.FC<
   PropsWithChildren<InputProps>
-> = ({ children, className, type = "text", ...props }) => {
+> = ({ children, className, icon, type = "text", ...props }) => {
   return (
     <Input
       border="normal"
       className={twMerge(`${variantStyles.disabled} ${className} ring-1`)}
       disabled
       error={true}
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-500" />} 
       showIcon={true}
       type={type}
       variant="default"
@@ -1267,6 +1280,7 @@ export const LabeledInputHelperSmIcon: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1276,7 +1290,7 @@ export const LabeledInputHelperSmIcon: React.FC<
       border="small"
       className={twMerge(`${variantStyles.default} ${className}`)}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1294,6 +1308,7 @@ export const LabeledInputHelperSmHoverIcon: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1303,7 +1318,7 @@ export const LabeledInputHelperSmHoverIcon: React.FC<
       border="small"
       className={twMerge(`${variantStyles.hover} ${className}`)}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1321,6 +1336,7 @@ export const LabeledInputHelperSmActiveIcon: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1330,7 +1346,7 @@ export const LabeledInputHelperSmActiveIcon: React.FC<
       border="small"
       className={twMerge(`${variantStyles.active} ${className}`)}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1348,6 +1364,7 @@ export const LabeledInputHelperSmDisabledIcon: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1358,7 +1375,7 @@ export const LabeledInputHelperSmDisabledIcon: React.FC<
       className={twMerge(`${variantStyles.disabled} ${className}`)}
       disabled
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1376,21 +1393,22 @@ export const LabeledInputHelperLgIcon: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
 }) => {
   return (
     <Input
-      {...props}
-      type={type}
-      variant="default"
-      className={twMerge(`${variantStyles.default} ${className}`)}
-      border="large"
-      showIcon={true}
-      iconColor="text-[hsl(var(--icon-color))]"
-      label={label}
-      helperText={helperText}
+    border="large"
+    className={twMerge(`${variantStyles.default} ${className}`)}
+    helperText={helperText}
+    icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
+    label={label}
+    showIcon={true}
+    type={type}
+    variant="default"
+    {...props}
     >
       {children}
     </Input>
@@ -1403,6 +1421,7 @@ export const LabeledInputHelperLgHoverIcon: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1412,7 +1431,7 @@ export const LabeledInputHelperLgHoverIcon: React.FC<
       border="large"
       className={twMerge(`${variantStyles.hover} ${className}`)}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1430,6 +1449,7 @@ export const LabeledInputHelperLgActiveIcon: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1439,7 +1459,7 @@ export const LabeledInputHelperLgActiveIcon: React.FC<
       border="large"
       className={twMerge(`${variantStyles.active} ${className}`)}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1457,6 +1477,7 @@ export const LabeledInputHelperLgDisabledIcon: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1467,7 +1488,7 @@ export const LabeledInputHelperLgDisabledIcon: React.FC<
       className={twMerge(`${variantStyles.disabled} ${className}`)}
       disabled
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-500" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1485,6 +1506,7 @@ export const LabeledInputHelperNmIcon: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1494,7 +1516,7 @@ export const LabeledInputHelperNmIcon: React.FC<
       border="normal"
       className={twMerge(`${variantStyles.default} ${className}`)}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       label={label}
       showIcon={true}
       type={type}
@@ -1512,6 +1534,7 @@ export const LabeledInputHelperNmHoverIcon: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1521,7 +1544,7 @@ export const LabeledInputHelperNmHoverIcon: React.FC<
       border="normal"
       className={twMerge(`${variantStyles.hover} ${className}`)}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />}
       label={label}
       showIcon={true}
       type={type}
@@ -1539,6 +1562,7 @@ export const LabeledInputHelperNmActiveIcon: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1548,7 +1572,7 @@ export const LabeledInputHelperNmActiveIcon: React.FC<
       border="normal"
       className={twMerge(`${variantStyles.active} ${className}`)}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1566,6 +1590,7 @@ export const LabeledInputHelperNmDisabledIcon: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1576,7 +1601,7 @@ export const LabeledInputHelperNmDisabledIcon: React.FC<
       className={twMerge(`${variantStyles.disabled} ${className}`)}
       disabled
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-500" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1594,6 +1619,7 @@ export const LabeledInputHelperSmIconError: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1604,7 +1630,7 @@ export const LabeledInputHelperSmIconError: React.FC<
       className={twMerge(`${variantStyles.default} ${className}`)}
       error={true}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1622,6 +1648,7 @@ export const LabeledInputHelperSmHoverIconError: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1632,7 +1659,7 @@ export const LabeledInputHelperSmHoverIconError: React.FC<
       className={twMerge(`${variantStyles.hover} ${className}`)}
       error={true}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1650,6 +1677,7 @@ export const LabeledInputHelperSmActiveIconError: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1660,7 +1688,7 @@ export const LabeledInputHelperSmActiveIconError: React.FC<
       className={twMerge(`${variantStyles.active} ${className}`)}
       error={true}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1678,6 +1706,7 @@ export const LabeledInputHelperSmDisabledIconError: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1688,7 +1717,7 @@ export const LabeledInputHelperSmDisabledIconError: React.FC<
       className={twMerge(`${variantStyles.disabled} ${className}`)}
       disabled
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-500" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1706,6 +1735,7 @@ export const LabeledInputHelperLgIconError: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1716,7 +1746,7 @@ export const LabeledInputHelperLgIconError: React.FC<
       className={twMerge(`${variantStyles.default} ${className}`)}
       error={true}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1734,6 +1764,7 @@ export const LabeledInputHelperLgHoverIconError: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1744,7 +1775,7 @@ export const LabeledInputHelperLgHoverIconError: React.FC<
       className={twMerge(`${variantStyles.hover} ${className}`)}
       error={true}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1762,6 +1793,7 @@ export const LabeledInputHelperLgActiveIconError: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1772,7 +1804,7 @@ export const LabeledInputHelperLgActiveIconError: React.FC<
       className={twMerge(`${variantStyles.active} ${className}`)}
       error={true}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1790,6 +1822,7 @@ export const LabeledInputHelperLgDisabledIconError: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1800,7 +1833,7 @@ export const LabeledInputHelperLgDisabledIconError: React.FC<
       className={twMerge(`${variantStyles.disabled} ${className}`)}
       disabled
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-500" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1818,6 +1851,7 @@ export const LabeledInputHelperNmIconError: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1828,7 +1862,7 @@ export const LabeledInputHelperNmIconError: React.FC<
       className={twMerge(`${variantStyles.default} ${className}`)}
       error={true}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1846,6 +1880,7 @@ export const LabeledInputHelperNmHoverIconError: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1856,7 +1891,7 @@ export const LabeledInputHelperNmHoverIconError: React.FC<
       className={twMerge(`${variantStyles.hover} ${className}`)}
       error={true}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1874,6 +1909,7 @@ export const LabeledInputHelperNmActiveIconError: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1884,7 +1920,7 @@ export const LabeledInputHelperNmActiveIconError: React.FC<
       className={twMerge(`${variantStyles.active} ${className}`)}
       error={true}
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-700" />} 
       label={label}
       showIcon={true}
       type={type}
@@ -1902,6 +1938,7 @@ export const LabeledInputHelperNmDisabledIconError: React.FC<
   children,
   className,
   helperText = "Input Helper Text",
+  icon,
   label = "Input Label",
   type = "text",
   ...props
@@ -1912,7 +1949,7 @@ export const LabeledInputHelperNmDisabledIconError: React.FC<
       className={twMerge(`${variantStyles.disabled} ${className}`)}
       disabled
       helperText={helperText}
-      iconColor="text-[hsl(var(--icon-color-disabled))]"
+      icon={icon || <UserIcon className="w-5 h-5 text-gray-500" />} 
       label={label}
       showIcon={true}
       type={type}
