@@ -125,7 +125,7 @@
         - Renderizado componente Form en \home
     Observaciones: Se continuara trabajando en el componente form
 
-    2025/02/05 - Components y Screen - Valentina Rincón
+    2025/02/06 - Components y Screen - Valentina Rincón
     Cambios:
         - Creado componente DefaultFormMedium en \Form\DefaultFormMedium.tsx
         - Creado componente DefaultFormNormal en \Form\DefaultFormNormal.tsx
