@@ -21,6 +21,7 @@ import {
 } from "../modules/library/components/atoms/button/index";
 
 import { TextAreaComponents } from "@/modules/library/components/atoms/textarea";
+import { Date } from '../modules/library/components/atoms/date/Date';
 import {
   DefaultForm,
   DefaultFormMedium,
@@ -1613,6 +1614,10 @@ export default function Home() {
         <DefaultFormMedium.FormMedium />
         <DefaultForm.Form />
         <DefaultFormNormal.FormNormal />
+      </div>
+      <div className="flex items-center justify-center min-h-screen">
+      <Date/>
+
       </div>
     </div>
   );
