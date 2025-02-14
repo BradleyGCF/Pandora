@@ -133,3 +133,8 @@
         - Modificados componentes (Input.tsx, InputBorder.tsx, InputDefault.tsx, InputLine) para darle soporte en la personalizacion de icons. 
         - Renombrado componente Form a DefaultForm en \Form\DefaultForm.tsx
     Observaciones: Se continuara trabajando en el componente form
+
+     2025/02/07 - Components y Screen - Valentina Rincón
+    Cambios:
+       - Creado componente Date.tsx
+    Observaciones:
