@@ -148,3 +148,11 @@
        - Crear componentes checbox group dentro de CheckboxComponent para permitir el uso entre variantes.
        -Dar soporte de personalizacion de estilos a los componentes.
     Observaciones:
+
+    2025/02/18 - Components y Screen - Valentina Rincón
+    Cambios:
+       - Creado componente CheckboxGroup en \checkbox
+       - Crear demás componentes checkbox  dentro de CheckboxComponent.tsx
+       - Añadidas propiedades al componente base para hacerlo más dinamico en Checkbox.tsx
+       - Añadida exportacion del componente CheckboxComponent en index.ts
+    Observaciones:

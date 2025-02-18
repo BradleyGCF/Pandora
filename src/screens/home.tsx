@@ -1,6 +1,10 @@
-import { ChipsComponents } from "@/modules/library/components/atoms/chips";
-import { Tooltip } from "../modules/library/components/atoms/tooltip/Tooltip";
 import { Badge } from "@/modules/library/components/atoms/badge/Badge";
+import { CheckboxComponent } from "@/modules/library/components/atoms/checkbox";
+import { ChipsComponents } from "@/modules/library/components/atoms/chips";
+import { Date } from "../modules/library/components/atoms/date/Date";
+import { TextAreaComponents } from "@/modules/library/components/atoms/textarea";
+import { Tooltip } from "../modules/library/components/atoms/tooltip/Tooltip";
+import { CheckboxGroup } from "../modules/library/components/atoms/checkbox/CheckboxGroup";
 
 import {
   AlertFilled,
@@ -19,18 +23,15 @@ import {
   ButtonSecondary,
   ButtonText,
 } from "../modules/library/components/atoms/button/index";
-
-import { TextAreaComponents } from "@/modules/library/components/atoms/textarea";
-import { Date } from '../modules/library/components/atoms/date/Date';
-import { Checkbox } from '../modules/library/components/atoms/checkbox/Checkbox';
-import { CheckboxDefault, CheckboxHover } from '../modules/library/components/atoms/checkbox/CheckboxComponent';
 import {
   DefaultForm,
   DefaultFormMedium,
   DefaultFormNormal,
 } from "@/modules/library/components/molecules/Form";
+import React from "react";
 
 export default function Home() {
+  const [isChecked, setIsChecked] = React.useState(false);
   return (
     <div>
       <div className="grid grid-cols-6 gap-2">
@@ -1618,10 +1619,24 @@ export default function Home() {
         <DefaultFormNormal.FormNormal />
       </div>
       <div className="flex items-center justify-center min-h-screen">
-      <Date/>
+        <Date />
       </div>
-      <div className="flex items-center justify-center mb-12">
-      <CheckboxHover/>
+      <div className="grid grid-cols-2 gap-10 min-h-screen">
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <CheckboxComponent.CheckboxDefault />
+          <CheckboxComponent.CheckboxHover />
+          <CheckboxComponent.CheckboxFocus />
+          <CheckboxComponent.CheckboxDisabled />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <CheckboxComponent.CheckboxDefaultIcon checked={isChecked}/>
+          <CheckboxComponent.CheckboxHoverIcon />
+          <CheckboxComponent.CheckboxFocusIcon />
+          <CheckboxComponent.CheckboxDisabledIcon />
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+          <CheckboxGroup checked={isChecked} onChange={setIsChecked} />
+        </div>
       </div>
     </div>
   );
