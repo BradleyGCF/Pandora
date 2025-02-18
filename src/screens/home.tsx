@@ -22,6 +22,8 @@ import {
 
 import { TextAreaComponents } from "@/modules/library/components/atoms/textarea";
 import { Date } from '../modules/library/components/atoms/date/Date';
+import { Checkbox } from '../modules/library/components/atoms/checkbox/Checkbox';
+import { CheckboxDefault, CheckboxHover } from '../modules/library/components/atoms/checkbox/CheckboxComponent';
 import {
   DefaultForm,
   DefaultFormMedium,
@@ -1617,7 +1619,9 @@ export default function Home() {
       </div>
       <div className="flex items-center justify-center min-h-screen">
       <Date/>
-
+      </div>
+      <div className="flex items-center justify-center mb-12">
+      <CheckboxHover/>
       </div>
     </div>
   );

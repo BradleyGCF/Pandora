@@ -138,3 +138,13 @@
     Cambios:
        - Creado componente Date.tsx
     Observaciones:
+
+    2025/02/17 - Components y Screen - Valentina Rincón
+    Cambios:
+       - Creado componente Checkbox en \checkbox
+       - Creada carpeta checkbox en \atoms
+       - Creado archivo CheckboxComponent en \checkbox
+       - Creado archivo CheckboxComponent en \checkbox
+       - Crear componentes checbox group dentro de CheckboxComponent para permitir el uso entre variantes.
+       -Dar soporte de personalizacion de estilos a los componentes.
+    Observaciones:
