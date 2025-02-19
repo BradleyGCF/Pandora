@@ -1,4 +1,3 @@
-import { DocumentIcon } from "@heroicons/react/24/outline";
 import React from "react";
 
 export type CheckboxProps = {
@@ -40,7 +39,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
       className={`${disabled ? disabledStyles : ""} ${variantStyles[variant]} ${className} flex gap-x-1.5 p-4 rounded-xl`}
     >
       {checkboxPosition === "left" && (
-        <label className="relative flex items-center cursor-pointer">
+        <label className="flex items-center cursor-pointer">
           <input
             disabled={disabled}
             type="checkbox"
@@ -48,18 +47,15 @@ export const Checkbox: React.FC<CheckboxProps> = ({
             onChange={(e) => onChange?.(e.target.checked)}
             className="peer hidden"
           />
-          <div
-            className={`w-5 h-5 rounded-sm flex items-center justify-center transition-all
+          <div className={`w-5 h-5 rounded-sm flex items-center justify-center transition-all
               ${disabled ? "bg-[#828282] border-gray-300 cursor-not-allowed" : "bg-gray-100 cursor-pointer"}
               peer-checked:${disabled ? "bg-gray-500 border-gray-500" : "bg-purple-700 border-purple-700"}
             `}
           >
             {checked && (
-              <span
-                className={`${disabled ? disabledStyles : ""} text-white text-xs font-bold`}
-              >
-                ✓
-              </span>
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 13 13" fill="none">
+             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4516 2.46958C12.7862 2.82011 12.7733 3.37551 12.4228 3.71011L5.79935 10.0754C5.62835 10.2387 5.39871 10.326 5.16245 10.3176C4.92619 10.3092 4.7033 10.2059 4.54428 10.031L1.30827 6.53714C0.982299 6.17858 1.00872 5.62365 1.36729 5.29769C1.72585 4.97172 2.28077 4.99814 2.60674 5.35671L5.238 8.1853L11.2111 2.44073C11.5617 2.10614 12.1171 2.11905 12.4516 2.46958Z" fill="white"/>
+             </svg>
             )}
           </div>
         </label>
@@ -98,11 +94,9 @@ export const Checkbox: React.FC<CheckboxProps> = ({
           `}
           >
             {checked && (
-              <span
-                className={`${disabled ? disabledStyles : ""} text-white text-xs font-bold`}
-              >
-                ✓
-              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 13 13" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4516 2.46958C12.7862 2.82011 12.7733 3.37551 12.4228 3.71011L5.79935 10.0754C5.62835 10.2387 5.39871 10.326 5.16245 10.3176C4.92619 10.3092 4.7033 10.2059 4.54428 10.031L1.30827 6.53714C0.982299 6.17858 1.00872 5.62365 1.36729 5.29769C1.72585 4.97172 2.28077 4.99814 2.60674 5.35671L5.238 8.1853L11.2111 2.44073C11.5617 2.10614 12.1171 2.11905 12.4516 2.46958Z" fill="white"/>
+              </svg>
             )}
           </div>
         </label>

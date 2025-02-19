@@ -4,7 +4,7 @@ import { ChipsComponents } from "@/modules/library/components/atoms/chips";
 import { Date } from "../modules/library/components/atoms/date/Date";
 import { TextAreaComponents } from "@/modules/library/components/atoms/textarea";
 import { Tooltip } from "../modules/library/components/atoms/tooltip/Tooltip";
-import { CheckboxGroup} from "../modules/library/components/atoms/checkbox/CheckboxGroup";
+import { CheckboxGroupTwo} from "../modules/library/components/atoms/checkbox/CheckboxGroup";
 
 import {
   AlertFilled,
@@ -1635,8 +1635,8 @@ export default function Home() {
           <CheckboxComponent.CheckboxDisabledIcon  />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
-          <CheckboxGroup checked={isChecked} onChange={setIsChecked} />
-          <CheckboxGroup checked={isChecked} onChange={setIsChecked} />
+          <CheckboxGroupTwo checked={isChecked} onChange={setIsChecked} />
+          {/* <CheckboxGroup checked={isChecked} onChange={setIsChecked} /> */}
         </div>
       </div>
     </div>

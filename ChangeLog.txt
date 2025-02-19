@@ -163,4 +163,5 @@
        - Modificado  componente para agregarle el estado al checked en CheckboxComponent.tsx
        - Crear demás componentes checkbox  dentro de CheckboxComponent.tsx 
        - Renderizados componentes de CheckboxComponent en \screen\home.tsx
+       - Modificado componente para hacer los checbox basados en listas en \CheckboxGroup.tsx
     Observaciones:
