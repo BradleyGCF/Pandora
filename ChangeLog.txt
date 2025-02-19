@@ -156,3 +156,11 @@
        - Añadidas propiedades al componente base para hacerlo más dinamico en Checkbox.tsx
        - Añadida exportacion del componente CheckboxComponent en index.ts
     Observaciones:
+
+    2025/02/19 - Components y Screen - Valentina Rincón
+    Cambios:
+       - Modificado componente para estilizar checbox y checked en Checkbox.tsx
+       - Modificado  componente para agregarle el estado al checked en CheckboxComponent.tsx
+       - Crear demás componentes checkbox  dentro de CheckboxComponent.tsx 
+       - Renderizados componentes de CheckboxComponent en \screen\home.tsx
+    Observaciones:
