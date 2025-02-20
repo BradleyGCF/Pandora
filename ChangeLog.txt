@@ -159,9 +159,10 @@
 
     2025/02/19 - Components y Screen - Valentina Rincón
     Cambios:
-       - Modificado componente para estilizar checbox y checked en Checkbox.tsx
-       - Modificado  componente para agregarle el estado al checked en CheckboxComponent.tsx
-       - Crear demás componentes checkbox  dentro de CheckboxComponent.tsx 
-       - Renderizados componentes de CheckboxComponent en \screen\home.tsx
-       - Modificado componente para hacer los checbox basados en listas en \CheckboxGroup.tsx
+       - Modificado componente para dar soporte de personalizacion de estilos Checkbox.tsx
+       - Modificado componente para dar soporte de personalizacion de estilos CheckboxGroup.tsx
+       - Modificado  componente para dar soporte de personalizacion de estilos en CheckboxComponent.tsx
+       - Crear y desarrollar componente CheckboxSimple dentro de CheckboxComponent.tsx 
+       - Renderizados componentes de CheckboxComponent, Toggle, CheckboxGroup y Avatars en \screen\home.tsx
+       - Creado archivo de barril para exportacion de los componentes Toogle en \toggle\index.ts
     Observaciones:
