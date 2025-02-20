@@ -75,3 +75,4 @@ export const CheckboxGroup: React.FC<CheckboxGroupProps> = ({
     </ul>
   );
 };
+

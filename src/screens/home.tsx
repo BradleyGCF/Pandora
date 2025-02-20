@@ -27,11 +27,15 @@ import {
   DefaultFormMedium,
   DefaultFormNormal,
 } from "@/modules/library/components/molecules/Form";
-import React from "react";
 import { CheckboxGroup } from "@/modules/library/components/atoms/checkbox/CheckboxGroup";
+import { CheckboxSimple } from "@/modules/library/components/atoms/checkbox/CheckboxComponent";
+import { ToogleLarge, ToogleMedium, ToogleSmall } from '@/modules/library/components/atoms/toogle/Toogle';
+import { useState } from "react";
+import { Avatars } from '../modules/library/components/atoms/avatars/Avatars';
+
 
 export default function Home() {
-  const [isChecked, setIsChecked] = React.useState(false);
+  const [isChecked, setIsChecked] = useState(false);
   return (
     <div>
       <div className="grid grid-cols-6 gap-2">
@@ -1659,6 +1663,13 @@ export default function Home() {
             options={["Option 1", "Option 2", "Option 3", "Option 4", "Option 5"]}
             selectedValues={["Option 1"]}
           />
+        </div>
+        <div className="flex flex-col items-center justify-center">
+        <CheckboxSimple checked={isChecked} onChange={setIsChecked}/>
+        <ToogleSmall />
+        <ToogleMedium />
+        <ToogleLarge />
+        <Avatars/>
         </div>
       </div>
     </div>

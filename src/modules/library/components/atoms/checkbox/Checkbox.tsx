@@ -1,12 +1,16 @@
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
 export type CheckboxProps = {
-  checked?: boolean;
   checkboxPosition?: "left" | "right";
+  checkboxStyle?: string;
+  checked?: boolean;
   className?: string;
   description?: string;
+  descriptionStyle?: string;
   disabled?: boolean;
   icon?: React.ReactNode;
+  labelStyle?: string;
   onChange?: (checked: boolean) => void;
   showIcon?: boolean;
   title?: string;
@@ -14,14 +18,17 @@ export type CheckboxProps = {
 };
 
 export const Checkbox: React.FC<CheckboxProps> = ({
-  checked,
   checkboxPosition = "right",
+  checkboxStyle,
+  checked,
   className,
   description,
+  descriptionStyle,
   disabled = false,
   icon,
-  showIcon = false,
+  labelStyle,
   onChange,
+  showIcon = false,
   title,
   variant = "default",
 }) => {
@@ -36,10 +43,12 @@ export const Checkbox: React.FC<CheckboxProps> = ({
 
   return (
     <div
-      className={`${disabled ? disabledStyles : ""} ${variantStyles[variant]} ${className} flex gap-x-1.5 p-4 rounded-xl`}
+      className={twMerge(
+        `${disabled ? disabledStyles : ""} ${variantStyles[variant]} ${className} flex gap-x-1.5 p-4 rounded-xl`
+      )}
     >
       {checkboxPosition === "left" && (
-        <label className="flex items-center cursor-pointer">
+        <label className="flex cursor-pointer">
           <input
             disabled={disabled}
             type="checkbox"
@@ -48,13 +57,15 @@ export const Checkbox: React.FC<CheckboxProps> = ({
             className="peer hidden"
           />
           <div
-            className={`w-5 h-5 rounded-sm flex items-center justify-center transition-all
+            className={twMerge(
+              `w-5 h-5 rounded-sm flex items-center justify-center transition-all
               ${
                 disabled
                   ? "bg-[#828282] border-gray-300 cursor-not-allowed peer-checked:bg-gray-500 peer-checked:border-gray-500"
                   : "bg-gray-100 cursor-pointer border-gray-400 peer-checked:bg-purple-700 peer-checked:border-purple-700"
-              }
-            `}
+              } ${checkboxStyle} 
+             `
+            )}
           >
             {checked && (
               <svg
@@ -86,15 +97,21 @@ export const Checkbox: React.FC<CheckboxProps> = ({
 
       <div className="flex flex-col w-full">
         <div className="flex text-sm">
-          <label htmlFor="helper-checkbox" className="font-medium">
+          <label className={twMerge(`font-medium ${labelStyle}`)}>
             {title}
           </label>
         </div>
-        <p className="text-xs font-normal text-[#828282]">{description}</p>
+        <p
+          className={twMerge(
+            `text-xs font-normal text-[#828282] ${descriptionStyle}`
+          )}
+        >
+          {description}
+        </p>
       </div>
 
       {checkboxPosition === "right" && (
-        <label className="relative flex items-center justify-center cursor-pointer">
+        <label className="relative flex  cursor-pointer">
           <input
             disabled={disabled}
             type="checkbox"
@@ -103,13 +120,13 @@ export const Checkbox: React.FC<CheckboxProps> = ({
             className="peer hidden"
           />
           <div
-            className={`w-5 h-5 rounded-sm flex items-center justify-center transition-all
+            className={twMerge(`w-5 h-5 rounded-sm flex items-center justify-center transition-all
             ${
               disabled
                 ? "bg-[#828282] border-gray-300 cursor-not-allowed peer-checked:bg-gray-500 peer-checked:border-gray-500"
                 : "bg-gray-100 cursor-pointer border-gray-400 peer-checked:bg-purple-700 peer-checked:border-purple-700"
-            }
-          `}
+            } ${checkboxStyle}
+          `)}
           >
             {checked && (
               <svg
