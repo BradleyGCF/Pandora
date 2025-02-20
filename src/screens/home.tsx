@@ -4,7 +4,6 @@ import { ChipsComponents } from "@/modules/library/components/atoms/chips";
 import { Date } from "../modules/library/components/atoms/date/Date";
 import { TextAreaComponents } from "@/modules/library/components/atoms/textarea";
 import { Tooltip } from "../modules/library/components/atoms/tooltip/Tooltip";
-import { CheckboxGroupTwo} from "../modules/library/components/atoms/checkbox/CheckboxGroup";
 
 import {
   AlertFilled,
@@ -29,6 +28,7 @@ import {
   DefaultFormNormal,
 } from "@/modules/library/components/molecules/Form";
 import React from "react";
+import { CheckboxGroup } from "@/modules/library/components/atoms/checkbox/CheckboxGroup";
 
 export default function Home() {
   const [isChecked, setIsChecked] = React.useState(false);
@@ -1625,18 +1625,40 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
           <CheckboxComponent.CheckboxDefault />
           <CheckboxComponent.CheckboxHover />
-          <CheckboxComponent.CheckboxFocus  />
+          <CheckboxComponent.CheckboxFocus />
           <CheckboxComponent.CheckboxDisabled />
         </div>
         <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
-          <CheckboxComponent.CheckboxDefaultIcon  /> 
-          <CheckboxComponent.CheckboxHoverIcon  />
-          <CheckboxComponent.CheckboxFocusIcon  />
-          <CheckboxComponent.CheckboxDisabledIcon  />
+          <CheckboxComponent.CheckboxDefaultIcon />
+          <CheckboxComponent.CheckboxHoverIcon />
+          <CheckboxComponent.CheckboxFocusIcon />
+          <CheckboxComponent.CheckboxDisabledIcon />
         </div>
-        <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
-          <CheckboxGroupTwo checked={isChecked} onChange={setIsChecked} />
-          {/* <CheckboxGroup checked={isChecked} onChange={setIsChecked} /> */}
+      </div>
+      <div className="grid grid-cols-4 gap-10 min-h-screen">
+        <div className="flex flex-col items-center justify-center">
+          <CheckboxGroup
+            options={["Option 1", "Option 2"]}
+            selectedValues={["Option 1"]}
+          />
+        </div>
+        <div className="flex flex-col items-center justify-center">
+          <CheckboxGroup
+            options={["Option 1", "Option 2", "Option 3"]}
+            selectedValues={["Option 1"]}
+          />
+        </div>
+        <div className="flex flex-col items-center justify-center">
+          <CheckboxGroup
+            options={["Option 1", "Option 2", "Option 3", "Option 4"]}
+            selectedValues={["Option 1"]}
+          />
+        </div>
+        <div className="flex flex-col items-center justify-center">
+          <CheckboxGroup
+            options={["Option 1", "Option 2", "Option 3", "Option 4", "Option 5"]}
+            selectedValues={["Option 1"]}
+          />
         </div>
       </div>
     </div>
