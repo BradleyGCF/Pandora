@@ -36,11 +36,9 @@ import {
 } from "@/modules/library/components/atoms/toogle/Toogle";
 import { useState } from "react";
 import { AvatarsComponent } from "@/modules/library/components/atoms/avatars";
-import { CardInput } from '../modules/library/components/molecules/CardInput/CardInput';
 import { Indicator } from '../modules/library/components/atoms/indicator/Indicator';
 
 export default function Home() {
-  const [isChecked, setIsChecked] = useState(false);
   return (
     <div>
       <div className="grid grid-cols-6 gap-2">
@@ -1688,8 +1686,6 @@ export default function Home() {
           <AvatarsComponent.AvatarsMd />
           <AvatarsComponent.AvatarsLg />
       </div>
-
-          <CardInput/>
           <div className="flex items-center justify-center gap-5 min-h-screen">
           <Indicator/>
 
