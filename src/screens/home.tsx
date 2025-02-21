@@ -29,10 +29,15 @@ import {
 } from "@/modules/library/components/molecules/Form";
 import { CheckboxGroup } from "@/modules/library/components/atoms/checkbox/CheckboxGroup";
 import { CheckboxSimple } from "@/modules/library/components/atoms/checkbox/CheckboxComponent";
-import { ToogleLarge, ToogleMedium, ToogleSmall } from '@/modules/library/components/atoms/toogle/Toogle';
+import {
+  ToogleLarge,
+  ToogleMedium,
+  ToogleSmall,
+} from "@/modules/library/components/atoms/toogle/Toogle";
 import { useState } from "react";
-import { Avatars } from '../modules/library/components/atoms/avatars/Avatars';
-
+import { AvatarsComponent } from "@/modules/library/components/atoms/avatars";
+import { CardInput } from '../modules/library/components/molecules/CardInput/CardInput';
+import { Indicator } from '../modules/library/components/atoms/indicator/Indicator';
 
 export default function Home() {
   const [isChecked, setIsChecked] = useState(false);
@@ -1660,18 +1665,35 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center justify-center">
           <CheckboxGroup
-            options={["Option 1", "Option 2", "Option 3", "Option 4", "Option 5"]}
+            options={[
+              "Option 1",
+              "Option 2",
+              "Option 3",
+              "Option 4",
+              "Option 5",
+            ]}
             selectedValues={["Option 1"]}
           />
         </div>
         <div className="flex flex-col items-center justify-center">
-        <CheckboxSimple checked={isChecked} onChange={setIsChecked}/>
-        <ToogleSmall />
-        <ToogleMedium />
-        <ToogleLarge />
-        <Avatars/>
+          <CheckboxSimple />
+          <ToogleSmall />
+          <ToogleMedium />
+          <ToogleLarge />
         </div>
       </div>
+      
+        <div className="flex items-center justify-center gap-5 min-h-screen">
+          <AvatarsComponent.AvatarsSm />
+          <AvatarsComponent.AvatarsMd />
+          <AvatarsComponent.AvatarsLg />
+      </div>
+
+          <CardInput/>
+          <div className="flex items-center justify-center gap-5 min-h-screen">
+          <Indicator/>
+
+          </div>
     </div>
   );
 }

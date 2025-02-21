@@ -2,7 +2,6 @@ import React, { PropsWithChildren, useState } from "react";
 import { Checkbox, CheckboxProps } from "./Checkbox";
 import { twMerge } from "tailwind-merge";
 import { DocumentIcon } from "@heroicons/react/24/outline";
-import { CheckboxGroup } from "./CheckboxGroup";
 
 const variantStyles = {
   default: "border-2 border-purple-700",
@@ -12,6 +11,7 @@ const variantStyles = {
 };
 
 export const CheckboxDefault: React.FC<PropsWithChildren<CheckboxProps>> = ({
+  checkboxStyle,
   className,
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus.",
   title = "Title",
@@ -20,6 +20,7 @@ export const CheckboxDefault: React.FC<PropsWithChildren<CheckboxProps>> = ({
   return (
     <Checkbox
       checkboxPosition="left"
+      checkboxStyle={checkboxStyle}
       checked={isChecked}
       className={twMerge(`${variantStyles.default} ${className}`)}
       description={description}
@@ -30,6 +31,7 @@ export const CheckboxDefault: React.FC<PropsWithChildren<CheckboxProps>> = ({
 };
 
 export const CheckboxHover: React.FC<PropsWithChildren<CheckboxProps>> = ({
+  checkboxStyle,
   className,
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus.",
   title = "Title",
@@ -38,6 +40,7 @@ export const CheckboxHover: React.FC<PropsWithChildren<CheckboxProps>> = ({
   return (
     <Checkbox
       checkboxPosition="left"
+      checkboxStyle={checkboxStyle}
       checked={isChecked}
       className={twMerge(`${variantStyles.hover} ${className}`)}
       description={description}
@@ -48,6 +51,7 @@ export const CheckboxHover: React.FC<PropsWithChildren<CheckboxProps>> = ({
 };
 
 export const CheckboxFocus: React.FC<PropsWithChildren<CheckboxProps>> = ({
+  checkboxStyle,
   className,
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus.",
   title = "Title",
@@ -57,6 +61,7 @@ export const CheckboxFocus: React.FC<PropsWithChildren<CheckboxProps>> = ({
     <Checkbox
       checkboxPosition="left"
       checked={isChecked}
+      checkboxStyle={checkboxStyle}
       className={twMerge(`${variantStyles.focus} ${className}`)}
       description={description}
       onChange={setIsChecked}
@@ -66,6 +71,7 @@ export const CheckboxFocus: React.FC<PropsWithChildren<CheckboxProps>> = ({
 };
 
 export const CheckboxDisabled: React.FC<PropsWithChildren<CheckboxProps>> = ({
+  checkboxStyle,
   className,
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus.",
   title = "Title",
@@ -73,6 +79,7 @@ export const CheckboxDisabled: React.FC<PropsWithChildren<CheckboxProps>> = ({
   const [isChecked, setIsChecked] = useState(true);
   return (
     <Checkbox
+      checkboxStyle={checkboxStyle}
       checkboxPosition="left"
       checked={isChecked}
       className={twMerge(`${variantStyles.disabled} ${className}`)}
@@ -83,10 +90,11 @@ export const CheckboxDisabled: React.FC<PropsWithChildren<CheckboxProps>> = ({
     />
   );
 };
-67374198260;
+
 export const CheckboxDefaultIcon: React.FC<
   PropsWithChildren<CheckboxProps>
 > = ({
+  checkboxStyle,
   className,
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus.",
   icon,
@@ -95,6 +103,7 @@ export const CheckboxDefaultIcon: React.FC<
   const [isChecked, setIsChecked] = useState(false);
   return (
     <Checkbox
+      checkboxStyle={checkboxStyle}
       checked={isChecked}
       className={twMerge(`${variantStyles.default} ${className}`)}
       description={description}
@@ -107,6 +116,7 @@ export const CheckboxDefaultIcon: React.FC<
 };
 
 export const CheckboxHoverIcon: React.FC<PropsWithChildren<CheckboxProps>> = ({
+  checkboxStyle,
   className,
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus.",
   icon,
@@ -115,6 +125,7 @@ export const CheckboxHoverIcon: React.FC<PropsWithChildren<CheckboxProps>> = ({
   const [isChecked, setIsChecked] = useState(false);
   return (
     <Checkbox
+      checkboxStyle={checkboxStyle}
       checked={isChecked}
       className={twMerge(`${variantStyles.hover} ${className}`)}
       description={description}
@@ -127,6 +138,7 @@ export const CheckboxHoverIcon: React.FC<PropsWithChildren<CheckboxProps>> = ({
 };
 
 export const CheckboxFocusIcon: React.FC<PropsWithChildren<CheckboxProps>> = ({
+  checkboxStyle,
   className,
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus.",
   icon,
@@ -135,6 +147,7 @@ export const CheckboxFocusIcon: React.FC<PropsWithChildren<CheckboxProps>> = ({
   const [isChecked, setIsChecked] = useState(false);
   return (
     <Checkbox
+      checkboxStyle={checkboxStyle}
       checked={isChecked}
       className={twMerge(`${variantStyles.focus} ${className}`)}
       description={description}
@@ -149,6 +162,7 @@ export const CheckboxFocusIcon: React.FC<PropsWithChildren<CheckboxProps>> = ({
 export const CheckboxDisabledIcon: React.FC<
   PropsWithChildren<CheckboxProps>
 > = ({
+  checkboxStyle,
   className,
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus.",
   icon,
@@ -157,6 +171,7 @@ export const CheckboxDisabledIcon: React.FC<
   const [isChecked] = useState(true);
   return (
     <Checkbox
+      checkboxStyle={checkboxStyle}
       checked={isChecked}
       className={twMerge(`${variantStyles.disabled} ${className}`)}
       description={description}
@@ -168,10 +183,11 @@ export const CheckboxDisabledIcon: React.FC<
   );
 };
 
-export const CheckboxSimple: React.FC<CheckboxProps> = ({
+export const CheckboxSimpleComponent: React.FC<CheckboxProps> = ({
   checked,
-  onChange,
   className,
+  onChange,
+  checkboxStyle,
 }) => {
   return (
     <label className="flex cursor-pointer">
@@ -183,8 +199,9 @@ export const CheckboxSimple: React.FC<CheckboxProps> = ({
       />
       <div
         className={twMerge(
-          `w-5 h-5 border-2 border-[#828282] rounded-sm flex items-center justify-center transition-all bg-white 
-                                peer-checked:bg-gray-700 peer-checked:border-transparent ${className}`
+          `w-5 h-5 border-2 border-[#828282] rounded-sm flex items-center justify-center transition-all bg-white peer-checked:bg-gray-700 peer-checked:border-transparent`,
+          className,
+          checkboxStyle
         )}
       >
         {checked && (
@@ -207,3 +224,10 @@ export const CheckboxSimple: React.FC<CheckboxProps> = ({
     </label>
   );
 };
+
+export const CheckboxSimple: React.FC<CheckboxProps> = ({className}) => {
+  const [isChecked, setIsChecked] = useState(false);
+  return (
+    <CheckboxSimpleComponent className={className} checked={isChecked} onChange={setIsChecked} />
+  )
+}

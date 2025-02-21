@@ -166,3 +166,14 @@
        - Renderizados componentes de CheckboxComponent, Toggle, CheckboxGroup y Avatars en \screen\home.tsx
        - Creado archivo de barril para exportacion de los componentes Toogle en \toggle\index.ts
     Observaciones:
+    
+    2025/02/20 - Components y Screen - Valentina Rincón
+    Cambios:
+       - Cambiar version de libreria en \package.json
+       - Exportar componentes Avatar para empaquetarlos \en main.ts 
+       - Modificado componente Avatar para crear variantes de estilos en \Avatar.tsx
+       - Creado componente AvatarComponent para crear componetes basados en las variantes de estilos en \AvatarComponent.tsx 
+       - Renderizados componentes Avatar e Indicator em \home.tsx
+       - Creado archivo de barril para exportacion de los componentes Avatar.
+       - Modificada estructura de componente para añadir propiedad que permite personalizar el checbox en CheckboxComponent.tsx
+    Observaciones:

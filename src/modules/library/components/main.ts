@@ -394,3 +394,6 @@ export { ChipsSuccessIcon} from "./atoms/chips/ChipsComponents.tsx";
 
 export { Tooltip } from "./atoms/tooltip/Tooltip.tsx";
 export { Badge } from "./atoms/badge/Badge.tsx";
+export { AvatarsSm } from "./atoms/avatars/AvatarsComponent.tsx"
+export { AvatarsMd } from "./atoms/avatars/AvatarsComponent.tsx"
+export { AvatarsLg } from "./atoms/avatars/AvatarsComponent.tsx"
