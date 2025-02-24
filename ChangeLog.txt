@@ -177,3 +177,13 @@
        - Creado archivo de barril para exportacion de los componentes Avatar.
        - Modificada estructura de componente para añadir propiedad que permite personalizar el checbox en CheckboxComponent.tsx
     Observaciones:
+
+     2025/02/25 - Components y Screen - Valentina Rincón
+    Cambios:
+       - Cambiar estructura del componente avatar para trabajar en componentes más dinamicos en Avatar.tsx
+       - Cambiar color de checked para componentes CardUserSelectItem en CheckboxComponent.tsx 
+       - Creado componente base Profiles.tsx
+       - Creado componente ProfileComponent para crear componentes donde se pueda renderizar en tamaños y variantes de cada profile en ProfileComponent.tsx
+       - Creado componente CardUserSelectItem para interactuar con avatars y checkbox.
+       - Creado archivo de barril para exportación de componentes ProfileComponent en \index.ts
+    Observaciones: Se está trabajando en los componentes avatar y profile ya que se tiene que estructurar correctamente los componentes para poder reutilizarlos. 

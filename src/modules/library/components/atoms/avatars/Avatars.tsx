@@ -18,6 +18,7 @@ const variantStyle = {
   large: "",
 };
 
+
 export const Avatars: React.FC<AvatarProps> = ({
   className,
   email = "maria@ui.email.com",
@@ -31,7 +32,7 @@ export const Avatars: React.FC<AvatarProps> = ({
   return (
     <div className={twMerge("flex items-center gap-2", className)}>
       <img className={twMerge(imageStyle)} src={image} />
-      <div className={twMerge("", className, variantStyle[variant])}>
+      <div className={twMerge(className, variantStyle[variant])}>
         <div className={twMerge("text-[#373737] font-medium", nameStyle)}>
           {name}
         </div>

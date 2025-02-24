@@ -34,9 +34,11 @@ import {
   ToogleMedium,
   ToogleSmall,
 } from "@/modules/library/components/atoms/toogle/Toogle";
-import { useState } from "react";
 import { AvatarsComponent } from "@/modules/library/components/atoms/avatars";
 import { Indicator } from '../modules/library/components/atoms/indicator/Indicator';
+import { CardUserSelectItem } from '../modules/library/components/molecules/CardInput/CardUserSelectItem';
+import { Profiles } from "@/modules/library/components/atoms/profiles/Profiles";
+import { ProfileComponent } from "@/modules/library/components/atoms/profiles";
 
 export default function Home() {
   return (
@@ -1686,9 +1688,13 @@ export default function Home() {
           <AvatarsComponent.AvatarsMd />
           <AvatarsComponent.AvatarsLg />
       </div>
-          <div className="flex items-center justify-center gap-5 min-h-screen">
-          <Indicator/>
-
+          <div className="flex flex-col gap-3 items-center justify-center min-h-screen">
+          {/* <Indicator/> */}
+          <CardUserSelectItem/>
+          <CardUserSelectItem variant="hover" />
+          <CardUserSelectItem variant="focus"/>
+          <CardUserSelectItem variant="disabled"/>
+          <ProfileComponent.ProfilePictureXs  imageSrc="/public/Ellipse2.svg"/>
           </div>
     </div>
   );

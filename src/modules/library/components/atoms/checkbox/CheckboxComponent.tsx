@@ -199,7 +199,7 @@ export const CheckboxSimpleComponent: React.FC<CheckboxProps> = ({
       />
       <div
         className={twMerge(
-          `w-5 h-5 border-2 border-[#828282] rounded-sm flex items-center justify-center transition-all bg-white peer-checked:bg-gray-700 peer-checked:border-transparent`,
+          `w-5 h-5 border-2 border-[#828282] rounded-sm flex items-center justify-center transition-all bg-white peer-checked:bg-purple-700 peer-checked:border-transparent`,
           className,
           checkboxStyle
         )}
