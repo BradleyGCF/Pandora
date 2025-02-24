@@ -1,7 +1,10 @@
+import { AvatarsComponent } from "@/modules/library/components/atoms/avatars";
 import { Badge } from "@/modules/library/components/atoms/badge/Badge";
+import { CardUserSelectItemComponent } from "@/modules/library/components/molecules/CardInput";
 import { CheckboxComponent } from "@/modules/library/components/atoms/checkbox";
 import { ChipsComponents } from "@/modules/library/components/atoms/chips";
 import { Date } from "../modules/library/components/atoms/date/Date";
+import { ProfileComponent } from "@/modules/library/components/atoms/profiles";
 import { TextAreaComponents } from "@/modules/library/components/atoms/textarea";
 import { Tooltip } from "../modules/library/components/atoms/tooltip/Tooltip";
 
@@ -34,11 +37,7 @@ import {
   ToogleMedium,
   ToogleSmall,
 } from "@/modules/library/components/atoms/toogle/Toogle";
-import { AvatarsComponent } from "@/modules/library/components/atoms/avatars";
-import { Indicator } from '../modules/library/components/atoms/indicator/Indicator';
-import { CardUserSelectItem } from '../modules/library/components/molecules/CardInput/CardUserSelectItem';
-import { Profiles } from "@/modules/library/components/atoms/profiles/Profiles";
-import { ProfileComponent } from "@/modules/library/components/atoms/profiles";
+import { AvatarContent } from "@/modules/library/components/atoms/profiles/ProfileContent";
 
 export default function Home() {
   return (
@@ -1682,20 +1681,53 @@ export default function Home() {
           <ToogleLarge />
         </div>
       </div>
-      
-        <div className="flex items-center justify-center gap-5 min-h-screen">
-          <AvatarsComponent.AvatarsSm />
-          <AvatarsComponent.AvatarsMd />
-          <AvatarsComponent.AvatarsLg />
+
+      <div className="flex items-center justify-center gap-5 min-h-screen">
+        <AvatarsComponent.AvatarsSm />
+        <AvatarsComponent.AvatarsMd />
+        <AvatarsComponent.AvatarsLg />
       </div>
-          <div className="flex flex-col gap-3 items-center justify-center min-h-screen">
-          {/* <Indicator/> */}
-          <CardUserSelectItem/>
-          <CardUserSelectItem variant="hover" />
-          <CardUserSelectItem variant="focus"/>
-          <CardUserSelectItem variant="disabled"/>
-          <ProfileComponent.ProfilePictureXs  imageSrc="/public/Ellipse2.svg"/>
-          </div>
+      <div className="flex flex-col gap-3 items-center justify-center min-h-screen">
+        {/* <Indicator/> */}
+        <CardUserSelectItemComponent.CardUserSelectItemSmDefault />
+        <CardUserSelectItemComponent.CardUserSelectItemSmHover />
+        <CardUserSelectItemComponent.CardUserSelectItemSmFocus />
+        <CardUserSelectItemComponent.CardUserSelectItemSmDisabled />
+      </div>
+      <div className="grid bg-slate-100 grid-cols-3 min-h-screen gap-10">
+        <div className="flex gap-3 items-center justify-center min-h-screen">
+          <ProfileComponent.ProfilePictureXs />
+          <ProfileComponent.ProfilePictureSm />
+          <ProfileComponent.ProfilePictureMd />
+          <ProfileComponent.ProfilePictureLg />
+          <ProfileComponent.ProfilePictureXl />
+          <ProfileComponent.ProfilePictureXxl />
+        </div>
+        <div className="flex gap-3 items-center justify-center min-h-screen">
+          <ProfileComponent.ProfilePictureXsBorder />
+          <ProfileComponent.ProfilePictureSmBorder />
+          <ProfileComponent.ProfilePictureMdBorder />
+          <ProfileComponent.ProfilePictureLgBorder />
+          <ProfileComponent.ProfilePictureXlBorder />
+          <ProfileComponent.ProfilePictureXxlBorder />
+        </div>
+        <div className="flex gap-3 items-center justify-center min-h-screen">
+          <ProfileComponent.ProfilePictureXsOnline />
+          <ProfileComponent.ProfilePictureSmOnline />
+          <ProfileComponent.ProfilePictureMdOnline />
+          <ProfileComponent.ProfilePictureLgOnline />
+          <ProfileComponent.ProfilePictureXlOnline />
+          <ProfileComponent.ProfilePictureXxlOnline />
+          <AvatarContent
+  // imageSrc={imageSrc}
+  name="John"
+  surname="Doe"
+  imageSrc="/public/Ellipse2.svg"
+  // icon={<UserIcon className="w-5 h-5 text-gray-600" />}
+  size="sm"
+/>
+        </div>
+      </div>
     </div>
   );
 }

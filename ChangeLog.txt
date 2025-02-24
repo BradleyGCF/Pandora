@@ -178,7 +178,7 @@
        - Modificada estructura de componente para añadir propiedad que permite personalizar el checbox en CheckboxComponent.tsx
     Observaciones:
 
-     2025/02/25 - Components y Screen - Valentina Rincón
+     2025/02/23 - Components y Screen - Valentina Rincón
     Cambios:
        - Cambiar estructura del componente avatar para trabajar en componentes más dinamicos en Avatar.tsx
        - Cambiar color de checked para componentes CardUserSelectItem en CheckboxComponent.tsx 
@@ -186,4 +186,13 @@
        - Creado componente ProfileComponent para crear componentes donde se pueda renderizar en tamaños y variantes de cada profile en ProfileComponent.tsx
        - Creado componente CardUserSelectItem para interactuar con avatars y checkbox.
        - Creado archivo de barril para exportación de componentes ProfileComponent en \index.ts
-    Observaciones: Se está trabajando en los componentes avatar y profile ya que se tiene que estructurar correctamente los componentes para poder reutilizarlos. 
+    Observaciones: Se está trabajando en los componentes avatar y profile ya que se tiene que estructurar correctamente los componentes para poder reutilizarlos.
+
+    2025/02/24 - Components y Screen - Valentina Rincón
+    Cambios:
+       - Reestrucutrar desarrollo de componente profile en ProfileComponent.tsx
+       - Reestrucutrar desarrollo de componente profile en Profile.tsx
+       - Creado componente ProfileContent para pruebas de reutilizacion para el componente CardUserSelectItem en ProfileContent.tsx
+       - Creados componentes para las vaaiantes de estilos en ProfileComponent.tsx
+       - Creado archivo de barril para componentes CardUserSelectItem en index.ts 
+    Observaciones:

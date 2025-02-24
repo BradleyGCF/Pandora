@@ -1,25 +1,26 @@
 import React, { useState } from "react";
 import { twMerge } from "tailwind-merge";
-import { AvatarsSm } from "../../main";
 import { CheckboxSimple } from "../../atoms/checkbox/CheckboxComponent";
-import { CheckboxProps } from '../../atoms/checkbox/Checkbox';
+import { AvatarsSm } from "../../main";
 
-interface CardUserSelectItemProps {
+export interface CardUserSelectItemProps {
   className?: string;
+  AvatarsComponent?: React.FC<any>;
   variant?: "default" | "hover" | "focus" | "disabled";
 }
 
 export const CardUserSelectItem: React.FC<CardUserSelectItemProps> = ({
   className,
+  AvatarsComponent = AvatarsSm,
   variant = "default"
 }) => {
   const [isChecked, setIsChecked] = useState(false);
 
   const variantStyles = {
-  default: "border-2 border-purple-700",
-  hover: "border-2 hover:ring-purple-700 hover:border-purple-700",
-  focus: "border-4 focus:border-[#D1C4E9] outline-none border-[#D1C4E9]",
-  disabled: "border-2 bg-[#EDE7F6] cursor-not-allowed outline-none hover:none text-[#828282]",
+  default: "",
+  hover: "",
+  focus: "",
+  disabled: "",
   }
 
   const disabled = "";
@@ -27,15 +28,16 @@ export const CardUserSelectItem: React.FC<CardUserSelectItemProps> = ({
   return (
     <div
       className={twMerge(
-        "flex justify-between w-96 cursor-not-allowed p-2 border border-[#D1D5DB] rounded-lg hover:bg-gray-50 transition-all  peer",
+        "flex justify-between w-96 p-2 border border-[#D1D5DB] rounded-lg transition-all peer",
         className, variantStyles[variant], disabled
       )}
     >
       <div className="flex items-center gap-3">
-        <AvatarsSm />
+        <AvatarsComponent/>
       </div>
 
       <CheckboxSimple
+      disabled
         checked={isChecked}
         onChange={setIsChecked}
       />
