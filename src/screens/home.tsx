@@ -2,6 +2,8 @@ import { AvatarsComponent } from "@/modules/library/components/atoms/avatars";
 import { Badge } from "@/modules/library/components/atoms/badge/Badge";
 import { CardUserSelectItemComponent } from "@/modules/library/components/molecules/CardInput";
 import { CheckboxComponent } from "@/modules/library/components/atoms/checkbox";
+import { CheckboxGroup } from "@/modules/library/components/atoms/checkbox/CheckboxGroup";
+import { CheckboxSimple } from "@/modules/library/components/atoms/checkbox/CheckboxComponent";
 import { ChipsComponents } from "@/modules/library/components/atoms/chips";
 import { Date } from "../modules/library/components/atoms/date/Date";
 import { ProfileComponent } from "@/modules/library/components/atoms/profiles";
@@ -25,19 +27,18 @@ import {
   ButtonSecondary,
   ButtonText,
 } from "../modules/library/components/atoms/button/index";
+
 import {
   DefaultForm,
   DefaultFormMedium,
   DefaultFormNormal,
 } from "@/modules/library/components/molecules/Form";
-import { CheckboxGroup } from "@/modules/library/components/atoms/checkbox/CheckboxGroup";
-import { CheckboxSimple } from "@/modules/library/components/atoms/checkbox/CheckboxComponent";
+
 import {
   ToogleLarge,
   ToogleMedium,
   ToogleSmall,
 } from "@/modules/library/components/atoms/toogle/Toogle";
-import { AvatarContent } from "@/modules/library/components/atoms/profiles/ProfileContent";
 
 export default function Home() {
   return (
@@ -1718,14 +1719,6 @@ export default function Home() {
           <ProfileComponent.ProfilePictureLgOnline />
           <ProfileComponent.ProfilePictureXlOnline />
           <ProfileComponent.ProfilePictureXxlOnline />
-          <AvatarContent
-  // imageSrc={imageSrc}
-  name="John"
-  surname="Doe"
-  imageSrc="/public/Ellipse2.svg"
-  // icon={<UserIcon className="w-5 h-5 text-gray-600" />}
-  size="sm"
-/>
         </div>
       </div>
     </div>

@@ -196,3 +196,10 @@
        - Creados componentes para las vaaiantes de estilos en ProfileComponent.tsx
        - Creado archivo de barril para componentes CardUserSelectItem en index.ts 
     Observaciones:
+
+    2025/02/26 - Components y Screen - Valentina Rincón
+    Cambios:
+        - Eliminado componente de prueba ProfileContent.tsx
+        - Reestructurado componente para hacerlo reutilizable en ProfileComponent.tsx
+        - Reestructurado componente para agregar propiedades y variables que permitan la reutilizacion de componentes en Profile.tsx
+    Observaciones:
